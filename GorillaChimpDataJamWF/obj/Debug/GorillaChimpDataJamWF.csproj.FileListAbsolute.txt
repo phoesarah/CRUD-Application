@@ -1,0 +1,10 @@
+D:\Workprograms\Gorillas\GorillaChimpDataJamWF\GorillaChimpDataJamWF\bin\Debug\GorillaChimpDataJamWF.exe.config
+D:\Workprograms\Gorillas\GorillaChimpDataJamWF\GorillaChimpDataJamWF\bin\Debug\GorillaChimpDataJamWF.exe
+D:\Workprograms\Gorillas\GorillaChimpDataJamWF\GorillaChimpDataJamWF\bin\Debug\GorillaChimpDataJamWF.pdb
+D:\Workprograms\Gorillas\GorillaChimpDataJamWF\GorillaChimpDataJamWF\obj\Debug\GorillaChimpDataJamWF.csprojResolveAssemblyReference.cache
+D:\Workprograms\Gorillas\GorillaChimpDataJamWF\GorillaChimpDataJamWF\obj\Debug\GorillaChimpDataJamWF.Form1.resources
+D:\Workprograms\Gorillas\GorillaChimpDataJamWF\GorillaChimpDataJamWF\obj\Debug\GorillaChimpDataJamWF.Properties.Resources.resources
+D:\Workprograms\Gorillas\GorillaChimpDataJamWF\GorillaChimpDataJamWF\obj\Debug\GorillaChimpDataJamWF.csproj.GenerateResource.Cache
+D:\Workprograms\Gorillas\GorillaChimpDataJamWF\GorillaChimpDataJamWF\obj\Debug\GorillaChimpDataJamWF.exe
+D:\Workprograms\Gorillas\GorillaChimpDataJamWF\GorillaChimpDataJamWF\obj\Debug\GorillaChimpDataJamWF.pdb
+D:\Workprograms\Gorillas\GorillaChimpDataJamWF\GorillaChimpDataJamWF\obj\Debug\GorillaChimpDataJamWF.CreateEntry.resources
