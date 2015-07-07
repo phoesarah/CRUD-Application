@@ -16,6 +16,9 @@ namespace GorillaChimpDataJamWF
         {
             InitializeComponent();
             GorillaHabEncounterPanel.Hide();
+            GorillaHabNestPanel.Hide();
+            GorillaHabScanPanel.Hide();
+            GorillaHabObservation.Hide();
             
         }
 
@@ -24,13 +27,48 @@ namespace GorillaChimpDataJamWF
             if (comboBox1.SelectedItem.ToString() == "Gorilla Habituation")
             {
                 GorillaHabEncounterPanel.Show();
-                //GorillaHabEncounterPanel.Hide();
+
+                GorillaHabNestPanel.Hide();
+                GorillaHabScanPanel.Hide();
+                GorillaHabObservation.Hide();
+              
             }
-            else if (comboBox1.SelectedItem.ToString() == "panel2")
+            if (comboBox1.SelectedItem.ToString() == "Gor_Habit_Nest")
             {
-                //panel2.Show();
+                
+                GorillaHabNestPanel.Show();
+
                 GorillaHabEncounterPanel.Hide();
+                GorillaHabScanPanel.Hide();
+                GorillaHabObservation.Hide();
+                
+            }
+             if (comboBox1.SelectedItem.ToString() == "Gorilla_Hab_Scan")
+             {
+                 GorillaHabScanPanel.Show();
+
+                 GorillaHabEncounterPanel.Hide();
+                 GorillaHabNestPanel.Hide();
+                 GorillaHabObservation.Hide();
+                
+             }
+             if (comboBox1.SelectedItem.ToString() == "Gorilla_Hab_Observation")
+            {
+                GorillaHabObservation.Show();
+
+                GorillaHabEncounterPanel.Hide();
+                GorillaHabNestPanel.Hide();
+                GorillaHabScanPanel.Hide();
+              
+             
             }
         }
+
+        private void label143_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }
