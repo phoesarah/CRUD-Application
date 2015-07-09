@@ -331,19 +331,19 @@
             this.label98 = new System.Windows.Forms.Label();
             this.FirstContactPointHabScan = new System.Windows.Forms.NumericUpDown();
             this.label99 = new System.Windows.Forms.Label();
-            this.GorillaHabObservation = new System.Windows.Forms.Panel();
-            this.IndividualHabObs = new System.Windows.Forms.TextBox();
-            this.label150 = new System.Windows.Forms.Label();
-            this.BehaviorHabObs = new System.Windows.Forms.TextBox();
+            this.GorillaHabObservationPanel = new System.Windows.Forms.Panel();
+            this.GorillaHabOBsDatePicker = new System.Windows.Forms.DateTimePicker();
+            this.label147 = new System.Windows.Forms.Label();
             this.label148 = new System.Windows.Forms.Label();
             this.HourHabObs = new System.Windows.Forms.TextBox();
-            this.label147 = new System.Windows.Forms.Label();
-            this.CommentHabObs = new System.Windows.Forms.RichTextBox();
             this.label149 = new System.Windows.Forms.Label();
-            this.dateTimePickeHabObs = new System.Windows.Forms.DateTimePicker();
-            this.label157 = new System.Windows.Forms.Label();
-            this.UniqueContactIDHabOBs = new System.Windows.Forms.TextBox();
-            this.label159 = new System.Windows.Forms.Label();
+            this.BehaviorHabObs = new System.Windows.Forms.TextBox();
+            this.Individual = new System.Windows.Forms.Label();
+            this.IndividualHabObs = new System.Windows.Forms.TextBox();
+            this.CommentHabObs = new System.Windows.Forms.RichTextBox();
+            this.label150 = new System.Windows.Forms.Label();
+            this.UniqueContactIDHabObs = new System.Windows.Forms.TextBox();
+            this.label151 = new System.Windows.Forms.Label();
             this.GorillaHabEncounterPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.FirstContactPointNum)).BeginInit();
             this.GorillaHabNestPanel.SuspendLayout();
@@ -424,7 +424,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.IN_AM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ScanPartySizeHabScan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FirstContactPointHabScan)).BeginInit();
-            this.GorillaHabObservation.SuspendLayout();
+            this.GorillaHabObservationPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -1497,7 +1497,6 @@
             // 
             // GorillaHabScanPanel
             // 
-            this.GorillaHabScanPanel.Controls.Add(this.GorillaHabObservation);
             this.GorillaHabScanPanel.Controls.Add(this.groupBox3);
             this.GorillaHabScanPanel.Controls.Add(this.groupBox2);
             this.GorillaHabScanPanel.Controls.Add(this.groupBox1);
@@ -3171,127 +3170,128 @@
             this.label99.TabIndex = 0;
             this.label99.Text = "First Contact Point:";
             // 
-            // GorillaHabObservation
+            // GorillaHabObservationPanel
             // 
-            this.GorillaHabObservation.Controls.Add(this.IndividualHabObs);
-            this.GorillaHabObservation.Controls.Add(this.label150);
-            this.GorillaHabObservation.Controls.Add(this.BehaviorHabObs);
-            this.GorillaHabObservation.Controls.Add(this.label148);
-            this.GorillaHabObservation.Controls.Add(this.HourHabObs);
-            this.GorillaHabObservation.Controls.Add(this.label147);
-            this.GorillaHabObservation.Controls.Add(this.CommentHabObs);
-            this.GorillaHabObservation.Controls.Add(this.label149);
-            this.GorillaHabObservation.Controls.Add(this.dateTimePickeHabObs);
-            this.GorillaHabObservation.Controls.Add(this.label157);
-            this.GorillaHabObservation.Controls.Add(this.UniqueContactIDHabOBs);
-            this.GorillaHabObservation.Controls.Add(this.label159);
-            this.GorillaHabObservation.Location = new System.Drawing.Point(0, 1);
-            this.GorillaHabObservation.Name = "GorillaHabObservation";
-            this.GorillaHabObservation.Size = new System.Drawing.Size(1249, 544);
-            this.GorillaHabObservation.TabIndex = 47;
+            this.GorillaHabObservationPanel.Controls.Add(this.UniqueContactIDHabObs);
+            this.GorillaHabObservationPanel.Controls.Add(this.label151);
+            this.GorillaHabObservationPanel.Controls.Add(this.CommentHabObs);
+            this.GorillaHabObservationPanel.Controls.Add(this.label150);
+            this.GorillaHabObservationPanel.Controls.Add(this.IndividualHabObs);
+            this.GorillaHabObservationPanel.Controls.Add(this.Individual);
+            this.GorillaHabObservationPanel.Controls.Add(this.BehaviorHabObs);
+            this.GorillaHabObservationPanel.Controls.Add(this.label149);
+            this.GorillaHabObservationPanel.Controls.Add(this.HourHabObs);
+            this.GorillaHabObservationPanel.Controls.Add(this.label148);
+            this.GorillaHabObservationPanel.Controls.Add(this.GorillaHabOBsDatePicker);
+            this.GorillaHabObservationPanel.Controls.Add(this.label147);
+            this.GorillaHabObservationPanel.Location = new System.Drawing.Point(12, 70);
+            this.GorillaHabObservationPanel.Name = "GorillaHabObservationPanel";
+            this.GorillaHabObservationPanel.Size = new System.Drawing.Size(1249, 545);
+            this.GorillaHabObservationPanel.TabIndex = 47;
             // 
-            // IndividualHabObs
+            // GorillaHabOBsDatePicker
             // 
-            this.IndividualHabObs.Location = new System.Drawing.Point(240, 72);
-            this.IndividualHabObs.Name = "IndividualHabObs";
-            this.IndividualHabObs.Size = new System.Drawing.Size(100, 20);
-            this.IndividualHabObs.TabIndex = 4;
-            // 
-            // label150
-            // 
-            this.label150.AutoSize = true;
-            this.label150.Location = new System.Drawing.Point(238, 55);
-            this.label150.Name = "label150";
-            this.label150.Size = new System.Drawing.Size(55, 13);
-            this.label150.TabIndex = 68;
-            this.label150.Text = "Individual:";
-            // 
-            // BehaviorHabObs
-            // 
-            this.BehaviorHabObs.Location = new System.Drawing.Point(126, 72);
-            this.BehaviorHabObs.Name = "BehaviorHabObs";
-            this.BehaviorHabObs.Size = new System.Drawing.Size(100, 20);
-            this.BehaviorHabObs.TabIndex = 3;
-            // 
-            // label148
-            // 
-            this.label148.AutoSize = true;
-            this.label148.Location = new System.Drawing.Point(123, 55);
-            this.label148.Name = "label148";
-            this.label148.Size = new System.Drawing.Size(52, 13);
-            this.label148.TabIndex = 66;
-            this.label148.Text = "Behavior:";
-            // 
-            // HourHabObs
-            // 
-            this.HourHabObs.Location = new System.Drawing.Point(12, 72);
-            this.HourHabObs.Name = "HourHabObs";
-            this.HourHabObs.Size = new System.Drawing.Size(100, 20);
-            this.HourHabObs.TabIndex = 2;
+            this.GorillaHabOBsDatePicker.Location = new System.Drawing.Point(46, 20);
+            this.GorillaHabOBsDatePicker.Name = "GorillaHabOBsDatePicker";
+            this.GorillaHabOBsDatePicker.Size = new System.Drawing.Size(200, 20);
+            this.GorillaHabOBsDatePicker.TabIndex = 11;
             // 
             // label147
             // 
             this.label147.AutoSize = true;
-            this.label147.Location = new System.Drawing.Point(9, 55);
+            this.label147.Location = new System.Drawing.Point(10, 26);
             this.label147.Name = "label147";
             this.label147.Size = new System.Drawing.Size(33, 13);
-            this.label147.TabIndex = 64;
-            this.label147.Text = "Hour:";
+            this.label147.TabIndex = 12;
+            this.label147.Text = "Date:";
             // 
-            // CommentHabObs
+            // label148
             // 
-            this.CommentHabObs.Location = new System.Drawing.Point(731, 394);
-            this.CommentHabObs.Name = "CommentHabObs";
-            this.CommentHabObs.Size = new System.Drawing.Size(342, 96);
-            this.CommentHabObs.TabIndex = 41;
-            this.CommentHabObs.Text = "";
+            this.label148.AutoSize = true;
+            this.label148.Location = new System.Drawing.Point(24, 71);
+            this.label148.Name = "label148";
+            this.label148.Size = new System.Drawing.Size(33, 13);
+            this.label148.TabIndex = 13;
+            this.label148.Text = "Hour:";
+            // 
+            // HourHabObs
+            // 
+            this.HourHabObs.Location = new System.Drawing.Point(22, 87);
+            this.HourHabObs.Name = "HourHabObs";
+            this.HourHabObs.Size = new System.Drawing.Size(100, 20);
+            this.HourHabObs.TabIndex = 14;
             // 
             // label149
             // 
             this.label149.AutoSize = true;
-            this.label149.Location = new System.Drawing.Point(723, 378);
+            this.label149.Location = new System.Drawing.Point(135, 73);
             this.label149.Name = "label149";
-            this.label149.Size = new System.Drawing.Size(59, 13);
-            this.label149.TabIndex = 63;
-            this.label149.Text = "Comments:";
+            this.label149.Size = new System.Drawing.Size(49, 13);
+            this.label149.TabIndex = 15;
+            this.label149.Text = "Behavior";
             // 
-            // dateTimePickeHabObs
+            // BehaviorHabObs
             // 
-            this.dateTimePickeHabObs.Location = new System.Drawing.Point(45, 6);
-            this.dateTimePickeHabObs.Name = "dateTimePickeHabObs";
-            this.dateTimePickeHabObs.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePickeHabObs.TabIndex = 1;
+            this.BehaviorHabObs.Location = new System.Drawing.Point(135, 86);
+            this.BehaviorHabObs.Name = "BehaviorHabObs";
+            this.BehaviorHabObs.Size = new System.Drawing.Size(100, 20);
+            this.BehaviorHabObs.TabIndex = 16;
             // 
-            // label157
+            // Individual
             // 
-            this.label157.AutoSize = true;
-            this.label157.Location = new System.Drawing.Point(9, 12);
-            this.label157.Name = "label157";
-            this.label157.Size = new System.Drawing.Size(33, 13);
-            this.label157.TabIndex = 10;
-            this.label157.Text = "Date:";
+            this.Individual.AutoSize = true;
+            this.Individual.Location = new System.Drawing.Point(251, 71);
+            this.Individual.Name = "Individual";
+            this.Individual.Size = new System.Drawing.Size(52, 13);
+            this.Individual.TabIndex = 17;
+            this.Individual.Text = "Individual";
             // 
-            // UniqueContactIDHabOBs
+            // IndividualHabObs
             // 
-            this.UniqueContactIDHabOBs.Location = new System.Drawing.Point(12, 470);
-            this.UniqueContactIDHabOBs.Name = "UniqueContactIDHabOBs";
-            this.UniqueContactIDHabOBs.Size = new System.Drawing.Size(140, 20);
-            this.UniqueContactIDHabOBs.TabIndex = 42;
+            this.IndividualHabObs.Location = new System.Drawing.Point(251, 86);
+            this.IndividualHabObs.Name = "IndividualHabObs";
+            this.IndividualHabObs.Size = new System.Drawing.Size(100, 20);
+            this.IndividualHabObs.TabIndex = 18;
             // 
-            // label159
+            // CommentHabObs
             // 
-            this.label159.AutoSize = true;
-            this.label159.Location = new System.Drawing.Point(9, 454);
-            this.label159.Name = "label159";
-            this.label159.Size = new System.Drawing.Size(98, 13);
-            this.label159.TabIndex = 4;
-            this.label159.Text = "Unique Contact ID:";
+            this.CommentHabObs.Location = new System.Drawing.Point(887, 430);
+            this.CommentHabObs.Name = "CommentHabObs";
+            this.CommentHabObs.Size = new System.Drawing.Size(342, 96);
+            this.CommentHabObs.TabIndex = 64;
+            this.CommentHabObs.Text = "";
+            // 
+            // label150
+            // 
+            this.label150.AutoSize = true;
+            this.label150.Location = new System.Drawing.Point(886, 413);
+            this.label150.Name = "label150";
+            this.label150.Size = new System.Drawing.Size(59, 13);
+            this.label150.TabIndex = 65;
+            this.label150.Text = "Comments:";
+            // 
+            // UniqueContactIDHabObs
+            // 
+            this.UniqueContactIDHabObs.Location = new System.Drawing.Point(19, 490);
+            this.UniqueContactIDHabObs.Name = "UniqueContactIDHabObs";
+            this.UniqueContactIDHabObs.Size = new System.Drawing.Size(140, 20);
+            this.UniqueContactIDHabObs.TabIndex = 67;
+            // 
+            // label151
+            // 
+            this.label151.AutoSize = true;
+            this.label151.Location = new System.Drawing.Point(16, 474);
+            this.label151.Name = "label151";
+            this.label151.Size = new System.Drawing.Size(98, 13);
+            this.label151.TabIndex = 66;
+            this.label151.Text = "Unique Contact ID:";
             // 
             // CreateEntry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1293, 656);
+            this.Controls.Add(this.GorillaHabObservationPanel);
             this.Controls.Add(this.GorillaHabScanPanel);
             this.Controls.Add(this.GorillaHabNestPanel);
             this.Controls.Add(this.CloseBtn);
@@ -3390,8 +3390,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.IN_AM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ScanPartySizeHabScan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FirstContactPointHabScan)).EndInit();
-            this.GorillaHabObservation.ResumeLayout(false);
-            this.GorillaHabObservation.PerformLayout();
+            this.GorillaHabObservationPanel.ResumeLayout(false);
+            this.GorillaHabObservationPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3702,18 +3702,18 @@
         private System.Windows.Forms.NumericUpDown SO_AM;
         private System.Windows.Forms.Label label131;
         private System.Windows.Forms.Label label132;
-        private System.Windows.Forms.Panel GorillaHabObservation;
-        private System.Windows.Forms.TextBox IndividualHabObs;
-        private System.Windows.Forms.Label label150;
-        private System.Windows.Forms.TextBox BehaviorHabObs;
-        private System.Windows.Forms.Label label148;
-        private System.Windows.Forms.TextBox HourHabObs;
+        private System.Windows.Forms.Panel GorillaHabObservationPanel;
+        private System.Windows.Forms.DateTimePicker GorillaHabOBsDatePicker;
         private System.Windows.Forms.Label label147;
+        private System.Windows.Forms.TextBox UniqueContactIDHabObs;
+        private System.Windows.Forms.Label label151;
         private System.Windows.Forms.RichTextBox CommentHabObs;
+        private System.Windows.Forms.Label label150;
+        private System.Windows.Forms.TextBox IndividualHabObs;
+        private System.Windows.Forms.Label Individual;
+        private System.Windows.Forms.TextBox BehaviorHabObs;
         private System.Windows.Forms.Label label149;
-        private System.Windows.Forms.DateTimePicker dateTimePickeHabObs;
-        private System.Windows.Forms.Label label157;
-        private System.Windows.Forms.TextBox UniqueContactIDHabOBs;
-        private System.Windows.Forms.Label label159;
+        private System.Windows.Forms.TextBox HourHabObs;
+        private System.Windows.Forms.Label label148;
     }
 }

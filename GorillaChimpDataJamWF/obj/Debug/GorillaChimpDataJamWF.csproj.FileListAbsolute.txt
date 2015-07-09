@@ -8,3 +8,7 @@ D:\Workprograms\Gorillas\GorillaChimpDataJamWF\GorillaChimpDataJamWF\obj\Debug\G
 D:\Workprograms\Gorillas\GorillaChimpDataJamWF\GorillaChimpDataJamWF\obj\Debug\GorillaChimpDataJamWF.exe
 D:\Workprograms\Gorillas\GorillaChimpDataJamWF\GorillaChimpDataJamWF\obj\Debug\GorillaChimpDataJamWF.pdb
 D:\Workprograms\Gorillas\GorillaChimpDataJamWF\GorillaChimpDataJamWF\obj\Debug\GorillaChimpDataJamWF.CreateEntry.resources
+D:\Workprograms\Gorillas\GorillaChimpDataJamWF\GorillaChimpDataJamWF\bin\Debug\EntityFramework.dll
+D:\Workprograms\Gorillas\GorillaChimpDataJamWF\GorillaChimpDataJamWF\bin\Debug\EntityFramework.SqlServer.dll
+D:\Workprograms\Gorillas\GorillaChimpDataJamWF\GorillaChimpDataJamWF\bin\Debug\EntityFramework.xml
+D:\Workprograms\Gorillas\GorillaChimpDataJamWF\GorillaChimpDataJamWF\bin\Debug\EntityFramework.SqlServer.xml

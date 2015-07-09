@@ -1,0 +1,763 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Gorillas2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="HabEncounter">
+          <Key>
+            <PropertyRef Name="UNIQUE_LINE" />
+          </Key>
+          <Property Name="UNIQUE_LINE" Type="smallint" Nullable="false" />
+          <Property Name="DATA_ENTRY" Type="varchar" MaxLength="3" />
+          <Property Name="TALLY" Type="smallint" />
+          <Property Name="FIRST_CONTACT_POINT" Type="smallint" />
+          <Property Name="DATA_SET" Type="varchar" MaxLength="19" />
+          <Property Name="SPECIES" Type="varchar" MaxLength="7" />
+          <Property Name="UNIQUE_CONTACT_ID" Type="varchar" MaxLength="27" />
+          <Property Name="OBSERVER" Type="varchar" MaxLength="11" />
+          <Property Name="TRACKER" Type="varchar" MaxLength="53" />
+          <Property Name="DATE" Type="datetime" />
+          <Property Name="MONTH" Type="varchar" MaxLength="9" />
+          <Property Name="DAY" Type="smallint" />
+          <Property Name="YEAR" Type="smallint" />
+          <Property Name=" COMMUNITY " Type="varchar" MaxLength="7" />
+          <Property Name=" DETECTION_1 " Type="varchar" MaxLength="14" />
+          <Property Name=" DETECTION_2 " Type="varchar" MaxLength="44" />
+          <Property Name="LAT" Type="varchar" MaxLength="17" />
+          <Property Name="LONG" Type="varchar" MaxLength="17" />
+          <Property Name=" FOREST_TYPE_CODE " Type="varchar" MaxLength="17" />
+          <Property Name="FOREST_TYPE" Type="varchar" MaxLength="17" />
+          <Property Name="UNDERSTOREY" Type="varchar" MaxLength="17" />
+          <Property Name="CANOPY" Type="varchar" MaxLength="17" />
+          <Property Name="START_TIME" Type="varchar" MaxLength="9" />
+          <Property Name="END_TIME" Type="varchar" MaxLength="9" />
+          <Property Name="DURATION" Type="varchar" MaxLength="9" />
+          <Property Name="HOURS" Type="varchar" MaxLength="9" />
+          <Property Name="MIN" Type="varchar" MaxLength="9" />
+          <Property Name="TOTAL_DURATION" Type="varchar" MaxLength="9" />
+          <Property Name=" RESPONSE_1 " Type="varchar" MaxLength="9" />
+          <Property Name="RESPONSE_2" Type="varchar" MaxLength="7" />
+          <Property Name="END_CONTACT" Type="varchar" MaxLength="8" />
+          <Property Name="TYPE_GROUP" Type="varchar" MaxLength="27" />
+          <Property Name="GROUP_ID" Type="varchar" MaxLength="24" />
+          <Property Name="CONTACT_NMBR" Type="varchar" MaxLength="3" />
+          <Property Name="DISTANCE_HUMANS_M" Type="varchar" MaxLength="7" />
+          <Property Name="TOTAL" Type="varchar" MaxLength="7" />
+          <Property Name=" ORIGINAL_PARTY_SIZE " Type="varchar" MaxLength="3" />
+          <Property Name="NEW_ARRIVALS" Type="varchar" MaxLength="3" />
+          <Property Name="AM_GOR_OBS" Type="varchar" MaxLength="7" />
+          <Property Name="AF_GOR_OBS" Type="varchar" MaxLength="19" />
+          <Property Name="SM_GOR_OBS" Type="smallint" />
+          <Property Name="SF_GOR_OBS" Type="smallint" />
+          <Property Name="JV_GOR_OBS" Type="smallint" />
+          <Property Name="INF_GOR_OBS" Type="smallint" />
+          <Property Name="UK_GOR_OBS" Type="smallint" />
+          <Property Name="WEATHER" Type="varchar" MaxLength="324" />
+          <Property Name="COMMENTS" Type="varchar" MaxLength="333" />
+          <Property Name="INITIAL_LOCATION" Type="varchar" MaxLength="15" />
+          <Property Name="NEST_TOTAL" Type="varchar" MaxLength="17" />
+          <Property Name="NEST_AGE" Type="varchar" MaxLength="27" />
+        </EntityType>
+        <EntityType Name="HabNest">
+          <Key>
+            <PropertyRef Name="UNIQUE_LINE" />
+          </Key>
+          <Property Name="UNIQUE_LINE" Type="smallint" Nullable="false" />
+          <Property Name="DATA_SHEET" Type="varchar" MaxLength="15" />
+          <Property Name="TALLY" Type="smallint" />
+          <Property Name="UNIQUE_CONTACT_ID" Type="varchar" MaxLength="29" />
+          <Property Name="DATE" Type="datetime" />
+          <Property Name="OBSERVER" Type="varchar" MaxLength="12" />
+          <Property Name="YEAR" Type="smallint" />
+          <Property Name="MONTH" Type="varchar" MaxLength="9" />
+          <Property Name="DAY" Type="smallint" />
+          <Property Name="NEST_NUMBER" Type="smallint" />
+          <Property Name="LOCATION" Type="varchar" MaxLength="14" />
+          <Property Name="DUNG_PRESENT" Type="varchar" MaxLength="7" />
+          <Property Name="SAMPLE_ID" Type="varchar" MaxLength="60" />
+          <Property Name="NEST_TYPE" Type="varchar" MaxLength="7" />
+          <Property Name="FOREST_TYPE_CODE" Type="varchar" MaxLength="7" />
+          <Property Name="FOREST_TYPE" Type="varchar" MaxLength="7" />
+          <Property Name="UNDERSTOREY" Type="varchar" MaxLength="7" />
+          <Property Name="CANOPY" Type="varchar" MaxLength="7" />
+          <Property Name="NEST_AGE" Type="varchar" MaxLength="8" />
+          <Property Name="SITE_SIZE" Type="smallint" />
+          <Property Name="COMMENT" Type="varchar" MaxLength="149" />
+        </EntityType>
+        <EntityType Name="HabObservation">
+          <Key>
+            <PropertyRef Name="UNIQUE_LINE" />
+          </Key>
+          <Property Name="UNIQUE_LINE" Type="smallint" Nullable="false" />
+          <Property Name="DATA_ENTRY" Type="varchar" MaxLength="3" />
+          <Property Name="TALLY" Type="smallint" />
+          <Property Name="FIRST_CONTACT_POINT" Type="smallint" />
+          <Property Name="DATA_SET" Type="varchar" MaxLength="20" />
+          <Property Name="SPECIES" Type="varchar" MaxLength="7" />
+          <Property Name="UNIQUE_CONTACT_ID" Type="varchar" MaxLength="29" />
+          <Property Name="OBSERVER" Type="varchar" MaxLength="12" />
+          <Property Name="TRACKER" Type="varchar" MaxLength="58" />
+          <Property Name="DATE" Type="datetime" />
+          <Property Name="MONTH" Type="varchar" MaxLength="9" />
+          <Property Name="DAY" Type="smallint" />
+          <Property Name="YEAR" Type="smallint" />
+          <Property Name=" COMMUNITY " Type="varchar" MaxLength="7" />
+          <Property Name=" DETECTION_1 " Type="varchar" MaxLength="15" />
+          <Property Name=" DETECTION_2 " Type="varchar" MaxLength="48" />
+          <Property Name="LAT" Type="varchar" MaxLength="18" />
+          <Property Name="LONG" Type="varchar" MaxLength="18" />
+          <Property Name=" FOREST_TYPE_CODE " Type="varchar" MaxLength="18" />
+          <Property Name="FOREST_TYPE" Type="varchar" MaxLength="18" />
+          <Property Name="UNDERSTOREY" Type="varchar" MaxLength="18" />
+          <Property Name="CANOPY" Type="varchar" MaxLength="18" />
+          <Property Name="START_TIME" Type="varchar" MaxLength="9" />
+          <Property Name="END_TIME" Type="varchar" MaxLength="9" />
+          <Property Name="DURATION" Type="varchar" MaxLength="9" />
+          <Property Name="HOURS" Type="varchar" MaxLength="9" />
+          <Property Name="MIN" Type="varchar" MaxLength="9" />
+          <Property Name="TOTAL_DURATION" Type="varchar" MaxLength="9" />
+          <Property Name=" RESPONSE_1 " Type="varchar" MaxLength="9" />
+          <Property Name="RESPONSE_2" Type="varchar" MaxLength="7" />
+          <Property Name="END_CONTACT" Type="varchar" MaxLength="8" />
+          <Property Name="TYPE_GROUP" Type="varchar" MaxLength="29" />
+          <Property Name="GROUP_ID" Type="varchar" MaxLength="26" />
+          <Property Name="CONTACT_NMBR" Type="varchar" MaxLength="3" />
+          <Property Name="DISTANCE_HUMANS_M" Type="varchar" MaxLength="7" />
+          <Property Name="TOTAL" Type="varchar" MaxLength="7" />
+          <Property Name=" ORIGINAL_PARTY_SIZE " Type="varchar" MaxLength="3" />
+          <Property Name="NEW_ARRIVALS" Type="varchar" MaxLength="3" />
+          <Property Name="AM_GOR_OBS" Type="varchar" MaxLength="7" />
+          <Property Name="AF_GOR_OBS" Type="varchar" MaxLength="20" />
+          <Property Name="SM_GOR_OBS" Type="smallint" />
+          <Property Name="SF_GOR_OBS" Type="smallint" />
+          <Property Name="JV_GOR_OBS" Type="smallint" />
+          <Property Name="INF_GOR_OBS" Type="smallint" />
+          <Property Name="UK_GOR_OBS" Type="smallint" />
+          <Property Name="WEATHER" Type="varchar" MaxLength="356" />
+          <Property Name="COMMENTS" Type="varchar" MaxLength="366" />
+          <Property Name="INITIAL_LOCATION" Type="varchar" MaxLength="16" />
+          <Property Name="NEST_TOTAL" Type="varchar" MaxLength="18" />
+          <Property Name="NEST_AGE" Type="varchar" MaxLength="29" />
+        </EntityType>
+        <EntityType Name="HabScan">
+          <Key>
+            <PropertyRef Name=" UNIQUE_LINE " />
+          </Key>
+          <Property Name=" UNIQUE_LINE " Type="smallint" Nullable="false" />
+          <Property Name=" DATA_SHEET " Type="varchar" MaxLength="19" />
+          <Property Name="TALLY" Type="smallint" />
+          <Property Name=" ENCOUNTER " Type="varchar" MaxLength="25" />
+          <Property Name=" OBSERVER " Type="varchar" MaxLength="8" />
+          <Property Name=" APE SPECIES " Type="varchar" MaxLength="1" />
+          <Property Name="DATE" Type="datetime" />
+          <Property Name="DAY" Type="smallint" />
+          <Property Name="MONTH" Type="varchar" MaxLength="6" />
+          <Property Name="YEAR" Type="smallint" />
+          <Property Name="HOUR" Type="smallint" />
+          <Property Name="MINUTE" Type="smallint" />
+          <Property Name="LOCATION" Type="varchar" MaxLength="15" />
+          <Property Name="SCAN_PARTY_SIZE" Type="smallint" />
+          <Property Name="IN-AM" Type="smallint" />
+          <Property Name="IN-AF" Type="smallint" />
+          <Property Name="IN-AD" Type="smallint" />
+          <Property Name="IN-SAM" Type="smallint" />
+          <Property Name="IN-SAF" Type="smallint" />
+          <Property Name="IN-SA" Type="smallint" />
+          <Property Name="IN-JUVM" Type="smallint" />
+          <Property Name="IN-JUVF" Type="varchar(max)" />
+          <Property Name="IN-JUV" Type="smallint" />
+          <Property Name="IN-INF" Type="smallint" />
+          <Property Name="IN-UK" Type="smallint" />
+          <Property Name="NEST" Type="varchar(max)" />
+          <Property Name="IN-TOT" Type="varchar(max)" />
+          <Property Name="FD-AM" Type="smallint" />
+          <Property Name="FD-AF" Type="smallint" />
+          <Property Name="FD-SAM" Type="smallint" />
+          <Property Name="FD-SAF" Type="smallint" />
+          <Property Name="FD-SA" Type="varchar(max)" />
+          <Property Name="FD-JUVM" Type="smallint" />
+          <Property Name="FD-JUVF" Type="smallint" />
+          <Property Name="FD-JUV" Type="smallint" />
+          <Property Name="FD-INF" Type="smallint" />
+          <Property Name="FD-UK" Type="smallint" />
+          <Property Name="FDTOTAL" Type="varchar(max)" />
+          <Property Name="LOCAL NAME" Type="varchar" MaxLength="22" />
+          <Property Name="SCIENTIFIC NAME" Type="varchar" MaxLength="19" />
+          <Property Name="PART" Type="varchar" MaxLength="15" />
+          <Property Name="SIMPLE PART" Type="varchar(max)" />
+          <Property Name="FDNOTE" Type="varchar(max)" />
+          <Property Name="TR-AM" Type="smallint" />
+          <Property Name="TR-AF" Type="smallint" />
+          <Property Name="TR-SAM" Type="smallint" />
+          <Property Name="TR-SAF" Type="smallint" />
+          <Property Name="TR-SA" Type="smallint" />
+          <Property Name="TR-JUVM" Type="smallint" />
+          <Property Name="TR-JUVF" Type="smallint" />
+          <Property Name="TR-JUV" Type="smallint" />
+          <Property Name="TR-INF" Type="smallint" />
+          <Property Name="TR-UK" Type="smallint" />
+          <Property Name="TR-TOT" Type="varchar(max)" />
+          <Property Name="OT-AM" Type="smallint" />
+          <Property Name="OT-AF" Type="smallint" />
+          <Property Name="OT-SAM" Type="smallint" />
+          <Property Name="OT-SAF" Type="varchar(max)" />
+          <Property Name="OT-SA" Type="varchar(max)" />
+          <Property Name="OT-JUVM" Type="smallint" />
+          <Property Name="OT-JUVF" Type="varchar(max)" />
+          <Property Name="OT-JUV" Type="varchar(max)" />
+          <Property Name="OT-INF" Type="smallint" />
+          <Property Name="OT-UK" Type="varchar(max)" />
+          <Property Name="OT-TOT" Type="varchar(max)" />
+          <Property Name="OTHER BEHAVIOR" Type="varchar" MaxLength="55" />
+          <Property Name="OBJECT" Type="varchar" MaxLength="8" />
+          <Property Name="ACTIVITY" Type="varchar" MaxLength="12" />
+          <Property Name="SO-AM" Type="varchar(max)" />
+          <Property Name="SO-AF" Type="smallint" />
+          <Property Name="SO-SAM" Type="smallint" />
+          <Property Name="SO-SAF" Type="varchar(max)" />
+          <Property Name="SO-SA" Type="varchar(max)" />
+          <Property Name="SO-JUVM" Type="smallint" />
+          <Property Name="SO-JUVF" Type="varchar(max)" />
+          <Property Name="SO-JUV" Type="varchar(max)" />
+          <Property Name="SO-INF" Type="smallint" />
+          <Property Name="SO-UK" Type="varchar(max)" />
+          <Property Name="SO-TOT" Type="varchar(max)" />
+          <Property Name="SOCIAL" Type="varchar" MaxLength="14" />
+          <Property Name="INDIVIDUAL" Type="varchar" MaxLength="16" />
+          <Property Name="RECIPROCITY" Type="varchar" MaxLength="9" />
+          <Property Name="OOV-AM" Type="varchar" MaxLength="59" />
+          <Property Name="OOV-AF" Type="smallint" />
+          <Property Name="OOV-SAM" Type="smallint" />
+          <Property Name="OOV-SAF" Type="smallint" />
+          <Property Name="OOV-SA" Type="varchar(max)" />
+          <Property Name="OOV-JUVM" Type="smallint" />
+          <Property Name="OOV-JUVF" Type="smallint" />
+          <Property Name="OOV-JUV" Type="smallint" />
+          <Property Name="OOV-INF" Type="smallint" />
+          <Property Name="OOV-UK" Type="smallint" />
+          <Property Name="OOV-TOT" Type="varchar(max)" />
+          <Property Name="COMMENT" Type="varchar" MaxLength="199" />
+        </EntityType>
+        <EntityContainer Name="Gorillas2ModelStoreContainer">
+          <EntitySet Name="HabEncounter" EntityType="Self.HabEncounter" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HabNest" EntityType="Self.HabNest" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HabObservation" EntityType="Self.HabObservation" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HabScan" EntityType="Self.HabScan" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Gorillas2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="HabEncounter">
+          <Key>
+            <PropertyRef Name="UNIQUE_LINE" />
+          </Key>
+          <Property Name="UNIQUE_LINE" Type="Int16" Nullable="false" />
+          <Property Name="DATA_ENTRY" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="TALLY" Type="Int16" />
+          <Property Name="FIRST_CONTACT_POINT" Type="Int16" />
+          <Property Name="DATA_SET" Type="String" MaxLength="19" FixedLength="false" Unicode="false" />
+          <Property Name="SPECIES" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+          <Property Name="UNIQUE_CONTACT_ID" Type="String" MaxLength="27" FixedLength="false" Unicode="false" />
+          <Property Name="OBSERVER" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+          <Property Name="TRACKER" Type="String" MaxLength="53" FixedLength="false" Unicode="false" />
+          <Property Name="DATE" Type="DateTime" Precision="3" />
+          <Property Name="MONTH" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="DAY" Type="Int16" />
+          <Property Name="YEAR" Type="Int16" />
+          <Property Name="C_COMMUNITY_" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+          <Property Name="C_DETECTION_1_" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+          <Property Name="C_DETECTION_2_" Type="String" MaxLength="44" FixedLength="false" Unicode="false" />
+          <Property Name="LAT" Type="String" MaxLength="17" FixedLength="false" Unicode="false" />
+          <Property Name="LONG" Type="String" MaxLength="17" FixedLength="false" Unicode="false" />
+          <Property Name="C_FOREST_TYPE_CODE_" Type="String" MaxLength="17" FixedLength="false" Unicode="false" />
+          <Property Name="FOREST_TYPE" Type="String" MaxLength="17" FixedLength="false" Unicode="false" />
+          <Property Name="UNDERSTOREY" Type="String" MaxLength="17" FixedLength="false" Unicode="false" />
+          <Property Name="CANOPY" Type="String" MaxLength="17" FixedLength="false" Unicode="false" />
+          <Property Name="START_TIME" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="END_TIME" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="DURATION" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="HOURS" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="MIN" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="TOTAL_DURATION" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="C_RESPONSE_1_" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="RESPONSE_2" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+          <Property Name="END_CONTACT" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="TYPE_GROUP" Type="String" MaxLength="27" FixedLength="false" Unicode="false" />
+          <Property Name="GROUP_ID" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+          <Property Name="CONTACT_NMBR" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="DISTANCE_HUMANS_M" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+          <Property Name="TOTAL" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+          <Property Name="C_ORIGINAL_PARTY_SIZE_" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="NEW_ARRIVALS" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="AM_GOR_OBS" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+          <Property Name="AF_GOR_OBS" Type="String" MaxLength="19" FixedLength="false" Unicode="false" />
+          <Property Name="SM_GOR_OBS" Type="Int16" />
+          <Property Name="SF_GOR_OBS" Type="Int16" />
+          <Property Name="JV_GOR_OBS" Type="Int16" />
+          <Property Name="INF_GOR_OBS" Type="Int16" />
+          <Property Name="UK_GOR_OBS" Type="Int16" />
+          <Property Name="WEATHER" Type="String" MaxLength="324" FixedLength="false" Unicode="false" />
+          <Property Name="COMMENTS" Type="String" MaxLength="333" FixedLength="false" Unicode="false" />
+          <Property Name="INITIAL_LOCATION" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="NEST_TOTAL" Type="String" MaxLength="17" FixedLength="false" Unicode="false" />
+          <Property Name="NEST_AGE" Type="String" MaxLength="27" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="HabNest">
+          <Key>
+            <PropertyRef Name="UNIQUE_LINE" />
+          </Key>
+          <Property Name="UNIQUE_LINE" Type="Int16" Nullable="false" />
+          <Property Name="DATA_SHEET" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="TALLY" Type="Int16" />
+          <Property Name="UNIQUE_CONTACT_ID" Type="String" MaxLength="29" FixedLength="false" Unicode="false" />
+          <Property Name="DATE" Type="DateTime" Precision="3" />
+          <Property Name="OBSERVER" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="YEAR" Type="Int16" />
+          <Property Name="MONTH" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="DAY" Type="Int16" />
+          <Property Name="NEST_NUMBER" Type="Int16" />
+          <Property Name="LOCATION" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+          <Property Name="DUNG_PRESENT" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+          <Property Name="SAMPLE_ID" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="NEST_TYPE" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+          <Property Name="FOREST_TYPE_CODE" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+          <Property Name="FOREST_TYPE" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+          <Property Name="UNDERSTOREY" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+          <Property Name="CANOPY" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+          <Property Name="NEST_AGE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="SITE_SIZE" Type="Int16" />
+          <Property Name="COMMENT" Type="String" MaxLength="149" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="HabObservation">
+          <Key>
+            <PropertyRef Name="UNIQUE_LINE" />
+          </Key>
+          <Property Name="UNIQUE_LINE" Type="Int16" Nullable="false" />
+          <Property Name="DATA_ENTRY" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="TALLY" Type="Int16" />
+          <Property Name="FIRST_CONTACT_POINT" Type="Int16" />
+          <Property Name="DATA_SET" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="SPECIES" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+          <Property Name="UNIQUE_CONTACT_ID" Type="String" MaxLength="29" FixedLength="false" Unicode="false" />
+          <Property Name="OBSERVER" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="TRACKER" Type="String" MaxLength="58" FixedLength="false" Unicode="false" />
+          <Property Name="DATE" Type="DateTime" Precision="3" />
+          <Property Name="MONTH" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="DAY" Type="Int16" />
+          <Property Name="YEAR" Type="Int16" />
+          <Property Name="C_COMMUNITY_" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+          <Property Name="C_DETECTION_1_" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="C_DETECTION_2_" Type="String" MaxLength="48" FixedLength="false" Unicode="false" />
+          <Property Name="LAT" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+          <Property Name="LONG" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+          <Property Name="C_FOREST_TYPE_CODE_" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+          <Property Name="FOREST_TYPE" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+          <Property Name="UNDERSTOREY" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+          <Property Name="CANOPY" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+          <Property Name="START_TIME" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="END_TIME" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="DURATION" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="HOURS" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="MIN" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="TOTAL_DURATION" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="C_RESPONSE_1_" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="RESPONSE_2" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+          <Property Name="END_CONTACT" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="TYPE_GROUP" Type="String" MaxLength="29" FixedLength="false" Unicode="false" />
+          <Property Name="GROUP_ID" Type="String" MaxLength="26" FixedLength="false" Unicode="false" />
+          <Property Name="CONTACT_NMBR" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="DISTANCE_HUMANS_M" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+          <Property Name="TOTAL" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+          <Property Name="C_ORIGINAL_PARTY_SIZE_" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="NEW_ARRIVALS" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="AM_GOR_OBS" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+          <Property Name="AF_GOR_OBS" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="SM_GOR_OBS" Type="Int16" />
+          <Property Name="SF_GOR_OBS" Type="Int16" />
+          <Property Name="JV_GOR_OBS" Type="Int16" />
+          <Property Name="INF_GOR_OBS" Type="Int16" />
+          <Property Name="UK_GOR_OBS" Type="Int16" />
+          <Property Name="WEATHER" Type="String" MaxLength="356" FixedLength="false" Unicode="false" />
+          <Property Name="COMMENTS" Type="String" MaxLength="366" FixedLength="false" Unicode="false" />
+          <Property Name="INITIAL_LOCATION" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="NEST_TOTAL" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+          <Property Name="NEST_AGE" Type="String" MaxLength="29" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="HabScan">
+          <Key>
+            <PropertyRef Name="C_UNIQUE_LINE_" />
+          </Key>
+          <Property Name="C_UNIQUE_LINE_" Type="Int16" Nullable="false" />
+          <Property Name="C_DATA_SHEET_" Type="String" MaxLength="19" FixedLength="false" Unicode="false" />
+          <Property Name="TALLY" Type="Int16" />
+          <Property Name="C_ENCOUNTER_" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="C_OBSERVER_" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="C_APE_SPECIES_" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="DATE" Type="DateTime" Precision="3" />
+          <Property Name="DAY" Type="Int16" />
+          <Property Name="MONTH" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="YEAR" Type="Int16" />
+          <Property Name="HOUR" Type="Int16" />
+          <Property Name="MINUTE" Type="Int16" />
+          <Property Name="LOCATION" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="SCAN_PARTY_SIZE" Type="Int16" />
+          <Property Name="IN_AM" Type="Int16" />
+          <Property Name="IN_AF" Type="Int16" />
+          <Property Name="IN_AD" Type="Int16" />
+          <Property Name="IN_SAM" Type="Int16" />
+          <Property Name="IN_SAF" Type="Int16" />
+          <Property Name="IN_SA" Type="Int16" />
+          <Property Name="IN_JUVM" Type="Int16" />
+          <Property Name="IN_JUVF" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="IN_JUV" Type="Int16" />
+          <Property Name="IN_INF" Type="Int16" />
+          <Property Name="IN_UK" Type="Int16" />
+          <Property Name="NEST" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="IN_TOT" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="FD_AM" Type="Int16" />
+          <Property Name="FD_AF" Type="Int16" />
+          <Property Name="FD_SAM" Type="Int16" />
+          <Property Name="FD_SAF" Type="Int16" />
+          <Property Name="FD_SA" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="FD_JUVM" Type="Int16" />
+          <Property Name="FD_JUVF" Type="Int16" />
+          <Property Name="FD_JUV" Type="Int16" />
+          <Property Name="FD_INF" Type="Int16" />
+          <Property Name="FD_UK" Type="Int16" />
+          <Property Name="FDTOTAL" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="LOCAL_NAME" Type="String" MaxLength="22" FixedLength="false" Unicode="false" />
+          <Property Name="SCIENTIFIC_NAME" Type="String" MaxLength="19" FixedLength="false" Unicode="false" />
+          <Property Name="PART" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="SIMPLE_PART" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="FDNOTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="TR_AM" Type="Int16" />
+          <Property Name="TR_AF" Type="Int16" />
+          <Property Name="TR_SAM" Type="Int16" />
+          <Property Name="TR_SAF" Type="Int16" />
+          <Property Name="TR_SA" Type="Int16" />
+          <Property Name="TR_JUVM" Type="Int16" />
+          <Property Name="TR_JUVF" Type="Int16" />
+          <Property Name="TR_JUV" Type="Int16" />
+          <Property Name="TR_INF" Type="Int16" />
+          <Property Name="TR_UK" Type="Int16" />
+          <Property Name="TR_TOT" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="OT_AM" Type="Int16" />
+          <Property Name="OT_AF" Type="Int16" />
+          <Property Name="OT_SAM" Type="Int16" />
+          <Property Name="OT_SAF" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="OT_SA" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="OT_JUVM" Type="Int16" />
+          <Property Name="OT_JUVF" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="OT_JUV" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="OT_INF" Type="Int16" />
+          <Property Name="OT_UK" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="OT_TOT" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="OTHER_BEHAVIOR" Type="String" MaxLength="55" FixedLength="false" Unicode="false" />
+          <Property Name="OBJECT" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="ACTIVITY" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="SO_AM" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="SO_AF" Type="Int16" />
+          <Property Name="SO_SAM" Type="Int16" />
+          <Property Name="SO_SAF" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="SO_SA" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="SO_JUVM" Type="Int16" />
+          <Property Name="SO_JUVF" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="SO_JUV" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="SO_INF" Type="Int16" />
+          <Property Name="SO_UK" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="SO_TOT" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="SOCIAL" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+          <Property Name="INDIVIDUAL" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="RECIPROCITY" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="OOV_AM" Type="String" MaxLength="59" FixedLength="false" Unicode="false" />
+          <Property Name="OOV_AF" Type="Int16" />
+          <Property Name="OOV_SAM" Type="Int16" />
+          <Property Name="OOV_SAF" Type="Int16" />
+          <Property Name="OOV_SA" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="OOV_JUVM" Type="Int16" />
+          <Property Name="OOV_JUVF" Type="Int16" />
+          <Property Name="OOV_JUV" Type="Int16" />
+          <Property Name="OOV_INF" Type="Int16" />
+          <Property Name="OOV_UK" Type="Int16" />
+          <Property Name="OOV_TOT" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="COMMENT" Type="String" MaxLength="199" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="Gorillas2Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="HabEncounters" EntityType="Self.HabEncounter" />
+          <EntitySet Name="HabNests" EntityType="Self.HabNest" />
+          <EntitySet Name="HabObservations" EntityType="Self.HabObservation" />
+          <EntitySet Name="HabScans" EntityType="Self.HabScan" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Gorillas2ModelStoreContainer" CdmEntityContainer="Gorillas2Entities">
+          <EntitySetMapping Name="HabEncounters">
+            <EntityTypeMapping TypeName="Gorillas2Model.HabEncounter">
+              <MappingFragment StoreEntitySet="HabEncounter">
+                <ScalarProperty Name="UNIQUE_LINE" ColumnName="UNIQUE_LINE" />
+                <ScalarProperty Name="DATA_ENTRY" ColumnName="DATA_ENTRY" />
+                <ScalarProperty Name="TALLY" ColumnName="TALLY" />
+                <ScalarProperty Name="FIRST_CONTACT_POINT" ColumnName="FIRST_CONTACT_POINT" />
+                <ScalarProperty Name="DATA_SET" ColumnName="DATA_SET" />
+                <ScalarProperty Name="SPECIES" ColumnName="SPECIES" />
+                <ScalarProperty Name="UNIQUE_CONTACT_ID" ColumnName="UNIQUE_CONTACT_ID" />
+                <ScalarProperty Name="OBSERVER" ColumnName="OBSERVER" />
+                <ScalarProperty Name="TRACKER" ColumnName="TRACKER" />
+                <ScalarProperty Name="DATE" ColumnName="DATE" />
+                <ScalarProperty Name="MONTH" ColumnName="MONTH" />
+                <ScalarProperty Name="DAY" ColumnName="DAY" />
+                <ScalarProperty Name="YEAR" ColumnName="YEAR" />
+                <ScalarProperty Name="C_COMMUNITY_" ColumnName=" COMMUNITY " />
+                <ScalarProperty Name="C_DETECTION_1_" ColumnName=" DETECTION_1 " />
+                <ScalarProperty Name="C_DETECTION_2_" ColumnName=" DETECTION_2 " />
+                <ScalarProperty Name="LAT" ColumnName="LAT" />
+                <ScalarProperty Name="LONG" ColumnName="LONG" />
+                <ScalarProperty Name="C_FOREST_TYPE_CODE_" ColumnName=" FOREST_TYPE_CODE " />
+                <ScalarProperty Name="FOREST_TYPE" ColumnName="FOREST_TYPE" />
+                <ScalarProperty Name="UNDERSTOREY" ColumnName="UNDERSTOREY" />
+                <ScalarProperty Name="CANOPY" ColumnName="CANOPY" />
+                <ScalarProperty Name="START_TIME" ColumnName="START_TIME" />
+                <ScalarProperty Name="END_TIME" ColumnName="END_TIME" />
+                <ScalarProperty Name="DURATION" ColumnName="DURATION" />
+                <ScalarProperty Name="HOURS" ColumnName="HOURS" />
+                <ScalarProperty Name="MIN" ColumnName="MIN" />
+                <ScalarProperty Name="TOTAL_DURATION" ColumnName="TOTAL_DURATION" />
+                <ScalarProperty Name="C_RESPONSE_1_" ColumnName=" RESPONSE_1 " />
+                <ScalarProperty Name="RESPONSE_2" ColumnName="RESPONSE_2" />
+                <ScalarProperty Name="END_CONTACT" ColumnName="END_CONTACT" />
+                <ScalarProperty Name="TYPE_GROUP" ColumnName="TYPE_GROUP" />
+                <ScalarProperty Name="GROUP_ID" ColumnName="GROUP_ID" />
+                <ScalarProperty Name="CONTACT_NMBR" ColumnName="CONTACT_NMBR" />
+                <ScalarProperty Name="DISTANCE_HUMANS_M" ColumnName="DISTANCE_HUMANS_M" />
+                <ScalarProperty Name="TOTAL" ColumnName="TOTAL" />
+                <ScalarProperty Name="C_ORIGINAL_PARTY_SIZE_" ColumnName=" ORIGINAL_PARTY_SIZE " />
+                <ScalarProperty Name="NEW_ARRIVALS" ColumnName="NEW_ARRIVALS" />
+                <ScalarProperty Name="AM_GOR_OBS" ColumnName="AM_GOR_OBS" />
+                <ScalarProperty Name="AF_GOR_OBS" ColumnName="AF_GOR_OBS" />
+                <ScalarProperty Name="SM_GOR_OBS" ColumnName="SM_GOR_OBS" />
+                <ScalarProperty Name="SF_GOR_OBS" ColumnName="SF_GOR_OBS" />
+                <ScalarProperty Name="JV_GOR_OBS" ColumnName="JV_GOR_OBS" />
+                <ScalarProperty Name="INF_GOR_OBS" ColumnName="INF_GOR_OBS" />
+                <ScalarProperty Name="UK_GOR_OBS" ColumnName="UK_GOR_OBS" />
+                <ScalarProperty Name="WEATHER" ColumnName="WEATHER" />
+                <ScalarProperty Name="COMMENTS" ColumnName="COMMENTS" />
+                <ScalarProperty Name="INITIAL_LOCATION" ColumnName="INITIAL_LOCATION" />
+                <ScalarProperty Name="NEST_TOTAL" ColumnName="NEST_TOTAL" />
+                <ScalarProperty Name="NEST_AGE" ColumnName="NEST_AGE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HabNests">
+            <EntityTypeMapping TypeName="Gorillas2Model.HabNest">
+              <MappingFragment StoreEntitySet="HabNest">
+                <ScalarProperty Name="UNIQUE_LINE" ColumnName="UNIQUE_LINE" />
+                <ScalarProperty Name="DATA_SHEET" ColumnName="DATA_SHEET" />
+                <ScalarProperty Name="TALLY" ColumnName="TALLY" />
+                <ScalarProperty Name="UNIQUE_CONTACT_ID" ColumnName="UNIQUE_CONTACT_ID" />
+                <ScalarProperty Name="DATE" ColumnName="DATE" />
+                <ScalarProperty Name="OBSERVER" ColumnName="OBSERVER" />
+                <ScalarProperty Name="YEAR" ColumnName="YEAR" />
+                <ScalarProperty Name="MONTH" ColumnName="MONTH" />
+                <ScalarProperty Name="DAY" ColumnName="DAY" />
+                <ScalarProperty Name="NEST_NUMBER" ColumnName="NEST_NUMBER" />
+                <ScalarProperty Name="LOCATION" ColumnName="LOCATION" />
+                <ScalarProperty Name="DUNG_PRESENT" ColumnName="DUNG_PRESENT" />
+                <ScalarProperty Name="SAMPLE_ID" ColumnName="SAMPLE_ID" />
+                <ScalarProperty Name="NEST_TYPE" ColumnName="NEST_TYPE" />
+                <ScalarProperty Name="FOREST_TYPE_CODE" ColumnName="FOREST_TYPE_CODE" />
+                <ScalarProperty Name="FOREST_TYPE" ColumnName="FOREST_TYPE" />
+                <ScalarProperty Name="UNDERSTOREY" ColumnName="UNDERSTOREY" />
+                <ScalarProperty Name="CANOPY" ColumnName="CANOPY" />
+                <ScalarProperty Name="NEST_AGE" ColumnName="NEST_AGE" />
+                <ScalarProperty Name="SITE_SIZE" ColumnName="SITE_SIZE" />
+                <ScalarProperty Name="COMMENT" ColumnName="COMMENT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HabObservations">
+            <EntityTypeMapping TypeName="Gorillas2Model.HabObservation">
+              <MappingFragment StoreEntitySet="HabObservation">
+                <ScalarProperty Name="UNIQUE_LINE" ColumnName="UNIQUE_LINE" />
+                <ScalarProperty Name="DATA_ENTRY" ColumnName="DATA_ENTRY" />
+                <ScalarProperty Name="TALLY" ColumnName="TALLY" />
+                <ScalarProperty Name="FIRST_CONTACT_POINT" ColumnName="FIRST_CONTACT_POINT" />
+                <ScalarProperty Name="DATA_SET" ColumnName="DATA_SET" />
+                <ScalarProperty Name="SPECIES" ColumnName="SPECIES" />
+                <ScalarProperty Name="UNIQUE_CONTACT_ID" ColumnName="UNIQUE_CONTACT_ID" />
+                <ScalarProperty Name="OBSERVER" ColumnName="OBSERVER" />
+                <ScalarProperty Name="TRACKER" ColumnName="TRACKER" />
+                <ScalarProperty Name="DATE" ColumnName="DATE" />
+                <ScalarProperty Name="MONTH" ColumnName="MONTH" />
+                <ScalarProperty Name="DAY" ColumnName="DAY" />
+                <ScalarProperty Name="YEAR" ColumnName="YEAR" />
+                <ScalarProperty Name="C_COMMUNITY_" ColumnName=" COMMUNITY " />
+                <ScalarProperty Name="C_DETECTION_1_" ColumnName=" DETECTION_1 " />
+                <ScalarProperty Name="C_DETECTION_2_" ColumnName=" DETECTION_2 " />
+                <ScalarProperty Name="LAT" ColumnName="LAT" />
+                <ScalarProperty Name="LONG" ColumnName="LONG" />
+                <ScalarProperty Name="C_FOREST_TYPE_CODE_" ColumnName=" FOREST_TYPE_CODE " />
+                <ScalarProperty Name="FOREST_TYPE" ColumnName="FOREST_TYPE" />
+                <ScalarProperty Name="UNDERSTOREY" ColumnName="UNDERSTOREY" />
+                <ScalarProperty Name="CANOPY" ColumnName="CANOPY" />
+                <ScalarProperty Name="START_TIME" ColumnName="START_TIME" />
+                <ScalarProperty Name="END_TIME" ColumnName="END_TIME" />
+                <ScalarProperty Name="DURATION" ColumnName="DURATION" />
+                <ScalarProperty Name="HOURS" ColumnName="HOURS" />
+                <ScalarProperty Name="MIN" ColumnName="MIN" />
+                <ScalarProperty Name="TOTAL_DURATION" ColumnName="TOTAL_DURATION" />
+                <ScalarProperty Name="C_RESPONSE_1_" ColumnName=" RESPONSE_1 " />
+                <ScalarProperty Name="RESPONSE_2" ColumnName="RESPONSE_2" />
+                <ScalarProperty Name="END_CONTACT" ColumnName="END_CONTACT" />
+                <ScalarProperty Name="TYPE_GROUP" ColumnName="TYPE_GROUP" />
+                <ScalarProperty Name="GROUP_ID" ColumnName="GROUP_ID" />
+                <ScalarProperty Name="CONTACT_NMBR" ColumnName="CONTACT_NMBR" />
+                <ScalarProperty Name="DISTANCE_HUMANS_M" ColumnName="DISTANCE_HUMANS_M" />
+                <ScalarProperty Name="TOTAL" ColumnName="TOTAL" />
+                <ScalarProperty Name="C_ORIGINAL_PARTY_SIZE_" ColumnName=" ORIGINAL_PARTY_SIZE " />
+                <ScalarProperty Name="NEW_ARRIVALS" ColumnName="NEW_ARRIVALS" />
+                <ScalarProperty Name="AM_GOR_OBS" ColumnName="AM_GOR_OBS" />
+                <ScalarProperty Name="AF_GOR_OBS" ColumnName="AF_GOR_OBS" />
+                <ScalarProperty Name="SM_GOR_OBS" ColumnName="SM_GOR_OBS" />
+                <ScalarProperty Name="SF_GOR_OBS" ColumnName="SF_GOR_OBS" />
+                <ScalarProperty Name="JV_GOR_OBS" ColumnName="JV_GOR_OBS" />
+                <ScalarProperty Name="INF_GOR_OBS" ColumnName="INF_GOR_OBS" />
+                <ScalarProperty Name="UK_GOR_OBS" ColumnName="UK_GOR_OBS" />
+                <ScalarProperty Name="WEATHER" ColumnName="WEATHER" />
+                <ScalarProperty Name="COMMENTS" ColumnName="COMMENTS" />
+                <ScalarProperty Name="INITIAL_LOCATION" ColumnName="INITIAL_LOCATION" />
+                <ScalarProperty Name="NEST_TOTAL" ColumnName="NEST_TOTAL" />
+                <ScalarProperty Name="NEST_AGE" ColumnName="NEST_AGE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HabScans">
+            <EntityTypeMapping TypeName="Gorillas2Model.HabScan">
+              <MappingFragment StoreEntitySet="HabScan">
+                <ScalarProperty Name="C_UNIQUE_LINE_" ColumnName=" UNIQUE_LINE " />
+                <ScalarProperty Name="C_DATA_SHEET_" ColumnName=" DATA_SHEET " />
+                <ScalarProperty Name="TALLY" ColumnName="TALLY" />
+                <ScalarProperty Name="C_ENCOUNTER_" ColumnName=" ENCOUNTER " />
+                <ScalarProperty Name="C_OBSERVER_" ColumnName=" OBSERVER " />
+                <ScalarProperty Name="C_APE_SPECIES_" ColumnName=" APE SPECIES " />
+                <ScalarProperty Name="DATE" ColumnName="DATE" />
+                <ScalarProperty Name="DAY" ColumnName="DAY" />
+                <ScalarProperty Name="MONTH" ColumnName="MONTH" />
+                <ScalarProperty Name="YEAR" ColumnName="YEAR" />
+                <ScalarProperty Name="HOUR" ColumnName="HOUR" />
+                <ScalarProperty Name="MINUTE" ColumnName="MINUTE" />
+                <ScalarProperty Name="LOCATION" ColumnName="LOCATION" />
+                <ScalarProperty Name="SCAN_PARTY_SIZE" ColumnName="SCAN_PARTY_SIZE" />
+                <ScalarProperty Name="IN_AM" ColumnName="IN-AM" />
+                <ScalarProperty Name="IN_AF" ColumnName="IN-AF" />
+                <ScalarProperty Name="IN_AD" ColumnName="IN-AD" />
+                <ScalarProperty Name="IN_SAM" ColumnName="IN-SAM" />
+                <ScalarProperty Name="IN_SAF" ColumnName="IN-SAF" />
+                <ScalarProperty Name="IN_SA" ColumnName="IN-SA" />
+                <ScalarProperty Name="IN_JUVM" ColumnName="IN-JUVM" />
+                <ScalarProperty Name="IN_JUVF" ColumnName="IN-JUVF" />
+                <ScalarProperty Name="IN_JUV" ColumnName="IN-JUV" />
+                <ScalarProperty Name="IN_INF" ColumnName="IN-INF" />
+                <ScalarProperty Name="IN_UK" ColumnName="IN-UK" />
+                <ScalarProperty Name="NEST" ColumnName="NEST" />
+                <ScalarProperty Name="IN_TOT" ColumnName="IN-TOT" />
+                <ScalarProperty Name="FD_AM" ColumnName="FD-AM" />
+                <ScalarProperty Name="FD_AF" ColumnName="FD-AF" />
+                <ScalarProperty Name="FD_SAM" ColumnName="FD-SAM" />
+                <ScalarProperty Name="FD_SAF" ColumnName="FD-SAF" />
+                <ScalarProperty Name="FD_SA" ColumnName="FD-SA" />
+                <ScalarProperty Name="FD_JUVM" ColumnName="FD-JUVM" />
+                <ScalarProperty Name="FD_JUVF" ColumnName="FD-JUVF" />
+                <ScalarProperty Name="FD_JUV" ColumnName="FD-JUV" />
+                <ScalarProperty Name="FD_INF" ColumnName="FD-INF" />
+                <ScalarProperty Name="FD_UK" ColumnName="FD-UK" />
+                <ScalarProperty Name="FDTOTAL" ColumnName="FDTOTAL" />
+                <ScalarProperty Name="LOCAL_NAME" ColumnName="LOCAL NAME" />
+                <ScalarProperty Name="SCIENTIFIC_NAME" ColumnName="SCIENTIFIC NAME" />
+                <ScalarProperty Name="PART" ColumnName="PART" />
+                <ScalarProperty Name="SIMPLE_PART" ColumnName="SIMPLE PART" />
+                <ScalarProperty Name="FDNOTE" ColumnName="FDNOTE" />
+                <ScalarProperty Name="TR_AM" ColumnName="TR-AM" />
+                <ScalarProperty Name="TR_AF" ColumnName="TR-AF" />
+                <ScalarProperty Name="TR_SAM" ColumnName="TR-SAM" />
+                <ScalarProperty Name="TR_SAF" ColumnName="TR-SAF" />
+                <ScalarProperty Name="TR_SA" ColumnName="TR-SA" />
+                <ScalarProperty Name="TR_JUVM" ColumnName="TR-JUVM" />
+                <ScalarProperty Name="TR_JUVF" ColumnName="TR-JUVF" />
+                <ScalarProperty Name="TR_JUV" ColumnName="TR-JUV" />
+                <ScalarProperty Name="TR_INF" ColumnName="TR-INF" />
+                <ScalarProperty Name="TR_UK" ColumnName="TR-UK" />
+                <ScalarProperty Name="TR_TOT" ColumnName="TR-TOT" />
+                <ScalarProperty Name="OT_AM" ColumnName="OT-AM" />
+                <ScalarProperty Name="OT_AF" ColumnName="OT-AF" />
+                <ScalarProperty Name="OT_SAM" ColumnName="OT-SAM" />
+                <ScalarProperty Name="OT_SAF" ColumnName="OT-SAF" />
+                <ScalarProperty Name="OT_SA" ColumnName="OT-SA" />
+                <ScalarProperty Name="OT_JUVM" ColumnName="OT-JUVM" />
+                <ScalarProperty Name="OT_JUVF" ColumnName="OT-JUVF" />
+                <ScalarProperty Name="OT_JUV" ColumnName="OT-JUV" />
+                <ScalarProperty Name="OT_INF" ColumnName="OT-INF" />
+                <ScalarProperty Name="OT_UK" ColumnName="OT-UK" />
+                <ScalarProperty Name="OT_TOT" ColumnName="OT-TOT" />
+                <ScalarProperty Name="OTHER_BEHAVIOR" ColumnName="OTHER BEHAVIOR" />
+                <ScalarProperty Name="OBJECT" ColumnName="OBJECT" />
+                <ScalarProperty Name="ACTIVITY" ColumnName="ACTIVITY" />
+                <ScalarProperty Name="SO_AM" ColumnName="SO-AM" />
+                <ScalarProperty Name="SO_AF" ColumnName="SO-AF" />
+                <ScalarProperty Name="SO_SAM" ColumnName="SO-SAM" />
+                <ScalarProperty Name="SO_SAF" ColumnName="SO-SAF" />
+                <ScalarProperty Name="SO_SA" ColumnName="SO-SA" />
+                <ScalarProperty Name="SO_JUVM" ColumnName="SO-JUVM" />
+                <ScalarProperty Name="SO_JUVF" ColumnName="SO-JUVF" />
+                <ScalarProperty Name="SO_JUV" ColumnName="SO-JUV" />
+                <ScalarProperty Name="SO_INF" ColumnName="SO-INF" />
+                <ScalarProperty Name="SO_UK" ColumnName="SO-UK" />
+                <ScalarProperty Name="SO_TOT" ColumnName="SO-TOT" />
+                <ScalarProperty Name="SOCIAL" ColumnName="SOCIAL" />
+                <ScalarProperty Name="INDIVIDUAL" ColumnName="INDIVIDUAL" />
+                <ScalarProperty Name="RECIPROCITY" ColumnName="RECIPROCITY" />
+                <ScalarProperty Name="OOV_AM" ColumnName="OOV-AM" />
+                <ScalarProperty Name="OOV_AF" ColumnName="OOV-AF" />
+                <ScalarProperty Name="OOV_SAM" ColumnName="OOV-SAM" />
+                <ScalarProperty Name="OOV_SAF" ColumnName="OOV-SAF" />
+                <ScalarProperty Name="OOV_SA" ColumnName="OOV-SA" />
+                <ScalarProperty Name="OOV_JUVM" ColumnName="OOV-JUVM" />
+                <ScalarProperty Name="OOV_JUVF" ColumnName="OOV-JUVF" />
+                <ScalarProperty Name="OOV_JUV" ColumnName="OOV-JUV" />
+                <ScalarProperty Name="OOV_INF" ColumnName="OOV-INF" />
+                <ScalarProperty Name="OOV_UK" ColumnName="OOV-UK" />
+                <ScalarProperty Name="OOV_TOT" ColumnName="OOV-TOT" />
+                <ScalarProperty Name="COMMENT" ColumnName="COMMENT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Gorillas2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="HabEncounter">
+    <Key>
+      <PropertyRef Name="UNIQUE_LINE" />
+    </Key>
+    <Property Name="UNIQUE_LINE" Type="smallint" Nullable="false" />
+    <Property Name="DATA_ENTRY" Type="varchar" MaxLength="3" />
+    <Property Name="TALLY" Type="smallint" />
+    <Property Name="FIRST_CONTACT_POINT" Type="smallint" />
+    <Property Name="DATA_SET" Type="varchar" MaxLength="19" />
+    <Property Name="SPECIES" Type="varchar" MaxLength="7" />
+    <Property Name="UNIQUE_CONTACT_ID" Type="varchar" MaxLength="27" />
+    <Property Name="OBSERVER" Type="varchar" MaxLength="11" />
+    <Property Name="TRACKER" Type="varchar" MaxLength="53" />
+    <Property Name="DATE" Type="datetime" />
+    <Property Name="MONTH" Type="varchar" MaxLength="9" />
+    <Property Name="DAY" Type="smallint" />
+    <Property Name="YEAR" Type="smallint" />
+    <Property Name=" COMMUNITY " Type="varchar" MaxLength="7" />
+    <Property Name=" DETECTION_1 " Type="varchar" MaxLength="14" />
+    <Property Name=" DETECTION_2 " Type="varchar" MaxLength="44" />
+    <Property Name="LAT" Type="varchar" MaxLength="17" />
+    <Property Name="LONG" Type="varchar" MaxLength="17" />
+    <Property Name=" FOREST_TYPE_CODE " Type="varchar" MaxLength="17" />
+    <Property Name="FOREST_TYPE" Type="varchar" MaxLength="17" />
+    <Property Name="UNDERSTOREY" Type="varchar" MaxLength="17" />
+    <Property Name="CANOPY" Type="varchar" MaxLength="17" />
+    <Property Name="START_TIME" Type="varchar" MaxLength="9" />
+    <Property Name="END_TIME" Type="varchar" MaxLength="9" />
+    <Property Name="DURATION" Type="varchar" MaxLength="9" />
+    <Property Name="HOURS" Type="varchar" MaxLength="9" />
+    <Property Name="MIN" Type="varchar" MaxLength="9" />
+    <Property Name="TOTAL_DURATION" Type="varchar" MaxLength="9" />
+    <Property Name=" RESPONSE_1 " Type="varchar" MaxLength="9" />
+    <Property Name="RESPONSE_2" Type="varchar" MaxLength="7" />
+    <Property Name="END_CONTACT" Type="varchar" MaxLength="8" />
+    <Property Name="TYPE_GROUP" Type="varchar" MaxLength="27" />
+    <Property Name="GROUP_ID" Type="varchar" MaxLength="24" />
+    <Property Name="CONTACT_NMBR" Type="varchar" MaxLength="3" />
+    <Property Name="DISTANCE_HUMANS_M" Type="varchar" MaxLength="7" />
+    <Property Name="TOTAL" Type="varchar" MaxLength="7" />
+    <Property Name=" ORIGINAL_PARTY_SIZE " Type="varchar" MaxLength="3" />
+    <Property Name="NEW_ARRIVALS" Type="varchar" MaxLength="3" />
+    <Property Name="AM_GOR_OBS" Type="varchar" MaxLength="7" />
+    <Property Name="AF_GOR_OBS" Type="varchar" MaxLength="19" />
+    <Property Name="SM_GOR_OBS" Type="smallint" />
+    <Property Name="SF_GOR_OBS" Type="smallint" />
+    <Property Name="JV_GOR_OBS" Type="smallint" />
+    <Property Name="INF_GOR_OBS" Type="smallint" />
+    <Property Name="UK_GOR_OBS" Type="smallint" />
+    <Property Name="WEATHER" Type="varchar" MaxLength="324" />
+    <Property Name="COMMENTS" Type="varchar" MaxLength="333" />
+    <Property Name="INITIAL_LOCATION" Type="varchar" MaxLength="15" />
+    <Property Name="NEST_TOTAL" Type="varchar" MaxLength="17" />
+    <Property Name="NEST_AGE" Type="varchar" MaxLength="27" />
+  </EntityType>
+  <EntityType Name="HabNest">
+    <Key>
+      <PropertyRef Name="UNIQUE_LINE" />
+    </Key>
+    <Property Name="UNIQUE_LINE" Type="smallint" Nullable="false" />
+    <Property Name="DATA_SHEET" Type="varchar" MaxLength="15" />
+    <Property Name="TALLY" Type="smallint" />
+    <Property Name="UNIQUE_CONTACT_ID" Type="varchar" MaxLength="29" />
+    <Property Name="DATE" Type="datetime" />
+    <Property Name="OBSERVER" Type="varchar" MaxLength="12" />
+    <Property Name="YEAR" Type="smallint" />
+    <Property Name="MONTH" Type="varchar" MaxLength="9" />
+    <Property Name="DAY" Type="smallint" />
+    <Property Name="NEST_NUMBER" Type="smallint" />
+    <Property Name="LOCATION" Type="varchar" MaxLength="14" />
+    <Property Name="DUNG_PRESENT" Type="varchar" MaxLength="7" />
+    <Property Name="SAMPLE_ID" Type="varchar" MaxLength="60" />
+    <Property Name="NEST_TYPE" Type="varchar" MaxLength="7" />
+    <Property Name="FOREST_TYPE_CODE" Type="varchar" MaxLength="7" />
+    <Property Name="FOREST_TYPE" Type="varchar" MaxLength="7" />
+    <Property Name="UNDERSTOREY" Type="varchar" MaxLength="7" />
+    <Property Name="CANOPY" Type="varchar" MaxLength="7" />
+    <Property Name="NEST_AGE" Type="varchar" MaxLength="8" />
+    <Property Name="SITE_SIZE" Type="smallint" />
+    <Property Name="COMMENT" Type="varchar" MaxLength="149" />
+  </EntityType>
+  <EntityType Name="HabObservation">
+    <Key>
+      <PropertyRef Name="UNIQUE_LINE" />
+    </Key>
+    <Property Name="UNIQUE_LINE" Type="smallint" Nullable="false" />
+    <Property Name="DATA_ENTRY" Type="varchar" MaxLength="3" />
+    <Property Name="TALLY" Type="smallint" />
+    <Property Name="FIRST_CONTACT_POINT" Type="smallint" />
+    <Property Name="DATA_SET" Type="varchar" MaxLength="20" />
+    <Property Name="SPECIES" Type="varchar" MaxLength="7" />
+    <Property Name="UNIQUE_CONTACT_ID" Type="varchar" MaxLength="29" />
+    <Property Name="OBSERVER" Type="varchar" MaxLength="12" />
+    <Property Name="TRACKER" Type="varchar" MaxLength="58" />
+    <Property Name="DATE" Type="datetime" />
+    <Property Name="MONTH" Type="varchar" MaxLength="9" />
+    <Property Name="DAY" Type="smallint" />
+    <Property Name="YEAR" Type="smallint" />
+    <Property Name=" COMMUNITY " Type="varchar" MaxLength="7" />
+    <Property Name=" DETECTION_1 " Type="varchar" MaxLength="15" />
+    <Property Name=" DETECTION_2 " Type="varchar" MaxLength="48" />
+    <Property Name="LAT" Type="varchar" MaxLength="18" />
+    <Property Name="LONG" Type="varchar" MaxLength="18" />
+    <Property Name=" FOREST_TYPE_CODE " Type="varchar" MaxLength="18" />
+    <Property Name="FOREST_TYPE" Type="varchar" MaxLength="18" />
+    <Property Name="UNDERSTOREY" Type="varchar" MaxLength="18" />
+    <Property Name="CANOPY" Type="varchar" MaxLength="18" />
+    <Property Name="START_TIME" Type="varchar" MaxLength="9" />
+    <Property Name="END_TIME" Type="varchar" MaxLength="9" />
+    <Property Name="DURATION" Type="varchar" MaxLength="9" />
+    <Property Name="HOURS" Type="varchar" MaxLength="9" />
+    <Property Name="MIN" Type="varchar" MaxLength="9" />
+    <Property Name="TOTAL_DURATION" Type="varchar" MaxLength="9" />
+    <Property Name=" RESPONSE_1 " Type="varchar" MaxLength="9" />
+    <Property Name="RESPONSE_2" Type="varchar" MaxLength="7" />
+    <Property Name="END_CONTACT" Type="varchar" MaxLength="8" />
+    <Property Name="TYPE_GROUP" Type="varchar" MaxLength="29" />
+    <Property Name="GROUP_ID" Type="varchar" MaxLength="26" />
+    <Property Name="CONTACT_NMBR" Type="varchar" MaxLength="3" />
+    <Property Name="DISTANCE_HUMANS_M" Type="varchar" MaxLength="7" />
+    <Property Name="TOTAL" Type="varchar" MaxLength="7" />
+    <Property Name=" ORIGINAL_PARTY_SIZE " Type="varchar" MaxLength="3" />
+    <Property Name="NEW_ARRIVALS" Type="varchar" MaxLength="3" />
+    <Property Name="AM_GOR_OBS" Type="varchar" MaxLength="7" />
+    <Property Name="AF_GOR_OBS" Type="varchar" MaxLength="20" />
+    <Property Name="SM_GOR_OBS" Type="smallint" />
+    <Property Name="SF_GOR_OBS" Type="smallint" />
+    <Property Name="JV_GOR_OBS" Type="smallint" />
+    <Property Name="INF_GOR_OBS" Type="smallint" />
+    <Property Name="UK_GOR_OBS" Type="smallint" />
+    <Property Name="WEATHER" Type="varchar" MaxLength="356" />
+    <Property Name="COMMENTS" Type="varchar" MaxLength="366" />
+    <Property Name="INITIAL_LOCATION" Type="varchar" MaxLength="16" />
+    <Property Name="NEST_TOTAL" Type="varchar" MaxLength="18" />
+    <Property Name="NEST_AGE" Type="varchar" MaxLength="29" />
+  </EntityType>
+  <EntityType Name="HabScan">
+    <Key>
+      <PropertyRef Name=" UNIQUE_LINE " />
+    </Key>
+    <Property Name=" UNIQUE_LINE " Type="smallint" Nullable="false" />
+    <Property Name=" DATA_SHEET " Type="varchar" MaxLength="19" />
+    <Property Name="TALLY" Type="smallint" />
+    <Property Name=" ENCOUNTER " Type="varchar" MaxLength="25" />
+    <Property Name=" OBSERVER " Type="varchar" MaxLength="8" />
+    <Property Name=" APE SPECIES " Type="varchar" MaxLength="1" />
+    <Property Name="DATE" Type="datetime" />
+    <Property Name="DAY" Type="smallint" />
+    <Property Name="MONTH" Type="varchar" MaxLength="6" />
+    <Property Name="YEAR" Type="smallint" />
+    <Property Name="HOUR" Type="smallint" />
+    <Property Name="MINUTE" Type="smallint" />
+    <Property Name="LOCATION" Type="varchar" MaxLength="15" />
+    <Property Name="SCAN_PARTY_SIZE" Type="smallint" />
+    <Property Name="IN-AM" Type="smallint" />
+    <Property Name="IN-AF" Type="smallint" />
+    <Property Name="IN-AD" Type="smallint" />
+    <Property Name="IN-SAM" Type="smallint" />
+    <Property Name="IN-SAF" Type="smallint" />
+    <Property Name="IN-SA" Type="smallint" />
+    <Property Name="IN-JUVM" Type="smallint" />
+    <Property Name="IN-JUVF" Type="varchar(max)" />
+    <Property Name="IN-JUV" Type="smallint" />
+    <Property Name="IN-INF" Type="smallint" />
+    <Property Name="IN-UK" Type="smallint" />
+    <Property Name="NEST" Type="varchar(max)" />
+    <Property Name="IN-TOT" Type="varchar(max)" />
+    <Property Name="FD-AM" Type="smallint" />
+    <Property Name="FD-AF" Type="smallint" />
+    <Property Name="FD-SAM" Type="smallint" />
+    <Property Name="FD-SAF" Type="smallint" />
+    <Property Name="FD-SA" Type="varchar(max)" />
+    <Property Name="FD-JUVM" Type="smallint" />
+    <Property Name="FD-JUVF" Type="smallint" />
+    <Property Name="FD-JUV" Type="smallint" />
+    <Property Name="FD-INF" Type="smallint" />
+    <Property Name="FD-UK" Type="smallint" />
+    <Property Name="FDTOTAL" Type="varchar(max)" />
+    <Property Name="LOCAL NAME" Type="varchar" MaxLength="22" />
+    <Property Name="SCIENTIFIC NAME" Type="varchar" MaxLength="19" />
+    <Property Name="PART" Type="varchar" MaxLength="15" />
+    <Property Name="SIMPLE PART" Type="varchar(max)" />
+    <Property Name="FDNOTE" Type="varchar(max)" />
+    <Property Name="TR-AM" Type="smallint" />
+    <Property Name="TR-AF" Type="smallint" />
+    <Property Name="TR-SAM" Type="smallint" />
+    <Property Name="TR-SAF" Type="smallint" />
+    <Property Name="TR-SA" Type="smallint" />
+    <Property Name="TR-JUVM" Type="smallint" />
+    <Property Name="TR-JUVF" Type="smallint" />
+    <Property Name="TR-JUV" Type="smallint" />
+    <Property Name="TR-INF" Type="smallint" />
+    <Property Name="TR-UK" Type="smallint" />
+    <Property Name="TR-TOT" Type="varchar(max)" />
+    <Property Name="OT-AM" Type="smallint" />
+    <Property Name="OT-AF" Type="smallint" />
+    <Property Name="OT-SAM" Type="smallint" />
+    <Property Name="OT-SAF" Type="varchar(max)" />
+    <Property Name="OT-SA" Type="varchar(max)" />
+    <Property Name="OT-JUVM" Type="smallint" />
+    <Property Name="OT-JUVF" Type="varchar(max)" />
+    <Property Name="OT-JUV" Type="varchar(max)" />
+    <Property Name="OT-INF" Type="smallint" />
+    <Property Name="OT-UK" Type="varchar(max)" />
+    <Property Name="OT-TOT" Type="varchar(max)" />
+    <Property Name="OTHER BEHAVIOR" Type="varchar" MaxLength="55" />
+    <Property Name="OBJECT" Type="varchar" MaxLength="8" />
+    <Property Name="ACTIVITY" Type="varchar" MaxLength="12" />
+    <Property Name="SO-AM" Type="varchar(max)" />
+    <Property Name="SO-AF" Type="smallint" />
+    <Property Name="SO-SAM" Type="smallint" />
+    <Property Name="SO-SAF" Type="varchar(max)" />
+    <Property Name="SO-SA" Type="varchar(max)" />
+    <Property Name="SO-JUVM" Type="smallint" />
+    <Property Name="SO-JUVF" Type="varchar(max)" />
+    <Property Name="SO-JUV" Type="varchar(max)" />
+    <Property Name="SO-INF" Type="smallint" />
+    <Property Name="SO-UK" Type="varchar(max)" />
+    <Property Name="SO-TOT" Type="varchar(max)" />
+    <Property Name="SOCIAL" Type="varchar" MaxLength="14" />
+    <Property Name="INDIVIDUAL" Type="varchar" MaxLength="16" />
+    <Property Name="RECIPROCITY" Type="varchar" MaxLength="9" />
+    <Property Name="OOV-AM" Type="varchar" MaxLength="59" />
+    <Property Name="OOV-AF" Type="smallint" />
+    <Property Name="OOV-SAM" Type="smallint" />
+    <Property Name="OOV-SAF" Type="smallint" />
+    <Property Name="OOV-SA" Type="varchar(max)" />
+    <Property Name="OOV-JUVM" Type="smallint" />
+    <Property Name="OOV-JUVF" Type="smallint" />
+    <Property Name="OOV-JUV" Type="smallint" />
+    <Property Name="OOV-INF" Type="smallint" />
+    <Property Name="OOV-UK" Type="smallint" />
+    <Property Name="OOV-TOT" Type="varchar(max)" />
+    <Property Name="COMMENT" Type="varchar" MaxLength="199" />
+  </EntityType>
+  <EntityContainer Name="Gorillas2ModelStoreContainer">
+    <EntitySet Name="HabEncounter" EntityType="Self.HabEncounter" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HabNest" EntityType="Self.HabNest" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HabObservation" EntityType="Self.HabObservation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HabScan" EntityType="Self.HabScan" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -18,7 +18,7 @@ namespace GorillaChimpDataJamWF
             GorillaHabEncounterPanel.Hide();
             GorillaHabNestPanel.Hide();
             GorillaHabScanPanel.Hide();
-            GorillaHabObservation.Hide();
+            GorillaHabObservationPanel.Hide();
             
         }
 
@@ -30,7 +30,7 @@ namespace GorillaChimpDataJamWF
 
                 GorillaHabNestPanel.Hide();
                 GorillaHabScanPanel.Hide();
-                GorillaHabObservation.Hide();
+                GorillaHabObservationPanel.Hide();
               
             }
             if (comboBox1.SelectedItem.ToString() == "Gor_Habit_Nest")
@@ -40,7 +40,7 @@ namespace GorillaChimpDataJamWF
 
                 GorillaHabEncounterPanel.Hide();
                 GorillaHabScanPanel.Hide();
-                GorillaHabObservation.Hide();
+                GorillaHabObservationPanel.Hide();
                 
             }
              if (comboBox1.SelectedItem.ToString() == "Gorilla_Hab_Scan")
@@ -49,12 +49,12 @@ namespace GorillaChimpDataJamWF
 
                  GorillaHabEncounterPanel.Hide();
                  GorillaHabNestPanel.Hide();
-                 GorillaHabObservation.Hide();
+                 GorillaHabObservationPanel.Hide();
                 
              }
-             if (comboBox1.SelectedItem.ToString() == "Gorilla_Hab_Observation")
+             else if (comboBox1.SelectedItem.ToString() == "Gorilla_Hab_Observation")
             {
-                GorillaHabObservation.Show();
+                GorillaHabObservationPanel.Show();
 
                 GorillaHabEncounterPanel.Hide();
                 GorillaHabNestPanel.Hide();
