@@ -77,12 +77,12 @@ namespace GorillaChimpDataJamWF
 
         private void SubmiutButton_Click(object sender, EventArgs e)
         {
-
+            //submits to Database but total duration does not work. 
             if (comboBox1.SelectedItem.ToString() == "Gorilla Habituation")
             {
 
 
-
+                if (FirstContactPointNum == null)
                 habenc.FIRST_CONTACT_POINT = Convert.ToInt16(FirstContactPointNum.Text);
                 habenc.DATA_SET = "gorilla habituation";
                 habenc.SPECIES = SpeciesComboBox.Text;
@@ -107,8 +107,8 @@ namespace GorillaChimpDataJamWF
                 habenc.DURATION = DurationTextBox.Text;
                 habenc.HOURS = HoursTextBox.Text;
                 habenc.MIN = MinuteTextBox.Text;
-             //   habenc.TOTAL_DURATION = ((Convert.ToInt32(HoursTextBox.Text)*60) +
-               //                          (Convert.ToInt32(MinuteTextBox.Text)).ToString());
+                if (HoursTextBox == null || MinuteTextBox == null)
+                habenc.TOTAL_DURATION = ((Convert.ToInt32(HoursTextBox.Text)*60) + (Convert.ToInt32(MinuteTextBox.Text)).ToString());
                 habenc.C_RESPONSE_1_ = Response1TextBox.Text;
                 habenc.RESPONSE_2 = Response2TextBox.Text;
                 habenc.END_CONTACT = EndContactTextBox.Text;
@@ -119,14 +119,19 @@ namespace GorillaChimpDataJamWF
                 habenc.TOTAL = TotalTextBox.Text;
                 habenc.C_ORIGINAL_PARTY_SIZE_ = OriginalPartySizeTextBox.Text;
                 habenc.NEW_ARRIVALS = NewArrivalTextBox.Text;
+                if (AmGorObs == null)
                 habenc.AM_GOR_OBS = AmGorObs.Text;
+                if (AfGorObsTextBox == null)
                 habenc.AF_GOR_OBS = AfGorObsTextBox.Text;
-                //convertying string to date time?? why? what is date time....
-
-              //  habenc.SM_GOR_OBS = Convert.ToInt16(SMGorObsTextBox.Text);
+                if (SMGorObsTextBox == null)
+                habenc.SM_GOR_OBS = Convert.ToInt16(SMGorObsTextBox.Text);
+                if (SFGorObsTextBox == null)
                 habenc.SF_GOR_OBS = Convert.ToInt16(SFGorObsTextBox.Text);
+                if (JVGorObsTextBox == null)
                 habenc.JV_GOR_OBS = Convert.ToInt16(JVGorObsTextBox.Text);
+                if (InfGorObsTextBox == null)
                 habenc.INF_GOR_OBS = Convert.ToInt16(InfGorObsTextBox.Text);
+                if (UKGorObsTextBox == null)
                 habenc.UK_GOR_OBS = Convert.ToInt16(UKGorObsTextBox.Text);
                 habenc.WEATHER = WeatherTextBox.Text;
                 habenc.COMMENTS = CommentsTextBox.Text;
@@ -136,6 +141,8 @@ namespace GorillaChimpDataJamWF
 
                 db.HabEncounters.Add(habenc);
                 db.SaveChanges();
+                ClearTextBoxes();
+                ClearRichTextBoxes();
 
             }
             //this submits to DB as is

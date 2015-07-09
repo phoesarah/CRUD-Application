@@ -118,6 +118,10 @@
             this.SubmiutButton = new System.Windows.Forms.Button();
             this.CloseBtn = new System.Windows.Forms.Button();
             this.GorillaHabNestPanel = new System.Windows.Forms.Panel();
+            this.SitesizeHabNest = new System.Windows.Forms.TextBox();
+            this.label153 = new System.Windows.Forms.Label();
+            this.NestTypeHabNest = new System.Windows.Forms.TextBox();
+            this.label152 = new System.Windows.Forms.Label();
             this.NestAgeHabNestText = new System.Windows.Forms.TextBox();
             this.label44 = new System.Windows.Forms.Label();
             this.NestNumberHabNestTextBox = new System.Windows.Forms.TextBox();
@@ -344,10 +348,6 @@
             this.label148 = new System.Windows.Forms.Label();
             this.GorillaHabOBsDatePicker = new System.Windows.Forms.DateTimePicker();
             this.label147 = new System.Windows.Forms.Label();
-            this.label152 = new System.Windows.Forms.Label();
-            this.NestTypeHabNest = new System.Windows.Forms.TextBox();
-            this.label153 = new System.Windows.Forms.Label();
-            this.SitesizeHabNest = new System.Windows.Forms.TextBox();
             this.GorillaHabEncounterPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.FirstContactPointNum)).BeginInit();
             this.GorillaHabNestPanel.SuspendLayout();
@@ -435,8 +435,8 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Gorilla Habituation",
-            "Gor_Habit_Nest",
+            "Gorilla Habituation -ok",
+            "Gor_Habit_Nest -ok",
             "Gorilla_Hab_Scan",
             "Gorilla_Hab_Observation"});
             this.comboBox1.Location = new System.Drawing.Point(24, 39);
@@ -1278,6 +1278,38 @@
             this.GorillaHabNestPanel.Name = "GorillaHabNestPanel";
             this.GorillaHabNestPanel.Size = new System.Drawing.Size(1249, 549);
             this.GorillaHabNestPanel.TabIndex = 45;
+            // 
+            // SitesizeHabNest
+            // 
+            this.SitesizeHabNest.Location = new System.Drawing.Point(448, 136);
+            this.SitesizeHabNest.Name = "SitesizeHabNest";
+            this.SitesizeHabNest.Size = new System.Drawing.Size(100, 20);
+            this.SitesizeHabNest.TabIndex = 70;
+            // 
+            // label153
+            // 
+            this.label153.AutoSize = true;
+            this.label153.Location = new System.Drawing.Point(450, 120);
+            this.label153.Name = "label153";
+            this.label153.Size = new System.Drawing.Size(51, 13);
+            this.label153.TabIndex = 69;
+            this.label153.Text = "Site Size:";
+            // 
+            // NestTypeHabNest
+            // 
+            this.NestTypeHabNest.Location = new System.Drawing.Point(479, 73);
+            this.NestTypeHabNest.Name = "NestTypeHabNest";
+            this.NestTypeHabNest.Size = new System.Drawing.Size(100, 20);
+            this.NestTypeHabNest.TabIndex = 68;
+            // 
+            // label152
+            // 
+            this.label152.AutoSize = true;
+            this.label152.Location = new System.Drawing.Point(479, 58);
+            this.label152.Name = "label152";
+            this.label152.Size = new System.Drawing.Size(59, 13);
+            this.label152.TabIndex = 67;
+            this.label152.Text = "Nest Type:";
             // 
             // NestAgeHabNestText
             // 
@@ -3293,38 +3325,6 @@
             this.label147.Size = new System.Drawing.Size(33, 13);
             this.label147.TabIndex = 12;
             this.label147.Text = "Date:";
-            // 
-            // label152
-            // 
-            this.label152.AutoSize = true;
-            this.label152.Location = new System.Drawing.Point(479, 58);
-            this.label152.Name = "label152";
-            this.label152.Size = new System.Drawing.Size(59, 13);
-            this.label152.TabIndex = 67;
-            this.label152.Text = "Nest Type:";
-            // 
-            // NestTypeHabNest
-            // 
-            this.NestTypeHabNest.Location = new System.Drawing.Point(479, 73);
-            this.NestTypeHabNest.Name = "NestTypeHabNest";
-            this.NestTypeHabNest.Size = new System.Drawing.Size(100, 20);
-            this.NestTypeHabNest.TabIndex = 68;
-            // 
-            // label153
-            // 
-            this.label153.AutoSize = true;
-            this.label153.Location = new System.Drawing.Point(450, 120);
-            this.label153.Name = "label153";
-            this.label153.Size = new System.Drawing.Size(51, 13);
-            this.label153.TabIndex = 69;
-            this.label153.Text = "Site Size:";
-            // 
-            // SitesizeHabNest
-            // 
-            this.SitesizeHabNest.Location = new System.Drawing.Point(448, 136);
-            this.SitesizeHabNest.Name = "SitesizeHabNest";
-            this.SitesizeHabNest.Size = new System.Drawing.Size(100, 20);
-            this.SitesizeHabNest.TabIndex = 70;
             // 
             // CreateEntry
             // 
