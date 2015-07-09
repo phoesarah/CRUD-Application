@@ -13,10 +13,10 @@ namespace GorillaChimpDataJamWF
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Gorillas2Entities : DbContext
+    public partial class Gorillas2Entities1 : DbContext
     {
-        public Gorillas2Entities()
-            : base("name=Gorillas2Entities")
+        public Gorillas2Entities1()
+            : base("name=Gorillas2Entities1")
         {
         }
     
