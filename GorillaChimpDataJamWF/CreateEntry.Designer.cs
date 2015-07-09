@@ -332,18 +332,22 @@
             this.FirstContactPointHabScan = new System.Windows.Forms.NumericUpDown();
             this.label99 = new System.Windows.Forms.Label();
             this.GorillaHabObservationPanel = new System.Windows.Forms.Panel();
-            this.GorillaHabOBsDatePicker = new System.Windows.Forms.DateTimePicker();
-            this.label147 = new System.Windows.Forms.Label();
-            this.label148 = new System.Windows.Forms.Label();
-            this.HourHabObs = new System.Windows.Forms.TextBox();
-            this.label149 = new System.Windows.Forms.Label();
-            this.BehaviorHabObs = new System.Windows.Forms.TextBox();
-            this.Individual = new System.Windows.Forms.Label();
-            this.IndividualHabObs = new System.Windows.Forms.TextBox();
-            this.CommentHabObs = new System.Windows.Forms.RichTextBox();
-            this.label150 = new System.Windows.Forms.Label();
             this.UniqueContactIDHabObs = new System.Windows.Forms.TextBox();
             this.label151 = new System.Windows.Forms.Label();
+            this.CommentHabObs = new System.Windows.Forms.RichTextBox();
+            this.label150 = new System.Windows.Forms.Label();
+            this.IndividualHabObs = new System.Windows.Forms.TextBox();
+            this.Individual = new System.Windows.Forms.Label();
+            this.BehaviorHabObs = new System.Windows.Forms.TextBox();
+            this.label149 = new System.Windows.Forms.Label();
+            this.HourHabObs = new System.Windows.Forms.TextBox();
+            this.label148 = new System.Windows.Forms.Label();
+            this.GorillaHabOBsDatePicker = new System.Windows.Forms.DateTimePicker();
+            this.label147 = new System.Windows.Forms.Label();
+            this.label152 = new System.Windows.Forms.Label();
+            this.NestTypeHabNest = new System.Windows.Forms.TextBox();
+            this.label153 = new System.Windows.Forms.Label();
+            this.SitesizeHabNest = new System.Windows.Forms.TextBox();
             this.GorillaHabEncounterPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.FirstContactPointNum)).BeginInit();
             this.GorillaHabNestPanel.SuspendLayout();
@@ -1225,6 +1229,7 @@
             this.SubmiutButton.TabIndex = 43;
             this.SubmiutButton.Text = "Submit";
             this.SubmiutButton.UseVisualStyleBackColor = true;
+            this.SubmiutButton.Click += new System.EventHandler(this.SubmiutButton_Click);
             // 
             // CloseBtn
             // 
@@ -1237,6 +1242,10 @@
             // 
             // GorillaHabNestPanel
             // 
+            this.GorillaHabNestPanel.Controls.Add(this.SitesizeHabNest);
+            this.GorillaHabNestPanel.Controls.Add(this.label153);
+            this.GorillaHabNestPanel.Controls.Add(this.NestTypeHabNest);
+            this.GorillaHabNestPanel.Controls.Add(this.label152);
             this.GorillaHabNestPanel.Controls.Add(this.NestAgeHabNestText);
             this.GorillaHabNestPanel.Controls.Add(this.label44);
             this.GorillaHabNestPanel.Controls.Add(this.NestNumberHabNestTextBox);
@@ -1265,9 +1274,9 @@
             this.GorillaHabNestPanel.Controls.Add(this.label83);
             this.GorillaHabNestPanel.Controls.Add(this.FirstContactPointHabNest);
             this.GorillaHabNestPanel.Controls.Add(this.label85);
-            this.GorillaHabNestPanel.Location = new System.Drawing.Point(12, 71);
+            this.GorillaHabNestPanel.Location = new System.Drawing.Point(12, 66);
             this.GorillaHabNestPanel.Name = "GorillaHabNestPanel";
-            this.GorillaHabNestPanel.Size = new System.Drawing.Size(1249, 544);
+            this.GorillaHabNestPanel.Size = new System.Drawing.Size(1249, 549);
             this.GorillaHabNestPanel.TabIndex = 45;
             // 
             // NestAgeHabNestText
@@ -1547,9 +1556,9 @@
             this.GorillaHabScanPanel.Controls.Add(this.label98);
             this.GorillaHabScanPanel.Controls.Add(this.FirstContactPointHabScan);
             this.GorillaHabScanPanel.Controls.Add(this.label99);
-            this.GorillaHabScanPanel.Location = new System.Drawing.Point(12, 70);
+            this.GorillaHabScanPanel.Location = new System.Drawing.Point(12, 66);
             this.GorillaHabScanPanel.Name = "GorillaHabScanPanel";
-            this.GorillaHabScanPanel.Size = new System.Drawing.Size(1249, 545);
+            this.GorillaHabScanPanel.Size = new System.Drawing.Size(1249, 549);
             this.GorillaHabScanPanel.TabIndex = 46;
             // 
             // groupBox3
@@ -2381,7 +2390,6 @@
             this.label143.Size = new System.Drawing.Size(53, 13);
             this.label143.TabIndex = 8;
             this.label143.Text = "OOV-SAF";
-            this.label143.Click += new System.EventHandler(this.label143_Click);
             // 
             // ReciprocityHabScan
             // 
@@ -3184,10 +3192,91 @@
             this.GorillaHabObservationPanel.Controls.Add(this.label148);
             this.GorillaHabObservationPanel.Controls.Add(this.GorillaHabOBsDatePicker);
             this.GorillaHabObservationPanel.Controls.Add(this.label147);
-            this.GorillaHabObservationPanel.Location = new System.Drawing.Point(12, 70);
+            this.GorillaHabObservationPanel.Location = new System.Drawing.Point(12, 66);
             this.GorillaHabObservationPanel.Name = "GorillaHabObservationPanel";
-            this.GorillaHabObservationPanel.Size = new System.Drawing.Size(1249, 545);
+            this.GorillaHabObservationPanel.Size = new System.Drawing.Size(1249, 549);
             this.GorillaHabObservationPanel.TabIndex = 47;
+            // 
+            // UniqueContactIDHabObs
+            // 
+            this.UniqueContactIDHabObs.Location = new System.Drawing.Point(19, 490);
+            this.UniqueContactIDHabObs.Name = "UniqueContactIDHabObs";
+            this.UniqueContactIDHabObs.Size = new System.Drawing.Size(140, 20);
+            this.UniqueContactIDHabObs.TabIndex = 67;
+            // 
+            // label151
+            // 
+            this.label151.AutoSize = true;
+            this.label151.Location = new System.Drawing.Point(16, 474);
+            this.label151.Name = "label151";
+            this.label151.Size = new System.Drawing.Size(98, 13);
+            this.label151.TabIndex = 66;
+            this.label151.Text = "Unique Contact ID:";
+            // 
+            // CommentHabObs
+            // 
+            this.CommentHabObs.Location = new System.Drawing.Point(895, 440);
+            this.CommentHabObs.Name = "CommentHabObs";
+            this.CommentHabObs.Size = new System.Drawing.Size(342, 96);
+            this.CommentHabObs.TabIndex = 64;
+            this.CommentHabObs.Text = "";
+            // 
+            // label150
+            // 
+            this.label150.AutoSize = true;
+            this.label150.Location = new System.Drawing.Point(894, 423);
+            this.label150.Name = "label150";
+            this.label150.Size = new System.Drawing.Size(59, 13);
+            this.label150.TabIndex = 65;
+            this.label150.Text = "Comments:";
+            // 
+            // IndividualHabObs
+            // 
+            this.IndividualHabObs.Location = new System.Drawing.Point(251, 86);
+            this.IndividualHabObs.Name = "IndividualHabObs";
+            this.IndividualHabObs.Size = new System.Drawing.Size(100, 20);
+            this.IndividualHabObs.TabIndex = 18;
+            // 
+            // Individual
+            // 
+            this.Individual.AutoSize = true;
+            this.Individual.Location = new System.Drawing.Point(251, 71);
+            this.Individual.Name = "Individual";
+            this.Individual.Size = new System.Drawing.Size(52, 13);
+            this.Individual.TabIndex = 17;
+            this.Individual.Text = "Individual";
+            // 
+            // BehaviorHabObs
+            // 
+            this.BehaviorHabObs.Location = new System.Drawing.Point(135, 86);
+            this.BehaviorHabObs.Name = "BehaviorHabObs";
+            this.BehaviorHabObs.Size = new System.Drawing.Size(100, 20);
+            this.BehaviorHabObs.TabIndex = 16;
+            // 
+            // label149
+            // 
+            this.label149.AutoSize = true;
+            this.label149.Location = new System.Drawing.Point(135, 73);
+            this.label149.Name = "label149";
+            this.label149.Size = new System.Drawing.Size(49, 13);
+            this.label149.TabIndex = 15;
+            this.label149.Text = "Behavior";
+            // 
+            // HourHabObs
+            // 
+            this.HourHabObs.Location = new System.Drawing.Point(22, 87);
+            this.HourHabObs.Name = "HourHabObs";
+            this.HourHabObs.Size = new System.Drawing.Size(100, 20);
+            this.HourHabObs.TabIndex = 14;
+            // 
+            // label148
+            // 
+            this.label148.AutoSize = true;
+            this.label148.Location = new System.Drawing.Point(24, 71);
+            this.label148.Name = "label148";
+            this.label148.Size = new System.Drawing.Size(33, 13);
+            this.label148.TabIndex = 13;
+            this.label148.Text = "Hour:";
             // 
             // GorillaHabOBsDatePicker
             // 
@@ -3205,86 +3294,37 @@
             this.label147.TabIndex = 12;
             this.label147.Text = "Date:";
             // 
-            // label148
+            // label152
             // 
-            this.label148.AutoSize = true;
-            this.label148.Location = new System.Drawing.Point(24, 71);
-            this.label148.Name = "label148";
-            this.label148.Size = new System.Drawing.Size(33, 13);
-            this.label148.TabIndex = 13;
-            this.label148.Text = "Hour:";
+            this.label152.AutoSize = true;
+            this.label152.Location = new System.Drawing.Point(479, 58);
+            this.label152.Name = "label152";
+            this.label152.Size = new System.Drawing.Size(59, 13);
+            this.label152.TabIndex = 67;
+            this.label152.Text = "Nest Type:";
             // 
-            // HourHabObs
+            // NestTypeHabNest
             // 
-            this.HourHabObs.Location = new System.Drawing.Point(22, 87);
-            this.HourHabObs.Name = "HourHabObs";
-            this.HourHabObs.Size = new System.Drawing.Size(100, 20);
-            this.HourHabObs.TabIndex = 14;
+            this.NestTypeHabNest.Location = new System.Drawing.Point(479, 73);
+            this.NestTypeHabNest.Name = "NestTypeHabNest";
+            this.NestTypeHabNest.Size = new System.Drawing.Size(100, 20);
+            this.NestTypeHabNest.TabIndex = 68;
             // 
-            // label149
+            // label153
             // 
-            this.label149.AutoSize = true;
-            this.label149.Location = new System.Drawing.Point(135, 73);
-            this.label149.Name = "label149";
-            this.label149.Size = new System.Drawing.Size(49, 13);
-            this.label149.TabIndex = 15;
-            this.label149.Text = "Behavior";
+            this.label153.AutoSize = true;
+            this.label153.Location = new System.Drawing.Point(450, 120);
+            this.label153.Name = "label153";
+            this.label153.Size = new System.Drawing.Size(51, 13);
+            this.label153.TabIndex = 69;
+            this.label153.Text = "Site Size:";
             // 
-            // BehaviorHabObs
+            // SitesizeHabNest
             // 
-            this.BehaviorHabObs.Location = new System.Drawing.Point(135, 86);
-            this.BehaviorHabObs.Name = "BehaviorHabObs";
-            this.BehaviorHabObs.Size = new System.Drawing.Size(100, 20);
-            this.BehaviorHabObs.TabIndex = 16;
-            // 
-            // Individual
-            // 
-            this.Individual.AutoSize = true;
-            this.Individual.Location = new System.Drawing.Point(251, 71);
-            this.Individual.Name = "Individual";
-            this.Individual.Size = new System.Drawing.Size(52, 13);
-            this.Individual.TabIndex = 17;
-            this.Individual.Text = "Individual";
-            // 
-            // IndividualHabObs
-            // 
-            this.IndividualHabObs.Location = new System.Drawing.Point(251, 86);
-            this.IndividualHabObs.Name = "IndividualHabObs";
-            this.IndividualHabObs.Size = new System.Drawing.Size(100, 20);
-            this.IndividualHabObs.TabIndex = 18;
-            // 
-            // CommentHabObs
-            // 
-            this.CommentHabObs.Location = new System.Drawing.Point(887, 430);
-            this.CommentHabObs.Name = "CommentHabObs";
-            this.CommentHabObs.Size = new System.Drawing.Size(342, 96);
-            this.CommentHabObs.TabIndex = 64;
-            this.CommentHabObs.Text = "";
-            // 
-            // label150
-            // 
-            this.label150.AutoSize = true;
-            this.label150.Location = new System.Drawing.Point(886, 413);
-            this.label150.Name = "label150";
-            this.label150.Size = new System.Drawing.Size(59, 13);
-            this.label150.TabIndex = 65;
-            this.label150.Text = "Comments:";
-            // 
-            // UniqueContactIDHabObs
-            // 
-            this.UniqueContactIDHabObs.Location = new System.Drawing.Point(19, 490);
-            this.UniqueContactIDHabObs.Name = "UniqueContactIDHabObs";
-            this.UniqueContactIDHabObs.Size = new System.Drawing.Size(140, 20);
-            this.UniqueContactIDHabObs.TabIndex = 67;
-            // 
-            // label151
-            // 
-            this.label151.AutoSize = true;
-            this.label151.Location = new System.Drawing.Point(16, 474);
-            this.label151.Name = "label151";
-            this.label151.Size = new System.Drawing.Size(98, 13);
-            this.label151.TabIndex = 66;
-            this.label151.Text = "Unique Contact ID:";
+            this.SitesizeHabNest.Location = new System.Drawing.Point(448, 136);
+            this.SitesizeHabNest.Name = "SitesizeHabNest";
+            this.SitesizeHabNest.Size = new System.Drawing.Size(100, 20);
+            this.SitesizeHabNest.TabIndex = 70;
             // 
             // CreateEntry
             // 
@@ -3715,5 +3755,9 @@
         private System.Windows.Forms.Label label149;
         private System.Windows.Forms.TextBox HourHabObs;
         private System.Windows.Forms.Label label148;
+        private System.Windows.Forms.TextBox NestTypeHabNest;
+        private System.Windows.Forms.Label label152;
+        private System.Windows.Forms.TextBox SitesizeHabNest;
+        private System.Windows.Forms.Label label153;
     }
 }

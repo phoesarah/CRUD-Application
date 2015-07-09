@@ -7,6 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace GorillaChimpDataJamWF
 {
     using System;
@@ -14,7 +17,10 @@ namespace GorillaChimpDataJamWF
     
     public partial class HabObservation
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key]
         public short UNIQUE_LINE { get; set; }
+
         public string DATA_SHEET { get; set; }
         public string UNIQUE_ENCOUNTER_ID { get; set; }
         public Nullable<System.DateTime> DATE { get; set; }

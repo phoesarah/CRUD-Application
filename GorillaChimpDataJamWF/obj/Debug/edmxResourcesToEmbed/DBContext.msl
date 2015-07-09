@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="Gorillas2ModelStoreContainer" CdmEntityContainer="Gorillas2Entities">
+  <EntityContainerMapping StorageEntityContainer="Gorillas2ModelStoreContainer" CdmEntityContainer="Gorillas2Entities1">
     <EntitySetMapping Name="HabEncounters">
       <EntityTypeMapping TypeName="Gorillas2Model.HabEncounter">
         <MappingFragment StoreEntitySet="HabEncounter">
@@ -88,55 +88,16 @@
       <EntityTypeMapping TypeName="Gorillas2Model.HabObservation">
         <MappingFragment StoreEntitySet="HabObservation">
           <ScalarProperty Name="UNIQUE_LINE" ColumnName="UNIQUE_LINE" />
-          <ScalarProperty Name="DATA_ENTRY" ColumnName="DATA_ENTRY" />
-          <ScalarProperty Name="TALLY" ColumnName="TALLY" />
-          <ScalarProperty Name="FIRST_CONTACT_POINT" ColumnName="FIRST_CONTACT_POINT" />
-          <ScalarProperty Name="DATA_SET" ColumnName="DATA_SET" />
-          <ScalarProperty Name="SPECIES" ColumnName="SPECIES" />
-          <ScalarProperty Name="UNIQUE_CONTACT_ID" ColumnName="UNIQUE_CONTACT_ID" />
-          <ScalarProperty Name="OBSERVER" ColumnName="OBSERVER" />
-          <ScalarProperty Name="TRACKER" ColumnName="TRACKER" />
+          <ScalarProperty Name="DATA_SHEET" ColumnName="DATA_SHEET" />
+          <ScalarProperty Name="UNIQUE_ENCOUNTER_ID" ColumnName="UNIQUE_ENCOUNTER_ID" />
           <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="YEAR" ColumnName="YEAR" />
           <ScalarProperty Name="MONTH" ColumnName="MONTH" />
           <ScalarProperty Name="DAY" ColumnName="DAY" />
-          <ScalarProperty Name="YEAR" ColumnName="YEAR" />
-          <ScalarProperty Name="C_COMMUNITY_" ColumnName=" COMMUNITY " />
-          <ScalarProperty Name="C_DETECTION_1_" ColumnName=" DETECTION_1 " />
-          <ScalarProperty Name="C_DETECTION_2_" ColumnName=" DETECTION_2 " />
-          <ScalarProperty Name="LAT" ColumnName="LAT" />
-          <ScalarProperty Name="LONG" ColumnName="LONG" />
-          <ScalarProperty Name="C_FOREST_TYPE_CODE_" ColumnName=" FOREST_TYPE_CODE " />
-          <ScalarProperty Name="FOREST_TYPE" ColumnName="FOREST_TYPE" />
-          <ScalarProperty Name="UNDERSTOREY" ColumnName="UNDERSTOREY" />
-          <ScalarProperty Name="CANOPY" ColumnName="CANOPY" />
-          <ScalarProperty Name="START_TIME" ColumnName="START_TIME" />
-          <ScalarProperty Name="END_TIME" ColumnName="END_TIME" />
-          <ScalarProperty Name="DURATION" ColumnName="DURATION" />
-          <ScalarProperty Name="HOURS" ColumnName="HOURS" />
-          <ScalarProperty Name="MIN" ColumnName="MIN" />
-          <ScalarProperty Name="TOTAL_DURATION" ColumnName="TOTAL_DURATION" />
-          <ScalarProperty Name="C_RESPONSE_1_" ColumnName=" RESPONSE_1 " />
-          <ScalarProperty Name="RESPONSE_2" ColumnName="RESPONSE_2" />
-          <ScalarProperty Name="END_CONTACT" ColumnName="END_CONTACT" />
-          <ScalarProperty Name="TYPE_GROUP" ColumnName="TYPE_GROUP" />
-          <ScalarProperty Name="GROUP_ID" ColumnName="GROUP_ID" />
-          <ScalarProperty Name="CONTACT_NMBR" ColumnName="CONTACT_NMBR" />
-          <ScalarProperty Name="DISTANCE_HUMANS_M" ColumnName="DISTANCE_HUMANS_M" />
-          <ScalarProperty Name="TOTAL" ColumnName="TOTAL" />
-          <ScalarProperty Name="C_ORIGINAL_PARTY_SIZE_" ColumnName=" ORIGINAL_PARTY_SIZE " />
-          <ScalarProperty Name="NEW_ARRIVALS" ColumnName="NEW_ARRIVALS" />
-          <ScalarProperty Name="AM_GOR_OBS" ColumnName="AM_GOR_OBS" />
-          <ScalarProperty Name="AF_GOR_OBS" ColumnName="AF_GOR_OBS" />
-          <ScalarProperty Name="SM_GOR_OBS" ColumnName="SM_GOR_OBS" />
-          <ScalarProperty Name="SF_GOR_OBS" ColumnName="SF_GOR_OBS" />
-          <ScalarProperty Name="JV_GOR_OBS" ColumnName="JV_GOR_OBS" />
-          <ScalarProperty Name="INF_GOR_OBS" ColumnName="INF_GOR_OBS" />
-          <ScalarProperty Name="UK_GOR_OBS" ColumnName="UK_GOR_OBS" />
-          <ScalarProperty Name="WEATHER" ColumnName="WEATHER" />
-          <ScalarProperty Name="COMMENTS" ColumnName="COMMENTS" />
-          <ScalarProperty Name="INITIAL_LOCATION" ColumnName="INITIAL_LOCATION" />
-          <ScalarProperty Name="NEST_TOTAL" ColumnName="NEST_TOTAL" />
-          <ScalarProperty Name="NEST_AGE" ColumnName="NEST_AGE" />
+          <ScalarProperty Name="HOUR" ColumnName="HOUR" />
+          <ScalarProperty Name="BEHAVIOR" ColumnName="BEHAVIOR" />
+          <ScalarProperty Name="INDIVIDUAL" ColumnName="INDIVIDUAL" />
+          <ScalarProperty Name="COMMENT" ColumnName="COMMENT" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
