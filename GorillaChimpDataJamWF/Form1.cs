@@ -12,6 +12,10 @@ namespace GorillaChimpDataJamWF
 {
     public partial class Form1 : Form
     {
+        //private dictionary object string string selected search fields  then set = to new on form load.  Then attach cchange events to all of those fields that
+        //check for existence of key and if does not exist add key and value, else update value.  key is name of column; value is value and throw in there. 
+        //Dataset not bound. 
+        private Dictionary<string, string> selectedsearchfields;
         public Form1()
         {
             InitializeComponent();
@@ -19,6 +23,9 @@ namespace GorillaChimpDataJamWF
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
+            selectedsearchfields = new Dictionary<string, string>();
+            
 
         }
 
@@ -32,5 +39,9 @@ namespace GorillaChimpDataJamWF
             CreateEntry createentry = new CreateEntry();
             createentry.Show();
         }
+
+       
+
+        }
     }
-}
+

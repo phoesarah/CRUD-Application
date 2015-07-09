@@ -55,41 +55,36 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Observer = new System.Windows.Forms.Label();
             this.ObserverCombo = new System.Windows.Forms.ComboBox();
+            this.habEncounterBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gorillas2DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gorillas2DataSet = new GorillaChimpDataJamWF.Gorillas2DataSet();
             this.SpeciesCombo = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.LocationCombo = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.PartySizeCombo = new System.Windows.Forms.ComboBox();
-            this.ActionBox = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.GorillaTypeBox = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.TallyAmtLabel = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.LocalNameCombo = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.ExitBtn = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.GroupIDBox = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.CommentBox = new System.Windows.Forms.RichTextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.IndividualComboBox = new System.Windows.Forms.ComboBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.BehaviorCombo = new System.Windows.Forms.ComboBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.SimplePart = new System.Windows.Forms.ComboBox();
-            this.PartComboBox = new System.Windows.Forms.ComboBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.ScientificNameCombo = new System.Windows.Forms.ComboBox();
-            this.NestCombo = new System.Windows.Forms.ComboBox();
+            this.habEncounterTableAdapter = new GorillaChimpDataJamWF.Gorillas2DataSetTableAdapters.HabEncounterTableAdapter();
+            this.habEncounterBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.habEncounterBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.habEncounterBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gorillas2DataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gorillas2DataSet)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.habEncounterBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.habEncounterBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -270,6 +265,11 @@
             // DataSheetCombo
             // 
             this.DataSheetCombo.FormattingEnabled = true;
+            this.DataSheetCombo.Items.AddRange(new object[] {
+            "Gorilla Habituation",
+            "///Gor_Habit_Nest ",
+            "//Gorilla_Hab_Scan",
+            "//Gorilla_Hab_Observation"});
             this.DataSheetCombo.Location = new System.Drawing.Point(16, 38);
             this.DataSheetCombo.Name = "DataSheetCombo";
             this.DataSheetCombo.Size = new System.Drawing.Size(121, 21);
@@ -311,14 +311,41 @@
             // ObserverCombo
             // 
             this.ObserverCombo.FormattingEnabled = true;
+            this.ObserverCombo.Items.AddRange(new object[] {
+            "FE,GM",
+            "DM,FE,JM,GM",
+            "AN,IS",
+            "FE,SK",
+            "JM,GM",
+            "DM,JM",
+            "FE,JM,CS",
+            "JM,FE"});
             this.ObserverCombo.Location = new System.Drawing.Point(146, 38);
             this.ObserverCombo.Name = "ObserverCombo";
             this.ObserverCombo.Size = new System.Drawing.Size(121, 21);
             this.ObserverCombo.TabIndex = 12;
             // 
+            // habEncounterBindingSource
+            // 
+            this.habEncounterBindingSource.DataMember = "HabEncounter";
+            this.habEncounterBindingSource.DataSource = this.gorillas2DataSetBindingSource;
+            // 
+            // gorillas2DataSetBindingSource
+            // 
+            this.gorillas2DataSetBindingSource.DataSource = this.gorillas2DataSet;
+            this.gorillas2DataSetBindingSource.Position = 0;
+            // 
+            // gorillas2DataSet
+            // 
+            this.gorillas2DataSet.DataSetName = "Gorillas2DataSet";
+            this.gorillas2DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // SpeciesCombo
             // 
+            this.SpeciesCombo.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.habEncounterBindingSource, "SPECIES", true));
             this.SpeciesCombo.FormattingEnabled = true;
+            this.SpeciesCombo.Items.AddRange(new object[] {
+            "gorilla"});
             this.SpeciesCombo.Location = new System.Drawing.Point(276, 38);
             this.SpeciesCombo.Name = "SpeciesCombo";
             this.SpeciesCombo.Size = new System.Drawing.Size(121, 21);
@@ -345,6 +372,13 @@
             // LocationCombo
             // 
             this.LocationCombo.FormattingEnabled = true;
+            this.LocationCombo.Items.AddRange(new object[] {
+            "Terre et Canope",
+            "Terre",
+            "Nest Site",
+            "Canope",
+            "missing",
+            "N/A"});
             this.LocationCombo.Location = new System.Drawing.Point(406, 38);
             this.LocationCombo.Name = "LocationCombo";
             this.LocationCombo.Size = new System.Drawing.Size(121, 21);
@@ -362,62 +396,13 @@
             // PartySizeCombo
             // 
             this.PartySizeCombo.FormattingEnabled = true;
+            this.PartySizeCombo.Items.AddRange(new object[] {
+            "0",
+            "N/A"});
             this.PartySizeCombo.Location = new System.Drawing.Point(536, 38);
             this.PartySizeCombo.Name = "PartySizeCombo";
             this.PartySizeCombo.Size = new System.Drawing.Size(121, 21);
             this.PartySizeCombo.TabIndex = 18;
-            // 
-            // ActionBox
-            // 
-            this.ActionBox.FormattingEnabled = true;
-            this.ActionBox.Location = new System.Drawing.Point(666, 38);
-            this.ActionBox.Name = "ActionBox";
-            this.ActionBox.Size = new System.Drawing.Size(56, 21);
-            this.ActionBox.TabIndex = 19;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(663, 21);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 13);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "Action:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(721, 21);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(66, 13);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "Gorilla Type:";
-            // 
-            // GorillaTypeBox
-            // 
-            this.GorillaTypeBox.FormattingEnabled = true;
-            this.GorillaTypeBox.Location = new System.Drawing.Point(731, 38);
-            this.GorillaTypeBox.Name = "GorillaTypeBox";
-            this.GorillaTypeBox.Size = new System.Drawing.Size(56, 21);
-            this.GorillaTypeBox.TabIndex = 22;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(941, 21);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(67, 13);
-            this.label8.TabIndex = 23;
-            this.label8.Text = "Local Name:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(802, 21);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(32, 13);
-            this.label9.TabIndex = 25;
-            this.label9.Text = "Nest:";
             // 
             // TallyAmtLabel
             // 
@@ -427,30 +412,13 @@
             this.TallyAmtLabel.Size = new System.Drawing.Size(0, 13);
             this.TallyAmtLabel.TabIndex = 28;
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(1077, 21);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(84, 13);
-            this.label11.TabIndex = 29;
-            this.label11.Text = "Scientific Name:";
-            // 
-            // LocalNameCombo
-            // 
-            this.LocalNameCombo.FormattingEnabled = true;
-            this.LocalNameCombo.Location = new System.Drawing.Point(944, 38);
-            this.LocalNameCombo.Name = "LocalNameCombo";
-            this.LocalNameCombo.Size = new System.Drawing.Size(121, 21);
-            this.LocalNameCombo.TabIndex = 30;
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.ExitBtn);
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.bindingNavigator1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 404);
+            this.panel1.Location = new System.Drawing.Point(0, 502);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1349, 380);
             this.panel1.TabIndex = 31;
@@ -466,37 +434,21 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.GroupIDBox);
+            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.CommentBox);
-            this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.IndividualComboBox);
-            this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.BehaviorCombo);
-            this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.SimplePart);
-            this.groupBox1.Controls.Add(this.PartComboBox);
-            this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.ScientificNameCombo);
-            this.groupBox1.Controls.Add(this.NestCombo);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.SearchBtn);
-            this.groupBox1.Controls.Add(this.LocalNameCombo);
             this.groupBox1.Controls.Add(this.dateTimePicker2);
             this.groupBox1.Controls.Add(this.ObserverCombo);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.DataSheetCombo);
-            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.Observer);
-            this.groupBox1.Controls.Add(this.GorillaTypeBox);
             this.groupBox1.Controls.Add(this.SpeciesCombo);
-            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.ActionBox);
             this.groupBox1.Controls.Add(this.LocationCombo);
             this.groupBox1.Controls.Add(this.PartySizeCombo);
             this.groupBox1.Controls.Add(this.label5);
@@ -506,6 +458,31 @@
             this.groupBox1.TabIndex = 32;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Search";
+            // 
+            // GroupIDBox
+            // 
+            this.GroupIDBox.FormattingEnabled = true;
+            this.GroupIDBox.Items.AddRange(new object[] {
+            "Group de deux gros males",
+            "Group of 6 indiv",
+            "Group of 3",
+            "N/A",
+            "Group from 24Jan13",
+            "Group of 2",
+            "Group from 11Jan13)"});
+            this.GroupIDBox.Location = new System.Drawing.Point(678, 37);
+            this.GroupIDBox.Name = "GroupIDBox";
+            this.GroupIDBox.Size = new System.Drawing.Size(121, 21);
+            this.GroupIDBox.TabIndex = 45;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(675, 21);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(53, 13);
+            this.label6.TabIndex = 44;
+            this.label6.Text = "Group ID:";
             // 
             // label16
             // 
@@ -525,95 +502,25 @@
             this.CommentBox.TabIndex = 42;
             this.CommentBox.Text = "";
             // 
-            // label15
+            // habEncounterTableAdapter
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(406, 76);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(52, 13);
-            this.label15.TabIndex = 40;
-            this.label15.Text = "Individual";
+            this.habEncounterTableAdapter.ClearBeforeFill = true;
             // 
-            // IndividualComboBox
+            // habEncounterBindingSource1
             // 
-            this.IndividualComboBox.FormattingEnabled = true;
-            this.IndividualComboBox.Location = new System.Drawing.Point(406, 92);
-            this.IndividualComboBox.Name = "IndividualComboBox";
-            this.IndividualComboBox.Size = new System.Drawing.Size(121, 21);
-            this.IndividualComboBox.TabIndex = 39;
+            this.habEncounterBindingSource1.DataMember = "HabEncounter";
+            this.habEncounterBindingSource1.DataSource = this.gorillas2DataSetBindingSource;
             // 
-            // label14
+            // habEncounterBindingSource2
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(276, 76);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(49, 13);
-            this.label14.TabIndex = 38;
-            this.label14.Text = "Behavior";
-            // 
-            // BehaviorCombo
-            // 
-            this.BehaviorCombo.FormattingEnabled = true;
-            this.BehaviorCombo.Location = new System.Drawing.Point(276, 92);
-            this.BehaviorCombo.Name = "BehaviorCombo";
-            this.BehaviorCombo.Size = new System.Drawing.Size(121, 21);
-            this.BehaviorCombo.TabIndex = 37;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(143, 76);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(60, 13);
-            this.label13.TabIndex = 36;
-            this.label13.Text = "Simple Part";
-            // 
-            // SimplePart
-            // 
-            this.SimplePart.FormattingEnabled = true;
-            this.SimplePart.Location = new System.Drawing.Point(146, 92);
-            this.SimplePart.Name = "SimplePart";
-            this.SimplePart.Size = new System.Drawing.Size(121, 21);
-            this.SimplePart.TabIndex = 35;
-            // 
-            // PartComboBox
-            // 
-            this.PartComboBox.FormattingEnabled = true;
-            this.PartComboBox.Location = new System.Drawing.Point(16, 92);
-            this.PartComboBox.Name = "PartComboBox";
-            this.PartComboBox.Size = new System.Drawing.Size(121, 21);
-            this.PartComboBox.TabIndex = 34;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(13, 76);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(29, 13);
-            this.label12.TabIndex = 33;
-            this.label12.Text = "Part:";
-            // 
-            // ScientificNameCombo
-            // 
-            this.ScientificNameCombo.FormattingEnabled = true;
-            this.ScientificNameCombo.Location = new System.Drawing.Point(1080, 38);
-            this.ScientificNameCombo.Name = "ScientificNameCombo";
-            this.ScientificNameCombo.Size = new System.Drawing.Size(121, 21);
-            this.ScientificNameCombo.TabIndex = 32;
-            // 
-            // NestCombo
-            // 
-            this.NestCombo.FormattingEnabled = true;
-            this.NestCombo.Location = new System.Drawing.Point(805, 38);
-            this.NestCombo.Name = "NestCombo";
-            this.NestCombo.Size = new System.Drawing.Size(121, 21);
-            this.NestCombo.TabIndex = 31;
+            this.habEncounterBindingSource2.DataMember = "HabEncounter";
+            this.habEncounterBindingSource2.DataSource = this.gorillas2DataSetBindingSource;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1349, 784);
+            this.ClientSize = new System.Drawing.Size(1349, 882);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.TallyAmtLabel);
@@ -625,10 +532,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.habEncounterBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gorillas2DataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gorillas2DataSet)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.habEncounterBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.habEncounterBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -664,30 +576,20 @@
         private System.Windows.Forms.ComboBox LocationCombo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox PartySizeCombo;
-        private System.Windows.Forms.ComboBox ActionBox;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox GorillaTypeBox;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label TallyAmtLabel;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox LocalNameCombo;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox SimplePart;
-        private System.Windows.Forms.ComboBox PartComboBox;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox ScientificNameCombo;
-        private System.Windows.Forms.ComboBox NestCombo;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox BehaviorCombo;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.ComboBox IndividualComboBox;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.RichTextBox CommentBox;
         private System.Windows.Forms.Button ExitBtn;
+        private System.Windows.Forms.BindingSource gorillas2DataSetBindingSource;
+        private Gorillas2DataSet gorillas2DataSet;
+        private System.Windows.Forms.BindingSource habEncounterBindingSource;
+        private Gorillas2DataSetTableAdapters.HabEncounterTableAdapter habEncounterTableAdapter;
+        private System.Windows.Forms.BindingSource habEncounterBindingSource1;
+        private System.Windows.Forms.BindingSource habEncounterBindingSource2;
+        private System.Windows.Forms.ComboBox GroupIDBox;
+        private System.Windows.Forms.Label label6;
     }
 }
 

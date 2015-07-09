@@ -435,9 +435,9 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Gorilla Habituation -ok",
-            "Gor_Habit_Nest -ok",
-            "Gorilla_Hab_Scan",
+            "Gorilla Habituation",
+            "Gor_Habit_Nest ",
+            "Gorilla_Hab_Scan -n",
             "Gorilla_Hab_Observation"});
             this.comboBox1.Location = new System.Drawing.Point(24, 39);
             this.comboBox1.Name = "comboBox1";

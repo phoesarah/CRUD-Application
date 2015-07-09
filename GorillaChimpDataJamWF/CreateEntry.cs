@@ -195,55 +195,93 @@ namespace GorillaChimpDataJamWF
                 habscan.DAY = Convert.ToInt16(dateTimeHabScan.Value.Day);
                 habscan.MONTH = dateTimeHabScan.Value.Month.ToString("MMMM");
                 habscan.YEAR = Convert.ToInt16(dateTimeHabScan.Value.Year);
+                if (HourTextBoxHabScan == null)
                 habscan.HOUR = Convert.ToInt16(HourTextBoxHabScan.Text);
+                if (MinutesHabScan == null)
                 habscan.MINUTE = Convert.ToInt16(MinutesHabScan.Text);
                 habscan.LOCATION = LocationHabScan.Text;
+                if (ScanPartySizeHabScan == null)
                 habscan.SCAN_PARTY_SIZE = Convert.ToInt16(ScanPartySizeHabScan.Text);
+                if (IN_AM == null)
                 habscan.IN_AM = Convert.ToInt16(IN_AM.Text);
+                if (IN_AF == null)
                 habscan.IN_AF = Convert.ToInt16(IN_AF.Text);
+                if (IN_AD == null)
                 habscan.IN_AD = Convert.ToInt16(IN_AD.Text);
+                if (IN_SAM == null)
                 habscan.IN_SAM = Convert.ToInt16(IN_SAM.Text);
+                if (IN_SAF == null)
                 habscan.IN_SAF = Convert.ToInt16(IN_SAF.Text);
+                if (IN_SA == null)
                 habscan.IN_SA = Convert.ToInt16(IN_SA.Text);
+                if (IN_JUVM == null)
                 habscan.IN_JUVM = Convert.ToInt16(IN_JUVM);
                 habscan.IN_JUVF = IN_JUVF.Text;
+                if (IN_JUV == null)
                 habscan.IN_JUV = Convert.ToInt16(IN_JUV.Text);
+                if (IN_INF == null)
                 habscan.IN_INF = Convert.ToInt16(IN_INF.Text);
+                if (IN_UK == null)
                 habscan.IN_UK = Convert.ToInt16(IN_UK.Text);
                 habscan.NEST = NestHabScan.Text;
                 habscan.IN_TOT = IN_TOT.Text;
+                if (FD_AM == null)
                 habscan.FD_AM = Convert.ToInt16(FD_AM.Text);
+                if (FD_AF == null)
                 habscan.FD_AF = Convert.ToInt16(FD_AF.Text);
+                if (FD_SAM == null)
                 habscan.FD_SAM = Convert.ToInt16(FD_SAM.Text);
+                if (FD_SAF == null)
                 habscan.FD_SAF = Convert.ToInt16(FD_SAF.Text);
+                if (FD_JUVM == null)
                 habscan.FD_JUVM = Convert.ToInt16(FD_JUVM.Text);
+                if (FD_JUVF == null)
                 habscan.FD_JUVF = Convert.ToInt16(FD_JUVF.Text);
+                if (FD_JUV == null)
                 habscan.FD_JUV = Convert.ToInt16(FD_JUV.Text);
+                if (FD_INF == null)
                 habscan.FD_INF = Convert.ToInt16(FD_INF.Text);
+                if (FD_UK == null)
                 habscan.FD_UK = Convert.ToInt16(FD_UK.Text);
                 habscan.LOCAL_NAME = LocalNameHabScan.Text;
                 habscan.SCIENTIFIC_NAME = ScientificNameHabScan.Text;
                 habscan.PART = PartHabScan.Text;
                 habscan.SIMPLE_PART = SimplePartHabScan.Text;
+                if (TR_AM == null)
                 habscan.TR_AM = Convert.ToInt16(TR_AM.Text);
+                if (TR_AF == null)
                 habscan.TR_AF = Convert.ToInt16(TR_AF.Text);
+                if (TR_SAM == null)
                 habscan.TR_SAM = Convert.ToInt16(TR_SAM.Text);
+                if (TR_SAF == null)
                 habscan.TR_SAF = Convert.ToInt16(TR_SAF.Text);
+                if (TR_SA == null)
                 habscan.TR_SA = Convert.ToInt16(TR_SA.Text);
+                if (TR_JUVM == null)
                 habscan.TR_JUVM = Convert.ToInt16(TR_JUVM.Text);
+                if (TR_JUVF== null)
                 habscan.TR_JUVF = Convert.ToInt16(TR_JUVF.Text);
+                if (TR_JUV == null)
                 habscan.TR_JUV = Convert.ToInt16(TR_JUV.Text);
+                if (TR_INF == null)
                 habscan.TR_INF = Convert.ToInt16(TR_INF.Text);
+                if (TR_UK == null)
                 habscan.TR_UK = Convert.ToInt16(TR_UK.Text);
                 habscan.TR_TOT = TR_TOT.Text;
+                if (OT_AM == null)
                 habscan.OT_AM = Convert.ToInt16(OT_AM.Text);
+                if (OT_AF == null)
                 habscan.OT_AF = Convert.ToInt16(OT_AF.Text);
+                if (OT_SAM == null)
                 habscan.OT_SAM = Convert.ToInt16(OT_SAM.Text);
+                if (TR_SAF == null)
                 habscan.OT_SAF = OT_SAF.Text;
                 habscan.OT_SA = OT_SA.Text;
+                if (OT_JUVM == null)
                 habscan.OT_JUVM = Convert.ToInt16(OT_JUVM.Text);
                 habscan.OT_JUVF = OT_JUVF.Text;
                 habscan.OT_JUV = OT_JUV.Text;
+                if (OT_INF== null)
                 habscan.OT_INF = Convert.ToInt16(OT_INF.Text);
                 habscan.OT_UK = OT_UK.Text;
                 habscan.OT_TOT = OT_TOT.Text;
@@ -251,36 +289,50 @@ namespace GorillaChimpDataJamWF
                 habscan.OBJECT = ObjectHabScan.Text;
                 habscan.ACTIVITY = ActivityHabScan.Text;
                 habscan.SO_AM = SO_AM.Text;
+                if (SO_AF == null)
                 habscan.SO_AF = Convert.ToInt16(SO_AF.Text);
+                if (SO_SAM == null)
                 habscan.SO_SAM = Convert.ToInt16(SO_SAM.Text);
                 habscan.SO_SAF = SO_SAF.Text;
                 habscan.SO_SA = SO_SA.Text;
+                if (SO_JUVM == null)
                 habscan.SO_JUVM = Convert.ToInt16(SO_JUVM.Text);
                 habscan.SO_JUVF = SO_JUVM.Text;
                 habscan.SO_JUV = SO_JUV.Text;
+                if (SO_INF == null)
                 habscan.SO_INF = Convert.ToInt16(SO_INF.Text);
                 habscan.SO_UK = SO_UK.Text;
                 habscan.SO_TOT = SO_TOT.Text;
                 habscan.SOCIAL = SocialHabScan.Text;
                 habscan.RECIPROCITY = ReciprocityHabScan.Text;
                 habscan.OOV_AM = OOV_AM.Text;
+                if (OOV_AF == null)
                 habscan.OOV_AF = Convert.ToInt16(OOV_AF.Text);
+                if (OOV_SAM == null)
                 habscan.OOV_SAM = Convert.ToInt16(OOV_SAM.Text);
+                if (OOV_SAF == null)
                 habscan.OOV_SAF = Convert.ToInt16(OOV_SAF.Text);
                 habscan.OOV_SA = OOV_SA.Text;
+                if (OOV_JUVM == null)
                 habscan.OOV_JUVM = Convert.ToInt16(OOV_JUVM.Text);
+                if (OOV_JUVF == null)
                 habscan.OOV_JUVF = Convert.ToInt16(OOV_JUVF.Text);
+                if (OOV_JUV == null)
                 habscan.OOV_JUV = Convert.ToInt16(OOV_JUV.Text);
+                if (OOV_INF == null)
                 habscan.OOV_INF = Convert.ToInt16(OOV_INF.Text);
+                if (OOV_UK == null)
                 habscan.OOV_UK = Convert.ToInt16(OOV_UK.Text);
                 habscan.OOV_TOT = OOV_TOT.Text;
        
 
                 db.HabScans.Add(habscan);
                 db.SaveChanges();
+                ClearTextBoxes();
+                ClearRichTextBoxes();
 
             }
-
+                //works
             else if (comboBox1.SelectedItem.ToString() == "Gorilla_Hab_Observation")
             {
 
@@ -297,6 +349,8 @@ namespace GorillaChimpDataJamWF
 
                 db.HabObservations.Add(habobs);
                 db.SaveChanges();
+                ClearTextBoxes();
+                ClearRichTextBoxes();
 
 
             }

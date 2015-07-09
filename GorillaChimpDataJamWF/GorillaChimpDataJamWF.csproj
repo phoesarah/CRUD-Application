@@ -80,6 +80,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gorillas2DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Gorillas2DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="HabEncounter.cs">
       <DependentUpon>DBContext.tt</DependentUpon>
     </Compile>
@@ -125,6 +130,17 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>DBContext.edmx</DependentUpon>
       <LastGenOutput>DBContext.cs</LastGenOutput>
+    </None>
+    <None Include="Gorillas2DataSet.xsc">
+      <DependentUpon>Gorillas2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Gorillas2DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Gorillas2DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Gorillas2DataSet.xss">
+      <DependentUpon>Gorillas2DataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

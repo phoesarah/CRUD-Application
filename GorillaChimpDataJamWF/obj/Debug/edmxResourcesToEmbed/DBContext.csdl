@@ -85,7 +85,7 @@
     <Key>
       <PropertyRef Name="UNIQUE_LINE" />
     </Key>
-    <Property Name="UNIQUE_LINE" Type="Int16" Nullable="false" />
+    <Property Name="UNIQUE_LINE" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="DATA_SHEET" Type="String" MaxLength="23" FixedLength="false" Unicode="false" />
     <Property Name="UNIQUE_ENCOUNTER_ID" Type="String" MaxLength="29" FixedLength="false" Unicode="false" />
     <Property Name="DATE" Type="DateTime" Precision="3" />
