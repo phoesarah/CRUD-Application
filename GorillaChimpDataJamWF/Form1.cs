@@ -17,6 +17,7 @@ namespace GorillaChimpDataJamWF
         //Dataset not bound. 
         private Dictionary<string, string> selectedsearchfields;
         Gorillas2Entities1 db = new Gorillas2Entities1();
+        
         public Form1()
         {
             InitializeComponent();
@@ -152,7 +153,49 @@ namespace GorillaChimpDataJamWF
 
         private void SearchBtn_Click(object sender, EventArgs e)
         {
-           dataGridView1.DataSource = db.HabEncounters.Where(x => x.OBSERVER == selectedsearchfields["Observer"].ToString()).ToList();
+            var habdatacon = db.HabEncounters.ToList();
+            foreach (var key in selectedsearchfields.Keys)
+            {
+                var val = selectedsearchfields[key];
+                switch (key)
+                {
+                    case "Observer":
+                        if (val != null)
+                            habdatacon = habdatacon.Where(x => x.OBSERVER == val).ToList();
+                        break;
+                    case "Species":
+                        if (val != null)
+                            habdatacon = habdatacon.Where(x => x.SPECIES == val).ToList();
+                        break;
+
+                    case "Location":
+                        if (val != null)
+                            habdatacon = habdatacon.Where(x => x.INITIAL_LOCATION== val).ToList();
+                        break;
+
+                    case "PartySize":
+                        if (val != null)
+                            habdatacon = habdatacon.Where(x => x.C_ORIGINAL_PARTY_SIZE_ == val).ToList();
+                        break;
+
+                    case "GroupID":
+                        if (val != null)
+                            habdatacon = habdatacon.Where(x => x.C_ORIGINAL_PARTY_SIZE_ == val).ToList();
+                        break;
+
+                    case "Comment":
+                        if (val != null)
+                             habdatacon = habdatacon.Where(x => x.COMMENTS.Contains(val)).ToList();
+                            break;
+                   
+
+                }
+            }
+
+
+            dataGridView1.DataSource = habdatacon;
+            //dataGridView1.DataSource = db.HabEncounters.Where(x => x.SPECIES == "gorilla").ToList();
+            //selectedsearchfields["Observer"].ToString()).ToList();
         }
 
         private void habEncounterBindingSource_CurrentChanged(object sender, EventArgs e)
