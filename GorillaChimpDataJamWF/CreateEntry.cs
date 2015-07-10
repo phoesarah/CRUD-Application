@@ -52,7 +52,7 @@ namespace GorillaChimpDataJamWF
                 GorillaHabObservationPanel.Hide();
                 
             }
-             if (comboBox1.SelectedItem.ToString() == "Gorilla_Hab_Scan")
+             if (comboBox1.SelectedItem.ToString() == "Gorilla_Hab_Scan -n")
              {
                  GorillaHabScanPanel.Show();
 
@@ -82,7 +82,7 @@ namespace GorillaChimpDataJamWF
             {
 
 
-                if (FirstContactPointNum == null)
+                if (FirstContactPointNum.Text != null)
                 habenc.FIRST_CONTACT_POINT = Convert.ToInt16(FirstContactPointNum.Text);
                 habenc.DATA_SET = "gorilla habituation";
                 habenc.SPECIES = SpeciesComboBox.Text;
@@ -107,7 +107,7 @@ namespace GorillaChimpDataJamWF
                 habenc.DURATION = DurationTextBox.Text;
                 habenc.HOURS = HoursTextBox.Text;
                 habenc.MIN = MinuteTextBox.Text;
-                if (HoursTextBox == null || MinuteTextBox == null)
+                if (HoursTextBox.Text != null || MinuteTextBox.Text != null)
                 habenc.TOTAL_DURATION = ((Convert.ToInt32(HoursTextBox.Text)*60) + (Convert.ToInt32(MinuteTextBox.Text)).ToString());
                 habenc.C_RESPONSE_1_ = Response1TextBox.Text;
                 habenc.RESPONSE_2 = Response2TextBox.Text;
@@ -119,19 +119,19 @@ namespace GorillaChimpDataJamWF
                 habenc.TOTAL = TotalTextBox.Text;
                 habenc.C_ORIGINAL_PARTY_SIZE_ = OriginalPartySizeTextBox.Text;
                 habenc.NEW_ARRIVALS = NewArrivalTextBox.Text;
-                if (AmGorObs == null)
+                if (AmGorObs.Text != null)
                 habenc.AM_GOR_OBS = AmGorObs.Text;
-                if (AfGorObsTextBox == null)
+                if (AfGorObsTextBox.Text != null)
                 habenc.AF_GOR_OBS = AfGorObsTextBox.Text;
-                if (SMGorObsTextBox == null)
+                if (SMGorObsTextBox.Text != null)
                 habenc.SM_GOR_OBS = Convert.ToInt16(SMGorObsTextBox.Text);
-                if (SFGorObsTextBox == null)
+                if (SFGorObsTextBox.Text != null)
                 habenc.SF_GOR_OBS = Convert.ToInt16(SFGorObsTextBox.Text);
-                if (JVGorObsTextBox == null)
+                if (JVGorObsTextBox.Text != null)
                 habenc.JV_GOR_OBS = Convert.ToInt16(JVGorObsTextBox.Text);
-                if (InfGorObsTextBox == null)
+                if (InfGorObsTextBox.Text != null)
                 habenc.INF_GOR_OBS = Convert.ToInt16(InfGorObsTextBox.Text);
-                if (UKGorObsTextBox == null)
+                if (UKGorObsTextBox.Text != null)
                 habenc.UK_GOR_OBS = Convert.ToInt16(UKGorObsTextBox.Text);
                 habenc.WEATHER = WeatherTextBox.Text;
                 habenc.COMMENTS = CommentsTextBox.Text;

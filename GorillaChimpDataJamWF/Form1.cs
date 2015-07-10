@@ -24,6 +24,7 @@ namespace GorillaChimpDataJamWF
             BeginDate.Hide();
             datelabel.Hide();
             EndDate.Hide();
+            checkForDateCheckbox.Hide();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -51,10 +52,12 @@ namespace GorillaChimpDataJamWF
         {
             if (selectedsearchfields.Keys.Contains("Observer"))
             {
-                selectedsearchfields["Observer"] = ObserverCombo.SelectedValue.ToString();
+                if (((ComboBox)sender).SelectedValue != null)
+                selectedsearchfields["Observer"] = ((ComboBox)sender).SelectedValue.ToString();
             }
             else
             {
+              
                 selectedsearchfields.Add("Observer",  ((ComboBox)sender).Text);
                 
             }
@@ -64,23 +67,27 @@ namespace GorillaChimpDataJamWF
         {
             if (selectedsearchfields.Keys.Contains("Species"))
             {
-                selectedsearchfields["Species"] = SpeciesCombo.SelectedValue.ToString();
+                if (((ComboBox)sender).SelectedValue != null)
+                selectedsearchfields["Species"] = ((ComboBox)sender).SelectedValue.ToString();
             }
             else
             {
+               
                 selectedsearchfields.Add("Species", ((ComboBox)sender).Text);
 
             }
         }
 
-        private void LocationChanged(object sender, EventArgs e)
+        private void locationboxchanged(object sender, EventArgs e)
         {
             if (selectedsearchfields.Keys.Contains("Location"))
             {
-                selectedsearchfields["Location"] = LocationCombo.SelectedValue.ToString();
+                if (((ComboBox)sender).SelectedValue != null)
+                selectedsearchfields["Location"] = ((ComboBox)sender).SelectedValue.ToString();
             }
             else
             {
+               
                 selectedsearchfields.Add("Location", ((ComboBox)sender).Text);
 
             }
@@ -90,10 +97,12 @@ namespace GorillaChimpDataJamWF
         {
             if (selectedsearchfields.Keys.Contains("PartySize"))
             {
-                selectedsearchfields["PartySize"] = PartySizeCombo.SelectedValue.ToString();
+                if (((ComboBox)sender).SelectedValue != null)
+                selectedsearchfields["PartySize"] = ((ComboBox)sender).SelectedValue.ToString();
             }
             else
             {
+               
                 selectedsearchfields.Add("PartySize", ((ComboBox)sender).Text);
 
             }
@@ -103,10 +112,12 @@ namespace GorillaChimpDataJamWF
         {
             if (selectedsearchfields.Keys.Contains("GroupID"))
             {
-                selectedsearchfields["GroupID"] = GroupIDBox.SelectedValue.ToString();
+                if (((ComboBox)sender).SelectedValue != null)
+                selectedsearchfields["GroupID"] = ((ComboBox)sender).SelectedValue.ToString();
             }
             else
             {
+                
                 selectedsearchfields.Add("GroupID", ((ComboBox)sender).Text);
 
             }
@@ -116,11 +127,13 @@ namespace GorillaChimpDataJamWF
         {
             if (selectedsearchfields.Keys.Contains("Comment"))
             {
-                selectedsearchfields["Comment"] = CommentBox.Text;
+                if (((RichTextBox)sender) != null)
+                selectedsearchfields["Comment"] = ((RichTextBox)sender).Text;
             }
             else
             {
-                selectedsearchfields.Add("Comment", CommentBox.Text);
+            
+                selectedsearchfields.Add("Comment", ((RichTextBox)sender).Text);
 
             }
         }
@@ -170,7 +183,7 @@ namespace GorillaChimpDataJamWF
 
                     case "Location":
                         if (val != null)
-                            habdatacon = habdatacon.Where(x => x.INITIAL_LOCATION== val).ToList();
+                            habdatacon = habdatacon.Where(x => x.INITIAL_LOCATION == val).ToList();
                         break;
 
                     case "PartySize":
@@ -180,7 +193,7 @@ namespace GorillaChimpDataJamWF
 
                     case "GroupID":
                         if (val != null)
-                            habdatacon = habdatacon.Where(x => x.C_ORIGINAL_PARTY_SIZE_ == val).ToList();
+                            habdatacon = habdatacon.Where(x => x.GROUP_ID == val).ToList();
                         break;
 
                     case "Comment":
@@ -188,12 +201,15 @@ namespace GorillaChimpDataJamWF
                              habdatacon = habdatacon.Where(x => x.COMMENTS.Contains(val)).ToList();
                             break;
                    
-
                 }
             }
 
 
             dataGridView1.DataSource = habdatacon;
+            if (habdatacon.Count == 0)
+            {
+                MessageBox.Show("Sorry, no results match your query", "OK");
+            }
             //dataGridView1.DataSource = db.HabEncounters.Where(x => x.SPECIES == "gorilla").ToList();
             //selectedsearchfields["Observer"].ToString()).ToList();
         }
@@ -202,6 +218,8 @@ namespace GorillaChimpDataJamWF
         {
 
         }
+
+     
 
          
        

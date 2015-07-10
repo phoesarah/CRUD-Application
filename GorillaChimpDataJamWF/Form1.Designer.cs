@@ -35,45 +35,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.CreateBtn = new System.Windows.Forms.Button();
-            this.SearchBtn = new System.Windows.Forms.Button();
-            this.DataSheetCombo = new System.Windows.Forms.ComboBox();
-            this.BeginDate = new System.Windows.Forms.DateTimePicker();
-            this.EndDate = new System.Windows.Forms.DateTimePicker();
-            this.datelabel = new System.Windows.Forms.Label();
-            this.Observer = new System.Windows.Forms.Label();
-            this.ObserverCombo = new System.Windows.Forms.ComboBox();
-            this.habEncounterBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gorillas2DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gorillas2DataSet = new GorillaChimpDataJamWF.Gorillas2DataSet();
-            this.SpeciesCombo = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.LocationCombo = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.PartySizeCombo = new System.Windows.Forms.ComboBox();
-            this.TallyAmtLabel = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.ExitBtn = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkForDateCheckbox = new System.Windows.Forms.CheckBox();
-            this.GroupIDBox = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.CommentBox = new System.Windows.Forms.RichTextBox();
-            this.habEncounterTableAdapter = new GorillaChimpDataJamWF.Gorillas2DataSetTableAdapters.HabEncounterTableAdapter();
             this.uNIQUELINEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dATAENTRYDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tALLYDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -124,12 +85,51 @@
             this.iNITIALLOCATIONDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nESTTOTALDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nESTAGEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.habEncounterBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gorillas2DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gorillas2DataSet = new GorillaChimpDataJamWF.Gorillas2DataSet();
+            this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.CreateBtn = new System.Windows.Forms.Button();
+            this.SearchBtn = new System.Windows.Forms.Button();
+            this.DataSheetCombo = new System.Windows.Forms.ComboBox();
+            this.BeginDate = new System.Windows.Forms.DateTimePicker();
+            this.EndDate = new System.Windows.Forms.DateTimePicker();
+            this.datelabel = new System.Windows.Forms.Label();
+            this.Observer = new System.Windows.Forms.Label();
+            this.ObserverCombo = new System.Windows.Forms.ComboBox();
+            this.SpeciesCombo = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.LocationCombo = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.PartySizeCombo = new System.Windows.Forms.ComboBox();
+            this.TallyAmtLabel = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.ExitBtn = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkForDateCheckbox = new System.Windows.Forms.CheckBox();
+            this.GroupIDBox = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.CommentBox = new System.Windows.Forms.RichTextBox();
+            this.habEncounterTableAdapter = new GorillaChimpDataJamWF.Gorillas2DataSetTableAdapters.HabEncounterTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
-            this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.habEncounterBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gorillas2DataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gorillas2DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
+            this.bindingNavigator1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -227,406 +227,6 @@
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.Size = new System.Drawing.Size(1293, 311);
             this.dataGridView1.TabIndex = 2;
-            // 
-            // bindingNavigator1
-            // 
-            this.bindingNavigator1.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.bindingNavigator1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
-            this.bindingNavigator1.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.bindingNavigator1.Dock = System.Windows.Forms.DockStyle.None;
-            this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem});
-            this.bindingNavigator1.Location = new System.Drawing.Point(18, 346);
-            this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.bindingNavigator1.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.bindingNavigator1.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.bindingNavigator1.Name = "bindingNavigator1";
-            this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(255, 25);
-            this.bindingNavigator1.TabIndex = 3;
-            this.bindingNavigator1.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Position";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // CreateBtn
-            // 
-            this.CreateBtn.Location = new System.Drawing.Point(18, 12);
-            this.CreateBtn.Name = "CreateBtn";
-            this.CreateBtn.Size = new System.Drawing.Size(135, 23);
-            this.CreateBtn.TabIndex = 4;
-            this.CreateBtn.Text = "Create New Encounter";
-            this.CreateBtn.UseVisualStyleBackColor = true;
-            this.CreateBtn.Click += new System.EventHandler(this.CreateBtn_Click);
-            // 
-            // SearchBtn
-            // 
-            this.SearchBtn.Location = new System.Drawing.Point(634, 286);
-            this.SearchBtn.Name = "SearchBtn";
-            this.SearchBtn.Size = new System.Drawing.Size(75, 23);
-            this.SearchBtn.TabIndex = 5;
-            this.SearchBtn.Text = "Search";
-            this.SearchBtn.UseVisualStyleBackColor = true;
-            this.SearchBtn.Click += new System.EventHandler(this.SearchBtn_Click);
-            // 
-            // DataSheetCombo
-            // 
-            this.DataSheetCombo.FormattingEnabled = true;
-            this.DataSheetCombo.Items.AddRange(new object[] {
-            "Gorilla Habituation",
-            "///Gor_Habit_Nest ",
-            "//Gorilla_Hab_Scan",
-            "//Gorilla_Hab_Observation"});
-            this.DataSheetCombo.Location = new System.Drawing.Point(16, 38);
-            this.DataSheetCombo.Name = "DataSheetCombo";
-            this.DataSheetCombo.Size = new System.Drawing.Size(121, 21);
-            this.DataSheetCombo.TabIndex = 6;
-            // 
-            // BeginDate
-            // 
-            this.BeginDate.Location = new System.Drawing.Point(2, 270);
-            this.BeginDate.Name = "BeginDate";
-            this.BeginDate.Size = new System.Drawing.Size(200, 20);
-            this.BeginDate.TabIndex = 7;
-            this.BeginDate.ValueChanged += new System.EventHandler(this.BeginDateChanged);
-            // 
-            // EndDate
-            // 
-            this.EndDate.Location = new System.Drawing.Point(234, 269);
-            this.EndDate.Name = "EndDate";
-            this.EndDate.Size = new System.Drawing.Size(200, 20);
-            this.EndDate.TabIndex = 8;
-            this.EndDate.ValueChanged += new System.EventHandler(this.EndDateChanged);
-            // 
-            // datelabel
-            // 
-            this.datelabel.AutoSize = true;
-            this.datelabel.Location = new System.Drawing.Point(208, 276);
-            this.datelabel.Name = "datelabel";
-            this.datelabel.Size = new System.Drawing.Size(20, 13);
-            this.datelabel.TabIndex = 9;
-            this.datelabel.Text = "To";
-            // 
-            // Observer
-            // 
-            this.Observer.AutoSize = true;
-            this.Observer.Location = new System.Drawing.Point(143, 21);
-            this.Observer.Name = "Observer";
-            this.Observer.Size = new System.Drawing.Size(53, 13);
-            this.Observer.TabIndex = 11;
-            this.Observer.Text = "Observer:";
-            // 
-            // ObserverCombo
-            // 
-            this.ObserverCombo.FormattingEnabled = true;
-            this.ObserverCombo.Items.AddRange(new object[] {
-            "FE,GM",
-            "DM,FE,JM,GM",
-            "AN,IS",
-            "FE,SK",
-            "JM,GM",
-            "DM,JM",
-            "FE,JM,CS",
-            "JM,FE"});
-            this.ObserverCombo.Location = new System.Drawing.Point(146, 38);
-            this.ObserverCombo.Name = "ObserverCombo";
-            this.ObserverCombo.Size = new System.Drawing.Size(121, 21);
-            this.ObserverCombo.TabIndex = 12;
-            this.ObserverCombo.SelectedValueChanged += new System.EventHandler(this.Observer_Changed);
-            // 
-            // habEncounterBindingSource
-            // 
-            this.habEncounterBindingSource.DataMember = "HabEncounter";
-            this.habEncounterBindingSource.DataSource = this.gorillas2DataSetBindingSource;
-            this.habEncounterBindingSource.CurrentChanged += new System.EventHandler(this.habEncounterBindingSource_CurrentChanged);
-            // 
-            // gorillas2DataSetBindingSource
-            // 
-            this.gorillas2DataSetBindingSource.DataSource = this.gorillas2DataSet;
-            this.gorillas2DataSetBindingSource.Position = 0;
-            // 
-            // gorillas2DataSet
-            // 
-            this.gorillas2DataSet.DataSetName = "Gorillas2DataSet";
-            this.gorillas2DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // SpeciesCombo
-            // 
-            this.SpeciesCombo.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.habEncounterBindingSource, "SPECIES", true));
-            this.SpeciesCombo.FormattingEnabled = true;
-            this.SpeciesCombo.Items.AddRange(new object[] {
-            "gorilla"});
-            this.SpeciesCombo.Location = new System.Drawing.Point(276, 38);
-            this.SpeciesCombo.Name = "SpeciesCombo";
-            this.SpeciesCombo.Size = new System.Drawing.Size(121, 21);
-            this.SpeciesCombo.TabIndex = 13;
-            this.SpeciesCombo.SelectedValueChanged += new System.EventHandler(this.SpeciesChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(273, 21);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 13);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Species:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(403, 21);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 13);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "Location:";
-            // 
-            // LocationCombo
-            // 
-            this.LocationCombo.FormattingEnabled = true;
-            this.LocationCombo.Items.AddRange(new object[] {
-            "Terre et Canope",
-            "Terre",
-            "Nest Site",
-            "Canope",
-            "missing",
-            "N/A"});
-            this.LocationCombo.Location = new System.Drawing.Point(406, 38);
-            this.LocationCombo.Name = "LocationCombo";
-            this.LocationCombo.Size = new System.Drawing.Size(121, 21);
-            this.LocationCombo.TabIndex = 16;
-            this.LocationCombo.LocationChanged += new System.EventHandler(this.LocationChanged);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(533, 21);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 13);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "Party Size:";
-            // 
-            // PartySizeCombo
-            // 
-            this.PartySizeCombo.FormattingEnabled = true;
-            this.PartySizeCombo.Items.AddRange(new object[] {
-            "0",
-            "N/A"});
-            this.PartySizeCombo.Location = new System.Drawing.Point(536, 38);
-            this.PartySizeCombo.Name = "PartySizeCombo";
-            this.PartySizeCombo.Size = new System.Drawing.Size(121, 21);
-            this.PartySizeCombo.TabIndex = 18;
-            this.PartySizeCombo.SelectedValueChanged += new System.EventHandler(this.PartySizeChanged);
-            // 
-            // TallyAmtLabel
-            // 
-            this.TallyAmtLabel.AutoSize = true;
-            this.TallyAmtLabel.Location = new System.Drawing.Point(573, 489);
-            this.TallyAmtLabel.Name = "TallyAmtLabel";
-            this.TallyAmtLabel.Size = new System.Drawing.Size(0, 13);
-            this.TallyAmtLabel.TabIndex = 28;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.ExitBtn);
-            this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Controls.Add(this.bindingNavigator1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 502);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1349, 380);
-            this.panel1.TabIndex = 31;
-            // 
-            // ExitBtn
-            // 
-            this.ExitBtn.Location = new System.Drawing.Point(1250, 343);
-            this.ExitBtn.Name = "ExitBtn";
-            this.ExitBtn.Size = new System.Drawing.Size(75, 23);
-            this.ExitBtn.TabIndex = 29;
-            this.ExitBtn.Text = "Exit";
-            this.ExitBtn.UseVisualStyleBackColor = true;
-            this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.checkForDateCheckbox);
-            this.groupBox1.Controls.Add(this.GroupIDBox);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.CommentBox);
-            this.groupBox1.Controls.Add(this.BeginDate);
-            this.groupBox1.Controls.Add(this.datelabel);
-            this.groupBox1.Controls.Add(this.SearchBtn);
-            this.groupBox1.Controls.Add(this.EndDate);
-            this.groupBox1.Controls.Add(this.ObserverCombo);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.DataSheetCombo);
-            this.groupBox1.Controls.Add(this.Observer);
-            this.groupBox1.Controls.Add(this.SpeciesCombo);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.LocationCombo);
-            this.groupBox1.Controls.Add(this.PartySizeCombo);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Location = new System.Drawing.Point(16, 48);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1321, 340);
-            this.groupBox1.TabIndex = 32;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Search";
-            // 
-            // checkForDateCheckbox
-            // 
-            this.checkForDateCheckbox.AutoSize = true;
-            this.checkForDateCheckbox.Location = new System.Drawing.Point(2, 247);
-            this.checkForDateCheckbox.Name = "checkForDateCheckbox";
-            this.checkForDateCheckbox.Size = new System.Drawing.Size(107, 17);
-            this.checkForDateCheckbox.TabIndex = 46;
-            this.checkForDateCheckbox.Text = "Search By Date?";
-            this.checkForDateCheckbox.UseVisualStyleBackColor = true;
-            this.checkForDateCheckbox.Click += new System.EventHandler(this.CheckforDateCheckBoxClicked);
-            // 
-            // GroupIDBox
-            // 
-            this.GroupIDBox.FormattingEnabled = true;
-            this.GroupIDBox.Items.AddRange(new object[] {
-            "Group de deux gros males",
-            "Group of 6 indiv",
-            "Group of 3",
-            "N/A",
-            "Group from 24Jan13",
-            "Group of 2",
-            "Group from 11Jan13)"});
-            this.GroupIDBox.Location = new System.Drawing.Point(678, 37);
-            this.GroupIDBox.Name = "GroupIDBox";
-            this.GroupIDBox.Size = new System.Drawing.Size(121, 21);
-            this.GroupIDBox.TabIndex = 45;
-            this.GroupIDBox.SelectedIndexChanged += new System.EventHandler(this.GroupIDChanged);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(675, 21);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 13);
-            this.label6.TabIndex = 44;
-            this.label6.Text = "Group ID:";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(973, 186);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(54, 13);
-            this.label16.TabIndex = 43;
-            this.label16.Text = "Comment:";
-            // 
-            // CommentBox
-            // 
-            this.CommentBox.Location = new System.Drawing.Point(976, 202);
-            this.CommentBox.Name = "CommentBox";
-            this.CommentBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.CommentBox.Size = new System.Drawing.Size(290, 107);
-            this.CommentBox.TabIndex = 42;
-            this.CommentBox.Text = "";
-            this.CommentBox.TextChanged += new System.EventHandler(this.CommentChanged);
-            // 
-            // habEncounterTableAdapter
-            // 
-            this.habEncounterTableAdapter.ClearBeforeFill = true;
             // 
             // uNIQUELINEDataGridViewTextBoxColumn
             // 
@@ -929,6 +529,406 @@
             this.nESTAGEDataGridViewTextBoxColumn.HeaderText = "NEST_AGE";
             this.nESTAGEDataGridViewTextBoxColumn.Name = "nESTAGEDataGridViewTextBoxColumn";
             // 
+            // habEncounterBindingSource
+            // 
+            this.habEncounterBindingSource.DataMember = "HabEncounter";
+            this.habEncounterBindingSource.DataSource = this.gorillas2DataSetBindingSource;
+            this.habEncounterBindingSource.CurrentChanged += new System.EventHandler(this.habEncounterBindingSource_CurrentChanged);
+            // 
+            // gorillas2DataSetBindingSource
+            // 
+            this.gorillas2DataSetBindingSource.DataSource = this.gorillas2DataSet;
+            this.gorillas2DataSetBindingSource.Position = 0;
+            // 
+            // gorillas2DataSet
+            // 
+            this.gorillas2DataSet.DataSetName = "Gorillas2DataSet";
+            this.gorillas2DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bindingNavigator1
+            // 
+            this.bindingNavigator1.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.bindingNavigator1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
+            this.bindingNavigator1.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.bindingNavigator1.Dock = System.Windows.Forms.DockStyle.None;
+            this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMoveFirstItem,
+            this.bindingNavigatorMovePreviousItem,
+            this.bindingNavigatorSeparator,
+            this.bindingNavigatorPositionItem,
+            this.bindingNavigatorCountItem,
+            this.bindingNavigatorSeparator1,
+            this.bindingNavigatorMoveNextItem,
+            this.bindingNavigatorMoveLastItem,
+            this.bindingNavigatorSeparator2,
+            this.bindingNavigatorAddNewItem,
+            this.bindingNavigatorDeleteItem});
+            this.bindingNavigator1.Location = new System.Drawing.Point(18, 346);
+            this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.bindingNavigator1.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.bindingNavigator1.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.bindingNavigator1.Name = "bindingNavigator1";
+            this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
+            this.bindingNavigator1.Size = new System.Drawing.Size(255, 25);
+            this.bindingNavigator1.TabIndex = 3;
+            this.bindingNavigator1.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
+            // bindingNavigatorMoveFirstItem
+            // 
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Text = "Move first";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
+            // 
+            // bindingNavigatorSeparator
+            // 
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorPositionItem
+            // 
+            this.bindingNavigatorPositionItem.AccessibleName = "Position";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
+            // 
+            // bindingNavigatorSeparator1
+            // 
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Text = "Move next";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Text = "Move last";
+            // 
+            // bindingNavigatorSeparator2
+            // 
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // CreateBtn
+            // 
+            this.CreateBtn.Location = new System.Drawing.Point(18, 12);
+            this.CreateBtn.Name = "CreateBtn";
+            this.CreateBtn.Size = new System.Drawing.Size(135, 23);
+            this.CreateBtn.TabIndex = 4;
+            this.CreateBtn.Text = "Create New Encounter";
+            this.CreateBtn.UseVisualStyleBackColor = true;
+            this.CreateBtn.Click += new System.EventHandler(this.CreateBtn_Click);
+            // 
+            // SearchBtn
+            // 
+            this.SearchBtn.Location = new System.Drawing.Point(634, 286);
+            this.SearchBtn.Name = "SearchBtn";
+            this.SearchBtn.Size = new System.Drawing.Size(75, 23);
+            this.SearchBtn.TabIndex = 5;
+            this.SearchBtn.Text = "Search";
+            this.SearchBtn.UseVisualStyleBackColor = true;
+            this.SearchBtn.Click += new System.EventHandler(this.SearchBtn_Click);
+            // 
+            // DataSheetCombo
+            // 
+            this.DataSheetCombo.FormattingEnabled = true;
+            this.DataSheetCombo.Items.AddRange(new object[] {
+            "Gorilla Habituation",
+            "///Gor_Habit_Nest ",
+            "//Gorilla_Hab_Scan",
+            "//Gorilla_Hab_Observation"});
+            this.DataSheetCombo.Location = new System.Drawing.Point(16, 38);
+            this.DataSheetCombo.Name = "DataSheetCombo";
+            this.DataSheetCombo.Size = new System.Drawing.Size(121, 21);
+            this.DataSheetCombo.TabIndex = 6;
+            // 
+            // BeginDate
+            // 
+            this.BeginDate.Location = new System.Drawing.Point(2, 270);
+            this.BeginDate.Name = "BeginDate";
+            this.BeginDate.Size = new System.Drawing.Size(200, 20);
+            this.BeginDate.TabIndex = 7;
+            this.BeginDate.ValueChanged += new System.EventHandler(this.BeginDateChanged);
+            // 
+            // EndDate
+            // 
+            this.EndDate.Location = new System.Drawing.Point(234, 269);
+            this.EndDate.Name = "EndDate";
+            this.EndDate.Size = new System.Drawing.Size(200, 20);
+            this.EndDate.TabIndex = 8;
+            this.EndDate.ValueChanged += new System.EventHandler(this.EndDateChanged);
+            // 
+            // datelabel
+            // 
+            this.datelabel.AutoSize = true;
+            this.datelabel.Location = new System.Drawing.Point(208, 276);
+            this.datelabel.Name = "datelabel";
+            this.datelabel.Size = new System.Drawing.Size(20, 13);
+            this.datelabel.TabIndex = 9;
+            this.datelabel.Text = "To";
+            // 
+            // Observer
+            // 
+            this.Observer.AutoSize = true;
+            this.Observer.Location = new System.Drawing.Point(143, 21);
+            this.Observer.Name = "Observer";
+            this.Observer.Size = new System.Drawing.Size(53, 13);
+            this.Observer.TabIndex = 11;
+            this.Observer.Text = "Observer:";
+            // 
+            // ObserverCombo
+            // 
+            this.ObserverCombo.FormattingEnabled = true;
+            this.ObserverCombo.Items.AddRange(new object[] {
+            "FE,GM",
+            "DM,FE,JM,GM",
+            "AN,IS",
+            "FE,SK",
+            "JM,GM",
+            "DM,JM",
+            "FE,JM,CS",
+            "JM,FE"});
+            this.ObserverCombo.Location = new System.Drawing.Point(146, 38);
+            this.ObserverCombo.Name = "ObserverCombo";
+            this.ObserverCombo.Size = new System.Drawing.Size(121, 21);
+            this.ObserverCombo.TabIndex = 12;
+            this.ObserverCombo.SelectedValueChanged += new System.EventHandler(this.Observer_Changed);
+            // 
+            // SpeciesCombo
+            // 
+            this.SpeciesCombo.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.habEncounterBindingSource, "SPECIES", true));
+            this.SpeciesCombo.FormattingEnabled = true;
+            this.SpeciesCombo.Items.AddRange(new object[] {
+            "gorilla"});
+            this.SpeciesCombo.Location = new System.Drawing.Point(276, 38);
+            this.SpeciesCombo.Name = "SpeciesCombo";
+            this.SpeciesCombo.Size = new System.Drawing.Size(121, 21);
+            this.SpeciesCombo.TabIndex = 13;
+            this.SpeciesCombo.SelectedValueChanged += new System.EventHandler(this.SpeciesChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(273, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(48, 13);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Species:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(403, 21);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(51, 13);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Location:";
+            // 
+            // LocationCombo
+            // 
+            this.LocationCombo.FormattingEnabled = true;
+            this.LocationCombo.Items.AddRange(new object[] {
+            "Terre et Canope",
+            "Terre",
+            "Nest Site",
+            "Canope",
+            "missing",
+            "N/A"});
+            this.LocationCombo.Location = new System.Drawing.Point(406, 38);
+            this.LocationCombo.Name = "LocationCombo";
+            this.LocationCombo.Size = new System.Drawing.Size(121, 21);
+            this.LocationCombo.TabIndex = 16;
+            this.LocationCombo.SelectedIndexChanged += new System.EventHandler(this.locationboxchanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(533, 21);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(57, 13);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Party Size:";
+            // 
+            // PartySizeCombo
+            // 
+            this.PartySizeCombo.FormattingEnabled = true;
+            this.PartySizeCombo.Items.AddRange(new object[] {
+            "0",
+            "N/A"});
+            this.PartySizeCombo.Location = new System.Drawing.Point(536, 38);
+            this.PartySizeCombo.Name = "PartySizeCombo";
+            this.PartySizeCombo.Size = new System.Drawing.Size(121, 21);
+            this.PartySizeCombo.TabIndex = 18;
+            this.PartySizeCombo.SelectedValueChanged += new System.EventHandler(this.PartySizeChanged);
+            // 
+            // TallyAmtLabel
+            // 
+            this.TallyAmtLabel.AutoSize = true;
+            this.TallyAmtLabel.Location = new System.Drawing.Point(573, 489);
+            this.TallyAmtLabel.Name = "TallyAmtLabel";
+            this.TallyAmtLabel.Size = new System.Drawing.Size(0, 13);
+            this.TallyAmtLabel.TabIndex = 28;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.ExitBtn);
+            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.bindingNavigator1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 502);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1349, 380);
+            this.panel1.TabIndex = 31;
+            // 
+            // ExitBtn
+            // 
+            this.ExitBtn.Location = new System.Drawing.Point(1250, 343);
+            this.ExitBtn.Name = "ExitBtn";
+            this.ExitBtn.Size = new System.Drawing.Size(75, 23);
+            this.ExitBtn.TabIndex = 29;
+            this.ExitBtn.Text = "Exit";
+            this.ExitBtn.UseVisualStyleBackColor = true;
+            this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.checkForDateCheckbox);
+            this.groupBox1.Controls.Add(this.GroupIDBox);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label16);
+            this.groupBox1.Controls.Add(this.CommentBox);
+            this.groupBox1.Controls.Add(this.BeginDate);
+            this.groupBox1.Controls.Add(this.datelabel);
+            this.groupBox1.Controls.Add(this.SearchBtn);
+            this.groupBox1.Controls.Add(this.EndDate);
+            this.groupBox1.Controls.Add(this.ObserverCombo);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.DataSheetCombo);
+            this.groupBox1.Controls.Add(this.Observer);
+            this.groupBox1.Controls.Add(this.SpeciesCombo);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.LocationCombo);
+            this.groupBox1.Controls.Add(this.PartySizeCombo);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Location = new System.Drawing.Point(16, 48);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1321, 340);
+            this.groupBox1.TabIndex = 32;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Search";
+            // 
+            // checkForDateCheckbox
+            // 
+            this.checkForDateCheckbox.AutoSize = true;
+            this.checkForDateCheckbox.Location = new System.Drawing.Point(2, 247);
+            this.checkForDateCheckbox.Name = "checkForDateCheckbox";
+            this.checkForDateCheckbox.Size = new System.Drawing.Size(107, 17);
+            this.checkForDateCheckbox.TabIndex = 46;
+            this.checkForDateCheckbox.Text = "Search By Date?";
+            this.checkForDateCheckbox.UseVisualStyleBackColor = true;
+            this.checkForDateCheckbox.Click += new System.EventHandler(this.CheckforDateCheckBoxClicked);
+            // 
+            // GroupIDBox
+            // 
+            this.GroupIDBox.FormattingEnabled = true;
+            this.GroupIDBox.Items.AddRange(new object[] {
+            "Group de deux gros males",
+            "Group of 6 indiv",
+            "Group of 3",
+            "N/A",
+            "Group from 24Jan13",
+            "Group of 2",
+            "Group from 11Jan13)"});
+            this.GroupIDBox.Location = new System.Drawing.Point(678, 37);
+            this.GroupIDBox.Name = "GroupIDBox";
+            this.GroupIDBox.Size = new System.Drawing.Size(121, 21);
+            this.GroupIDBox.TabIndex = 45;
+            this.GroupIDBox.SelectedIndexChanged += new System.EventHandler(this.GroupIDChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(675, 21);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(53, 13);
+            this.label6.TabIndex = 44;
+            this.label6.Text = "Group ID:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(973, 186);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(54, 13);
+            this.label16.TabIndex = 43;
+            this.label16.Text = "Comment:";
+            // 
+            // CommentBox
+            // 
+            this.CommentBox.Location = new System.Drawing.Point(976, 202);
+            this.CommentBox.Name = "CommentBox";
+            this.CommentBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CommentBox.Size = new System.Drawing.Size(290, 107);
+            this.CommentBox.TabIndex = 42;
+            this.CommentBox.Text = "";
+            this.CommentBox.TextChanged += new System.EventHandler(this.CommentChanged);
+            // 
+            // habEncounterTableAdapter
+            // 
+            this.habEncounterTableAdapter.ClearBeforeFill = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -942,12 +942,12 @@
             this.Text = "Gorilla Lookup";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
-            this.bindingNavigator1.ResumeLayout(false);
-            this.bindingNavigator1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.habEncounterBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gorillas2DataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gorillas2DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
+            this.bindingNavigator1.ResumeLayout(false);
+            this.bindingNavigator1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
