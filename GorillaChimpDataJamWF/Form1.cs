@@ -17,6 +17,7 @@ namespace GorillaChimpDataJamWF
         //Dataset not bound. 
         private Dictionary<string, string> selectedsearchfields;
         Gorillas2Entities1 db = new Gorillas2Entities1();
+        DataGridViewImageColumn delbut = new DataGridViewImageColumn();
         
         public Form1()
         {
@@ -25,6 +26,7 @@ namespace GorillaChimpDataJamWF
             datelabel.Hide();
             EndDate.Hide();
             checkForDateCheckbox.Hide();
+            dataGridView1.Columns.Add(delbut);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -210,6 +212,14 @@ namespace GorillaChimpDataJamWF
 
 
             dataGridView1.DataSource = habdatacon;
+
+            
+            delbut.Image = Image.FromFile(Environment.CurrentDirectory + "/images/delete.png");
+            delbut.Width = 40;
+            delbut.AutoSizeMode = 
+            delbut.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+           
+
             if (habdatacon.Count == 0)
             {
                 MessageBox.Show("Sorry, no results match your query", "OK");
@@ -233,6 +243,11 @@ namespace GorillaChimpDataJamWF
             LocationCombo.Text = "";
             GroupIDBox.Text = "";
             CommentBox.Text = "";
+        }
+
+        private void cellvaluechanged(object sender, DataGridViewCellEventArgs e)
+        {
+            
         }
 
      
