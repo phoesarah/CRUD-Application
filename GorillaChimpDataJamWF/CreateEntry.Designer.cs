@@ -41,23 +41,14 @@
             this.label40 = new System.Windows.Forms.Label();
             this.WeatherTextBox = new System.Windows.Forms.TextBox();
             this.label39 = new System.Windows.Forms.Label();
-            this.UKGorObsTextBox = new System.Windows.Forms.TextBox();
             this.label38 = new System.Windows.Forms.Label();
-            this.InfGorObsTextBox = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
-            this.JVGorObsTextBox = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
-            this.SFGorObsTextBox = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
-            this.SMGorObsTextBox = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
-            this.AfGorObsTextBox = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.AmGorObs = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
-            this.NewArrivalTextBox = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
-            this.OriginalPartySizeTextBox = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
             this.TotalTextBox = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
@@ -118,13 +109,11 @@
             this.SubmiutButton = new System.Windows.Forms.Button();
             this.CloseBtn = new System.Windows.Forms.Button();
             this.GorillaHabNestPanel = new System.Windows.Forms.Panel();
-            this.SitesizeHabNest = new System.Windows.Forms.TextBox();
             this.label153 = new System.Windows.Forms.Label();
             this.NestTypeHabNest = new System.Windows.Forms.TextBox();
             this.label152 = new System.Windows.Forms.Label();
             this.NestAgeHabNestText = new System.Windows.Forms.TextBox();
             this.label44 = new System.Windows.Forms.Label();
-            this.NestNumberHabNestTextBox = new System.Windows.Forms.TextBox();
             this.label45 = new System.Windows.Forms.Label();
             this.CommentsHabNestText = new System.Windows.Forms.RichTextBox();
             this.label46 = new System.Windows.Forms.Label();
@@ -319,9 +308,7 @@
             this.label51 = new System.Windows.Forms.Label();
             this.LocationHabScan = new System.Windows.Forms.TextBox();
             this.label50 = new System.Windows.Forms.Label();
-            this.MinutesHabScan = new System.Windows.Forms.TextBox();
             this.label48 = new System.Windows.Forms.Label();
-            this.HourTextBoxHabScan = new System.Windows.Forms.TextBox();
             this.label47 = new System.Windows.Forms.Label();
             this.CommentsHabScan = new System.Windows.Forms.RichTextBox();
             this.label49 = new System.Windows.Forms.Label();
@@ -348,6 +335,19 @@
             this.label148 = new System.Windows.Forms.Label();
             this.GorillaHabOBsDatePicker = new System.Windows.Forms.DateTimePicker();
             this.label147 = new System.Windows.Forms.Label();
+            this.HourTextBoxHabScan = new System.Windows.Forms.NumericUpDown();
+            this.MinutesHabScan = new System.Windows.Forms.NumericUpDown();
+            this.NestNumberHabNestTextBox = new System.Windows.Forms.NumericUpDown();
+            this.SitesizeHabNest = new System.Windows.Forms.NumericUpDown();
+            this.OriginalPartySizeTextBox = new System.Windows.Forms.NumericUpDown();
+            this.NewArrivalTextBox = new System.Windows.Forms.NumericUpDown();
+            this.AmGorObs = new System.Windows.Forms.NumericUpDown();
+            this.AfGorObsTextBox = new System.Windows.Forms.NumericUpDown();
+            this.SMGorObsTextBox = new System.Windows.Forms.NumericUpDown();
+            this.SFGorObsTextBox = new System.Windows.Forms.NumericUpDown();
+            this.JVGorObsTextBox = new System.Windows.Forms.NumericUpDown();
+            this.InfGorObsTextBox = new System.Windows.Forms.NumericUpDown();
+            this.UKGorObsTextBox = new System.Windows.Forms.NumericUpDown();
             this.GorillaHabEncounterPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.FirstContactPointNum)).BeginInit();
             this.GorillaHabNestPanel.SuspendLayout();
@@ -429,6 +429,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.ScanPartySizeHabScan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FirstContactPointHabScan)).BeginInit();
             this.GorillaHabObservationPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.HourTextBoxHabScan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MinutesHabScan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NestNumberHabNestTextBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SitesizeHabNest)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OriginalPartySizeTextBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NewArrivalTextBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AmGorObs)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AfGorObsTextBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SMGorObsTextBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SFGorObsTextBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JVGorObsTextBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InfGorObsTextBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UKGorObsTextBox)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -437,7 +450,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Gorilla Habituation",
             "Gor_Habit_Nest",
-            "Gorilla_Hab_Scan -n",
+            "Gorilla_Hab_Scan",
             "Gorilla_Hab_Observation"});
             this.comboBox1.Location = new System.Drawing.Point(24, 39);
             this.comboBox1.Name = "comboBox1";
@@ -456,6 +469,15 @@
             // 
             // GorillaHabEncounterPanel
             // 
+            this.GorillaHabEncounterPanel.Controls.Add(this.UKGorObsTextBox);
+            this.GorillaHabEncounterPanel.Controls.Add(this.InfGorObsTextBox);
+            this.GorillaHabEncounterPanel.Controls.Add(this.JVGorObsTextBox);
+            this.GorillaHabEncounterPanel.Controls.Add(this.SFGorObsTextBox);
+            this.GorillaHabEncounterPanel.Controls.Add(this.SMGorObsTextBox);
+            this.GorillaHabEncounterPanel.Controls.Add(this.AfGorObsTextBox);
+            this.GorillaHabEncounterPanel.Controls.Add(this.AmGorObs);
+            this.GorillaHabEncounterPanel.Controls.Add(this.NewArrivalTextBox);
+            this.GorillaHabEncounterPanel.Controls.Add(this.OriginalPartySizeTextBox);
             this.GorillaHabEncounterPanel.Controls.Add(this.NestAgeTextBox);
             this.GorillaHabEncounterPanel.Controls.Add(this.label43);
             this.GorillaHabEncounterPanel.Controls.Add(this.NestTotalTextBox);
@@ -466,23 +488,14 @@
             this.GorillaHabEncounterPanel.Controls.Add(this.label40);
             this.GorillaHabEncounterPanel.Controls.Add(this.WeatherTextBox);
             this.GorillaHabEncounterPanel.Controls.Add(this.label39);
-            this.GorillaHabEncounterPanel.Controls.Add(this.UKGorObsTextBox);
             this.GorillaHabEncounterPanel.Controls.Add(this.label38);
-            this.GorillaHabEncounterPanel.Controls.Add(this.InfGorObsTextBox);
             this.GorillaHabEncounterPanel.Controls.Add(this.label37);
-            this.GorillaHabEncounterPanel.Controls.Add(this.JVGorObsTextBox);
             this.GorillaHabEncounterPanel.Controls.Add(this.label36);
-            this.GorillaHabEncounterPanel.Controls.Add(this.SFGorObsTextBox);
             this.GorillaHabEncounterPanel.Controls.Add(this.label35);
-            this.GorillaHabEncounterPanel.Controls.Add(this.SMGorObsTextBox);
             this.GorillaHabEncounterPanel.Controls.Add(this.label34);
-            this.GorillaHabEncounterPanel.Controls.Add(this.AfGorObsTextBox);
             this.GorillaHabEncounterPanel.Controls.Add(this.label33);
-            this.GorillaHabEncounterPanel.Controls.Add(this.AmGorObs);
             this.GorillaHabEncounterPanel.Controls.Add(this.label32);
-            this.GorillaHabEncounterPanel.Controls.Add(this.NewArrivalTextBox);
             this.GorillaHabEncounterPanel.Controls.Add(this.label31);
-            this.GorillaHabEncounterPanel.Controls.Add(this.OriginalPartySizeTextBox);
             this.GorillaHabEncounterPanel.Controls.Add(this.label30);
             this.GorillaHabEncounterPanel.Controls.Add(this.TotalTextBox);
             this.GorillaHabEncounterPanel.Controls.Add(this.label29);
@@ -626,145 +639,82 @@
             this.label39.TabIndex = 61;
             this.label39.Text = "Weather:";
             // 
-            // UKGorObsTextBox
-            // 
-            this.UKGorObsTextBox.Location = new System.Drawing.Point(880, 316);
-            this.UKGorObsTextBox.Name = "UKGorObsTextBox";
-            this.UKGorObsTextBox.Size = new System.Drawing.Size(100, 20);
-            this.UKGorObsTextBox.TabIndex = 36;
-            // 
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(877, 302);
+            this.label38.Location = new System.Drawing.Point(723, 304);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(67, 13);
             this.label38.TabIndex = 60;
             this.label38.Text = "UK Gor Obs:";
             // 
-            // InfGorObsTextBox
-            // 
-            this.InfGorObsTextBox.Location = new System.Drawing.Point(770, 317);
-            this.InfGorObsTextBox.Name = "InfGorObsTextBox";
-            this.InfGorObsTextBox.Size = new System.Drawing.Size(100, 20);
-            this.InfGorObsTextBox.TabIndex = 35;
-            // 
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(767, 302);
+            this.label37.Location = new System.Drawing.Point(641, 304);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(64, 13);
             this.label37.TabIndex = 59;
             this.label37.Text = "Inf Gor Obs:";
             // 
-            // JVGorObsTextBox
-            // 
-            this.JVGorObsTextBox.Location = new System.Drawing.Point(664, 317);
-            this.JVGorObsTextBox.Name = "JVGorObsTextBox";
-            this.JVGorObsTextBox.Size = new System.Drawing.Size(100, 20);
-            this.JVGorObsTextBox.TabIndex = 34;
-            // 
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(665, 302);
+            this.label36.Location = new System.Drawing.Point(551, 304);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(64, 13);
             this.label36.TabIndex = 58;
             this.label36.Text = "JV Gor Obs:";
             // 
-            // SFGorObsTextBox
-            // 
-            this.SFGorObsTextBox.Location = new System.Drawing.Point(558, 317);
-            this.SFGorObsTextBox.Name = "SFGorObsTextBox";
-            this.SFGorObsTextBox.Size = new System.Drawing.Size(100, 20);
-            this.SFGorObsTextBox.TabIndex = 33;
-            // 
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(555, 302);
+            this.label35.Location = new System.Drawing.Point(469, 304);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(65, 13);
             this.label35.TabIndex = 57;
             this.label35.Text = "SF Gor Obs:";
             // 
-            // SMGorObsTextBox
-            // 
-            this.SMGorObsTextBox.Location = new System.Drawing.Point(448, 317);
-            this.SMGorObsTextBox.Name = "SMGorObsTextBox";
-            this.SMGorObsTextBox.Size = new System.Drawing.Size(100, 20);
-            this.SMGorObsTextBox.TabIndex = 32;
-            // 
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(448, 302);
+            this.label34.Location = new System.Drawing.Point(382, 304);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(68, 13);
             this.label34.TabIndex = 56;
             this.label34.Text = "SM Gor Obs:";
             // 
-            // AfGorObsTextBox
-            // 
-            this.AfGorObsTextBox.Location = new System.Drawing.Point(342, 317);
-            this.AfGorObsTextBox.Name = "AfGorObsTextBox";
-            this.AfGorObsTextBox.Size = new System.Drawing.Size(100, 20);
-            this.AfGorObsTextBox.TabIndex = 31;
-            // 
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(336, 302);
+            this.label33.Location = new System.Drawing.Point(294, 304);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(65, 13);
             this.label33.TabIndex = 55;
             this.label33.Text = "AF Gor Obs:";
             // 
-            // AmGorObs
-            // 
-            this.AmGorObs.Location = new System.Drawing.Point(234, 317);
-            this.AmGorObs.Name = "AmGorObs";
-            this.AmGorObs.Size = new System.Drawing.Size(100, 20);
-            this.AmGorObs.TabIndex = 30;
-            // 
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(231, 302);
+            this.label32.Location = new System.Drawing.Point(212, 304);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(68, 13);
             this.label32.TabIndex = 54;
             this.label32.Text = "AM Gor Obs:";
             // 
-            // NewArrivalTextBox
-            // 
-            this.NewArrivalTextBox.Location = new System.Drawing.Point(128, 317);
-            this.NewArrivalTextBox.Name = "NewArrivalTextBox";
-            this.NewArrivalTextBox.Size = new System.Drawing.Size(100, 20);
-            this.NewArrivalTextBox.TabIndex = 29;
-            // 
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(127, 302);
+            this.label31.Location = new System.Drawing.Point(121, 304);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(69, 13);
             this.label31.TabIndex = 53;
             this.label31.Text = "New Arrivals:";
             // 
-            // OriginalPartySizeTextBox
-            // 
-            this.OriginalPartySizeTextBox.Location = new System.Drawing.Point(22, 317);
-            this.OriginalPartySizeTextBox.Name = "OriginalPartySizeTextBox";
-            this.OriginalPartySizeTextBox.Size = new System.Drawing.Size(100, 20);
-            this.OriginalPartySizeTextBox.TabIndex = 28;
-            // 
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(18, 302);
+            this.label30.Location = new System.Drawing.Point(16, 304);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(95, 13);
             this.label30.TabIndex = 52;
@@ -1239,16 +1189,17 @@
             this.CloseBtn.TabIndex = 44;
             this.CloseBtn.Text = "Close Form";
             this.CloseBtn.UseVisualStyleBackColor = true;
+            this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click);
             // 
             // GorillaHabNestPanel
             // 
             this.GorillaHabNestPanel.Controls.Add(this.SitesizeHabNest);
+            this.GorillaHabNestPanel.Controls.Add(this.NestNumberHabNestTextBox);
             this.GorillaHabNestPanel.Controls.Add(this.label153);
             this.GorillaHabNestPanel.Controls.Add(this.NestTypeHabNest);
             this.GorillaHabNestPanel.Controls.Add(this.label152);
             this.GorillaHabNestPanel.Controls.Add(this.NestAgeHabNestText);
             this.GorillaHabNestPanel.Controls.Add(this.label44);
-            this.GorillaHabNestPanel.Controls.Add(this.NestNumberHabNestTextBox);
             this.GorillaHabNestPanel.Controls.Add(this.label45);
             this.GorillaHabNestPanel.Controls.Add(this.CommentsHabNestText);
             this.GorillaHabNestPanel.Controls.Add(this.label46);
@@ -1279,17 +1230,10 @@
             this.GorillaHabNestPanel.Size = new System.Drawing.Size(1249, 549);
             this.GorillaHabNestPanel.TabIndex = 45;
             // 
-            // SitesizeHabNest
-            // 
-            this.SitesizeHabNest.Location = new System.Drawing.Point(448, 136);
-            this.SitesizeHabNest.Name = "SitesizeHabNest";
-            this.SitesizeHabNest.Size = new System.Drawing.Size(100, 20);
-            this.SitesizeHabNest.TabIndex = 70;
-            // 
             // label153
             // 
             this.label153.AutoSize = true;
-            this.label153.Location = new System.Drawing.Point(450, 120);
+            this.label153.Location = new System.Drawing.Point(444, 120);
             this.label153.Name = "label153";
             this.label153.Size = new System.Drawing.Size(51, 13);
             this.label153.TabIndex = 69;
@@ -1297,7 +1241,7 @@
             // 
             // NestTypeHabNest
             // 
-            this.NestTypeHabNest.Location = new System.Drawing.Point(479, 73);
+            this.NestTypeHabNest.Location = new System.Drawing.Point(434, 74);
             this.NestTypeHabNest.Name = "NestTypeHabNest";
             this.NestTypeHabNest.Size = new System.Drawing.Size(100, 20);
             this.NestTypeHabNest.TabIndex = 68;
@@ -1305,7 +1249,7 @@
             // label152
             // 
             this.label152.AutoSize = true;
-            this.label152.Location = new System.Drawing.Point(479, 58);
+            this.label152.Location = new System.Drawing.Point(434, 59);
             this.label152.Name = "label152";
             this.label152.Size = new System.Drawing.Size(59, 13);
             this.label152.TabIndex = 67;
@@ -1313,7 +1257,7 @@
             // 
             // NestAgeHabNestText
             // 
-            this.NestAgeHabNestText.Location = new System.Drawing.Point(253, 74);
+            this.NestAgeHabNestText.Location = new System.Drawing.Point(215, 74);
             this.NestAgeHabNestText.Name = "NestAgeHabNestText";
             this.NestAgeHabNestText.Size = new System.Drawing.Size(100, 20);
             this.NestAgeHabNestText.TabIndex = 6;
@@ -1321,23 +1265,16 @@
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(249, 57);
+            this.label44.Location = new System.Drawing.Point(211, 57);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(54, 13);
             this.label44.TabIndex = 66;
             this.label44.Text = "Nest Age:";
             // 
-            // NestNumberHabNestTextBox
-            // 
-            this.NestNumberHabNestTextBox.Location = new System.Drawing.Point(134, 74);
-            this.NestNumberHabNestTextBox.Name = "NestNumberHabNestTextBox";
-            this.NestNumberHabNestTextBox.Size = new System.Drawing.Size(100, 20);
-            this.NestNumberHabNestTextBox.TabIndex = 5;
-            // 
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(131, 58);
+            this.label45.Location = new System.Drawing.Point(127, 57);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(72, 13);
             this.label45.TabIndex = 65;
@@ -1458,7 +1395,7 @@
             // 
             // LocationHabNestTexTBox
             // 
-            this.LocationHabNestTexTBox.Location = new System.Drawing.Point(367, 74);
+            this.LocationHabNestTexTBox.Location = new System.Drawing.Point(325, 74);
             this.LocationHabNestTexTBox.Name = "LocationHabNestTexTBox";
             this.LocationHabNestTexTBox.Size = new System.Drawing.Size(100, 20);
             this.LocationHabNestTexTBox.TabIndex = 7;
@@ -1466,7 +1403,7 @@
             // label75
             // 
             this.label75.AutoSize = true;
-            this.label75.Location = new System.Drawing.Point(367, 58);
+            this.label75.Location = new System.Drawing.Point(325, 58);
             this.label75.Name = "label75";
             this.label75.Size = new System.Drawing.Size(51, 13);
             this.label75.TabIndex = 20;
@@ -1538,6 +1475,8 @@
             // 
             // GorillaHabScanPanel
             // 
+            this.GorillaHabScanPanel.Controls.Add(this.MinutesHabScan);
+            this.GorillaHabScanPanel.Controls.Add(this.HourTextBoxHabScan);
             this.GorillaHabScanPanel.Controls.Add(this.groupBox3);
             this.GorillaHabScanPanel.Controls.Add(this.groupBox2);
             this.GorillaHabScanPanel.Controls.Add(this.groupBox1);
@@ -1572,9 +1511,7 @@
             this.GorillaHabScanPanel.Controls.Add(this.label51);
             this.GorillaHabScanPanel.Controls.Add(this.LocationHabScan);
             this.GorillaHabScanPanel.Controls.Add(this.label50);
-            this.GorillaHabScanPanel.Controls.Add(this.MinutesHabScan);
             this.GorillaHabScanPanel.Controls.Add(this.label48);
-            this.GorillaHabScanPanel.Controls.Add(this.HourTextBoxHabScan);
             this.GorillaHabScanPanel.Controls.Add(this.label47);
             this.GorillaHabScanPanel.Controls.Add(this.CommentsHabScan);
             this.GorillaHabScanPanel.Controls.Add(this.label49);
@@ -1588,9 +1525,9 @@
             this.GorillaHabScanPanel.Controls.Add(this.label98);
             this.GorillaHabScanPanel.Controls.Add(this.FirstContactPointHabScan);
             this.GorillaHabScanPanel.Controls.Add(this.label99);
-            this.GorillaHabScanPanel.Location = new System.Drawing.Point(12, 66);
+            this.GorillaHabScanPanel.Location = new System.Drawing.Point(19, 76);
             this.GorillaHabScanPanel.Name = "GorillaHabScanPanel";
-            this.GorillaHabScanPanel.Size = new System.Drawing.Size(1249, 549);
+            this.GorillaHabScanPanel.Size = new System.Drawing.Size(1242, 539);
             this.GorillaHabScanPanel.TabIndex = 46;
             // 
             // groupBox3
@@ -3078,13 +3015,6 @@
             this.label50.TabIndex = 68;
             this.label50.Text = "Location:";
             // 
-            // MinutesHabScan
-            // 
-            this.MinutesHabScan.Location = new System.Drawing.Point(352, 70);
-            this.MinutesHabScan.Name = "MinutesHabScan";
-            this.MinutesHabScan.Size = new System.Drawing.Size(100, 20);
-            this.MinutesHabScan.TabIndex = 67;
-            // 
             // label48
             // 
             this.label48.AutoSize = true;
@@ -3093,13 +3023,6 @@
             this.label48.Size = new System.Drawing.Size(47, 13);
             this.label48.TabIndex = 66;
             this.label48.Text = "Minutes:";
-            // 
-            // HourTextBoxHabScan
-            // 
-            this.HourTextBoxHabScan.Location = new System.Drawing.Point(240, 70);
-            this.HourTextBoxHabScan.Name = "HourTextBoxHabScan";
-            this.HourTextBoxHabScan.Size = new System.Drawing.Size(100, 20);
-            this.HourTextBoxHabScan.TabIndex = 65;
             // 
             // label47
             // 
@@ -3224,9 +3147,9 @@
             this.GorillaHabObservationPanel.Controls.Add(this.label148);
             this.GorillaHabObservationPanel.Controls.Add(this.GorillaHabOBsDatePicker);
             this.GorillaHabObservationPanel.Controls.Add(this.label147);
-            this.GorillaHabObservationPanel.Location = new System.Drawing.Point(12, 66);
+            this.GorillaHabObservationPanel.Location = new System.Drawing.Point(22, 73);
             this.GorillaHabObservationPanel.Name = "GorillaHabObservationPanel";
-            this.GorillaHabObservationPanel.Size = new System.Drawing.Size(1249, 549);
+            this.GorillaHabObservationPanel.Size = new System.Drawing.Size(1239, 542);
             this.GorillaHabObservationPanel.TabIndex = 47;
             // 
             // UniqueContactIDHabObs
@@ -3325,6 +3248,97 @@
             this.label147.Size = new System.Drawing.Size(33, 13);
             this.label147.TabIndex = 12;
             this.label147.Text = "Date:";
+            // 
+            // HourTextBoxHabScan
+            // 
+            this.HourTextBoxHabScan.Location = new System.Drawing.Point(244, 69);
+            this.HourTextBoxHabScan.Name = "HourTextBoxHabScan";
+            this.HourTextBoxHabScan.Size = new System.Drawing.Size(84, 20);
+            this.HourTextBoxHabScan.TabIndex = 102;
+            // 
+            // MinutesHabScan
+            // 
+            this.MinutesHabScan.Location = new System.Drawing.Point(359, 69);
+            this.MinutesHabScan.Name = "MinutesHabScan";
+            this.MinutesHabScan.Size = new System.Drawing.Size(82, 20);
+            this.MinutesHabScan.TabIndex = 103;
+            // 
+            // NestNumberHabNestTextBox
+            // 
+            this.NestNumberHabNestTextBox.Location = new System.Drawing.Point(130, 75);
+            this.NestNumberHabNestTextBox.Name = "NestNumberHabNestTextBox";
+            this.NestNumberHabNestTextBox.Size = new System.Drawing.Size(65, 20);
+            this.NestNumberHabNestTextBox.TabIndex = 71;
+            // 
+            // SitesizeHabNest
+            // 
+            this.SitesizeHabNest.Location = new System.Drawing.Point(447, 136);
+            this.SitesizeHabNest.Name = "SitesizeHabNest";
+            this.SitesizeHabNest.Size = new System.Drawing.Size(69, 20);
+            this.SitesizeHabNest.TabIndex = 72;
+            // 
+            // OriginalPartySizeTextBox
+            // 
+            this.OriginalPartySizeTextBox.Location = new System.Drawing.Point(19, 323);
+            this.OriginalPartySizeTextBox.Name = "OriginalPartySizeTextBox";
+            this.OriginalPartySizeTextBox.Size = new System.Drawing.Size(64, 20);
+            this.OriginalPartySizeTextBox.TabIndex = 67;
+            // 
+            // NewArrivalTextBox
+            // 
+            this.NewArrivalTextBox.Location = new System.Drawing.Point(124, 323);
+            this.NewArrivalTextBox.Name = "NewArrivalTextBox";
+            this.NewArrivalTextBox.Size = new System.Drawing.Size(64, 20);
+            this.NewArrivalTextBox.TabIndex = 68;
+            // 
+            // AmGorObs
+            // 
+            this.AmGorObs.Location = new System.Drawing.Point(212, 323);
+            this.AmGorObs.Name = "AmGorObs";
+            this.AmGorObs.Size = new System.Drawing.Size(64, 20);
+            this.AmGorObs.TabIndex = 69;
+            // 
+            // AfGorObsTextBox
+            // 
+            this.AfGorObsTextBox.Location = new System.Drawing.Point(297, 323);
+            this.AfGorObsTextBox.Name = "AfGorObsTextBox";
+            this.AfGorObsTextBox.Size = new System.Drawing.Size(64, 20);
+            this.AfGorObsTextBox.TabIndex = 70;
+            // 
+            // SMGorObsTextBox
+            // 
+            this.SMGorObsTextBox.Location = new System.Drawing.Point(385, 323);
+            this.SMGorObsTextBox.Name = "SMGorObsTextBox";
+            this.SMGorObsTextBox.Size = new System.Drawing.Size(64, 20);
+            this.SMGorObsTextBox.TabIndex = 71;
+            // 
+            // SFGorObsTextBox
+            // 
+            this.SFGorObsTextBox.Location = new System.Drawing.Point(472, 323);
+            this.SFGorObsTextBox.Name = "SFGorObsTextBox";
+            this.SFGorObsTextBox.Size = new System.Drawing.Size(64, 20);
+            this.SFGorObsTextBox.TabIndex = 72;
+            // 
+            // JVGorObsTextBox
+            // 
+            this.JVGorObsTextBox.Location = new System.Drawing.Point(554, 323);
+            this.JVGorObsTextBox.Name = "JVGorObsTextBox";
+            this.JVGorObsTextBox.Size = new System.Drawing.Size(64, 20);
+            this.JVGorObsTextBox.TabIndex = 73;
+            // 
+            // InfGorObsTextBox
+            // 
+            this.InfGorObsTextBox.Location = new System.Drawing.Point(642, 323);
+            this.InfGorObsTextBox.Name = "InfGorObsTextBox";
+            this.InfGorObsTextBox.Size = new System.Drawing.Size(64, 20);
+            this.InfGorObsTextBox.TabIndex = 74;
+            // 
+            // UKGorObsTextBox
+            // 
+            this.UKGorObsTextBox.Location = new System.Drawing.Point(727, 323);
+            this.UKGorObsTextBox.Name = "UKGorObsTextBox";
+            this.UKGorObsTextBox.Size = new System.Drawing.Size(64, 20);
+            this.UKGorObsTextBox.TabIndex = 75;
             // 
             // CreateEntry
             // 
@@ -3432,6 +3446,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.FirstContactPointHabScan)).EndInit();
             this.GorillaHabObservationPanel.ResumeLayout(false);
             this.GorillaHabObservationPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.HourTextBoxHabScan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MinutesHabScan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NestNumberHabNestTextBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SitesizeHabNest)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OriginalPartySizeTextBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NewArrivalTextBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AmGorObs)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AfGorObsTextBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SMGorObsTextBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SFGorObsTextBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JVGorObsTextBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InfGorObsTextBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UKGorObsTextBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3498,27 +3525,18 @@
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.TextBox ContactNumberTextBox;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox OriginalPartySizeTextBox;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.TextBox TotalTextBox;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox NewArrivalTextBox;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox AmGorObs;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.TextBox AfGorObsTextBox;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox SMGorObsTextBox;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox SFGorObsTextBox;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.TextBox JVGorObsTextBox;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.TextBox InfGorObsTextBox;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.TextBox WeatherTextBox;
         private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.TextBox UKGorObsTextBox;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.TextBox InitialLocationTextBox;
         private System.Windows.Forms.Label label40;
@@ -3531,7 +3549,6 @@
         private System.Windows.Forms.Panel GorillaHabNestPanel;
         private System.Windows.Forms.TextBox NestAgeHabNestText;
         private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.TextBox NestNumberHabNestTextBox;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.RichTextBox CommentsHabNestText;
         private System.Windows.Forms.Label label46;
@@ -3571,9 +3588,7 @@
         private System.Windows.Forms.Label label99;
         private System.Windows.Forms.TextBox LocationHabScan;
         private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.TextBox MinutesHabScan;
         private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.TextBox HourTextBoxHabScan;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Panel GorillaHabScanPanel;
         private System.Windows.Forms.TextBox FDNoteHabScan;
@@ -3757,7 +3772,19 @@
         private System.Windows.Forms.Label label148;
         private System.Windows.Forms.TextBox NestTypeHabNest;
         private System.Windows.Forms.Label label152;
-        private System.Windows.Forms.TextBox SitesizeHabNest;
         private System.Windows.Forms.Label label153;
+        private System.Windows.Forms.NumericUpDown MinutesHabScan;
+        private System.Windows.Forms.NumericUpDown HourTextBoxHabScan;
+        private System.Windows.Forms.NumericUpDown SitesizeHabNest;
+        private System.Windows.Forms.NumericUpDown NestNumberHabNestTextBox;
+        private System.Windows.Forms.NumericUpDown UKGorObsTextBox;
+        private System.Windows.Forms.NumericUpDown InfGorObsTextBox;
+        private System.Windows.Forms.NumericUpDown JVGorObsTextBox;
+        private System.Windows.Forms.NumericUpDown SFGorObsTextBox;
+        private System.Windows.Forms.NumericUpDown SMGorObsTextBox;
+        private System.Windows.Forms.NumericUpDown AfGorObsTextBox;
+        private System.Windows.Forms.NumericUpDown AmGorObs;
+        private System.Windows.Forms.NumericUpDown NewArrivalTextBox;
+        private System.Windows.Forms.NumericUpDown OriginalPartySizeTextBox;
     }
 }

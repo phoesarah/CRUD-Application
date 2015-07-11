@@ -52,8 +52,12 @@ namespace GorillaChimpDataJamWF
         {
             if (selectedsearchfields.Keys.Contains("Observer"))
             {
-                if (((ComboBox)sender).SelectedValue != null)
-                selectedsearchfields["Observer"] = ((ComboBox)sender).SelectedValue.ToString();
+                selectedsearchfields.Remove("Observer");
+                selectedsearchfields.Add("Observer", ((ComboBox)sender).Text);
+                
+               
+                
+                // selectedsearchfields["Observer"] = ((ComboBox)sender).SelectedItem.ToString();
             }
             else
             {
@@ -67,8 +71,8 @@ namespace GorillaChimpDataJamWF
         {
             if (selectedsearchfields.Keys.Contains("Species"))
             {
-                if (((ComboBox)sender).SelectedValue != null)
-                selectedsearchfields["Species"] = ((ComboBox)sender).SelectedValue.ToString();
+                
+                selectedsearchfields["Species"] = ((ComboBox)sender).SelectedItem.ToString();
             }
             else
             {
@@ -82,8 +86,8 @@ namespace GorillaChimpDataJamWF
         {
             if (selectedsearchfields.Keys.Contains("Location"))
             {
-                if (((ComboBox)sender).SelectedValue != null)
-                selectedsearchfields["Location"] = ((ComboBox)sender).SelectedValue.ToString();
+               
+                selectedsearchfields["Location"] = ((ComboBox)sender).SelectedItem.ToString();
             }
             else
             {
@@ -97,8 +101,8 @@ namespace GorillaChimpDataJamWF
         {
             if (selectedsearchfields.Keys.Contains("PartySize"))
             {
-                if (((ComboBox)sender).SelectedValue != null)
-                selectedsearchfields["PartySize"] = ((ComboBox)sender).SelectedValue.ToString();
+              
+                selectedsearchfields["PartySize"] = ((ComboBox)sender).SelectedItem.ToString();
             }
             else
             {
@@ -112,8 +116,8 @@ namespace GorillaChimpDataJamWF
         {
             if (selectedsearchfields.Keys.Contains("GroupID"))
             {
-                if (((ComboBox)sender).SelectedValue != null)
-                selectedsearchfields["GroupID"] = ((ComboBox)sender).SelectedValue.ToString();
+          
+                selectedsearchfields["GroupID"] = ((ComboBox)sender).SelectedItem.ToString();
             }
             else
             {
@@ -127,7 +131,7 @@ namespace GorillaChimpDataJamWF
         {
             if (selectedsearchfields.Keys.Contains("Comment"))
             {
-                if (((RichTextBox)sender) != null)
+             
                 selectedsearchfields["Comment"] = ((RichTextBox)sender).Text;
             }
             else
@@ -217,6 +221,18 @@ namespace GorillaChimpDataJamWF
         private void habEncounterBindingSource_CurrentChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void ClearButton_Click(object sender, EventArgs e)
+        {
+            selectedsearchfields.Clear();
+            PartySizeCombo.Text = "";
+            DataSheetCombo.Text = "";
+            ObserverCombo.Text = "";
+            SpeciesCombo.Text = "";
+            LocationCombo.Text = "";
+            GroupIDBox.Text = "";
+            CommentBox.Text = "";
         }
 
      
