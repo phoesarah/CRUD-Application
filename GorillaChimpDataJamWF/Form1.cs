@@ -17,8 +17,9 @@ namespace GorillaChimpDataJamWF
         //Dataset not bound. 
         private Dictionary<string, string> selectedsearchfields;
         Gorillas2Entities1 db = new Gorillas2Entities1();
-        DataGridViewImageColumn delbut = new DataGridViewImageColumn();
-        
+        DataGridViewLinkColumn Deletelink = new DataGridViewLinkColumn();
+        DataGridViewLinkColumn Editlink = new DataGridViewLinkColumn();
+
         public Form1()
         {
             InitializeComponent();
@@ -26,7 +27,22 @@ namespace GorillaChimpDataJamWF
             datelabel.Hide();
             EndDate.Hide();
             checkForDateCheckbox.Hide();
-            dataGridView1.Columns.Add(delbut);
+
+
+            Editlink.UseColumnTextForLinkValue = true;
+            Editlink.HeaderText = "EDIT"; Editlink.DataPropertyName = "lnkColumn";
+            Editlink.LinkBehavior = LinkBehavior.SystemDefault;
+            Editlink.Text = "Edit";
+            dataGridView1.Columns.Add(Editlink);
+
+            Deletelink.UseColumnTextForLinkValue = true;
+            Deletelink.HeaderText = "DELETE";
+            Deletelink.DataPropertyName = "lnkColumn";
+            Deletelink.LinkBehavior = LinkBehavior.SystemDefault;
+            Deletelink.Text = "Delete"; dataGridView1.Columns.Add(Deletelink);
+
+            
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -213,11 +229,7 @@ namespace GorillaChimpDataJamWF
 
             dataGridView1.DataSource = habdatacon;
 
-            
-            delbut.Image = Image.FromFile(Environment.CurrentDirectory + "/images/delete.png");
-            delbut.Width = 40;
-            delbut.AutoSizeMode = 
-            delbut.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+         
            
 
             if (habdatacon.Count == 0)
@@ -245,10 +257,32 @@ namespace GorillaChimpDataJamWF
             CommentBox.Text = "";
         }
 
-        private void cellvaluechanged(object sender, DataGridViewCellEventArgs e)
+        
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             
+            
+            //edit button is clicked
+            if (e.ColumnIndex == 50)
+            {
+              //  int bid = int.Parse(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
+                MessageBox.Show("Edit was clicked", "OK");
+            }
+            //deletebutton is clicked
+            if (e.ColumnIndex == 51)
+            {
+               DialogResult result = MessageBox.Show("Are you sure you would like to delete this reccord?", "Confirmation", MessageBoxButtons.OKCancel);
+                if (result == DialogResult.OK)
+                {
+                     //delete the record from the Book table
+                   // dataGridView1.Rows.RemoveAt(e.RowIndex); //delete the row from the DataGridView
+                }
+            }
+           
         }
+
+       
 
      
 
