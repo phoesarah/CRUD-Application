@@ -275,9 +275,14 @@ namespace GorillaChimpDataJamWF
                DialogResult result = MessageBox.Show("Are you sure you would like to delete this reccord?", "Confirmation", MessageBoxButtons.OKCancel);
                 if (result == DialogResult.OK)
                 {
-                    MessageBox.Show("You clicked Okay");
-                    //delete the record from the Book table
-                    // dataGridView1.Rows.RemoveAt(e.RowIndex); //delete the row from the DataGridView
+
+                   
+                    var recordtodelete = dataGridView1.Rows[e.RowIndex].Cells[0].Value;
+                    HabEncounter habencounter = db.HabEncounters.Find(recordtodelete);
+                    db.HabEncounters.Remove(habencounter);
+                    db.SaveChanges();
+                    MessageBox.Show("Record with the ID of " + dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString() + " has been Deleted");
+
                 }
             }
            
