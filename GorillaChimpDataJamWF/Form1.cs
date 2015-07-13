@@ -12,7 +12,6 @@ namespace GorillaChimpDataJamWF
 {
     public partial class Form1 : Form
     {
-        
         private Dictionary<string, string> selectedsearchfields;
         Gorillas2Entities1 db = new Gorillas2Entities1();
         DataGridViewLinkColumn Deletelink = new DataGridViewLinkColumn();
@@ -70,7 +69,6 @@ namespace GorillaChimpDataJamWF
             {
                 selectedsearchfields.Remove("Observer");
                 selectedsearchfields.Add("Observer", ((ComboBox)sender).Text);
-                
 
             }
             else
@@ -233,6 +231,7 @@ namespace GorillaChimpDataJamWF
                 MessageBox.Show("Sorry, no results match your query");
             }
   
+
         }
 
         private void habEncounterBindingSource_CurrentChanged(object sender, EventArgs e)
