@@ -1,0 +1,9 @@
+diff a/GorillaChimpDataJamWF/Form1.cs b/GorillaChimpDataJamWF/Form1.cs	(rejected hunks)
+@@ -12,6 +12,7 @@
+ {
+     public partial class Form1 : Form
+     {
++       
+         private Dictionary<string, string> selectedsearchfields;
+         Gorillas2Entities1 db = new Gorillas2Entities1();
+         DataGridViewLinkColumn Deletelink = new DataGridViewLinkColumn();
