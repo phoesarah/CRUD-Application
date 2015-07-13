@@ -234,7 +234,7 @@ namespace GorillaChimpDataJamWF
 
             if (habdatacon.Count == 0)
             {
-                MessageBox.Show("Sorry, no results match your query", "OK");
+                MessageBox.Show("Sorry, no results match your query");
             }
             //dataGridView1.DataSource = db.HabEncounters.Where(x => x.SPECIES == "gorilla").ToList();
             //selectedsearchfields["Observer"].ToString()).ToList();
@@ -275,8 +275,9 @@ namespace GorillaChimpDataJamWF
                DialogResult result = MessageBox.Show("Are you sure you would like to delete this reccord?", "Confirmation", MessageBoxButtons.OKCancel);
                 if (result == DialogResult.OK)
                 {
-                     //delete the record from the Book table
-                   // dataGridView1.Rows.RemoveAt(e.RowIndex); //delete the row from the DataGridView
+                    MessageBox.Show("You clicked Okay");
+                    //delete the record from the Book table
+                    // dataGridView1.Rows.RemoveAt(e.RowIndex); //delete the row from the DataGridView
                 }
             }
            
