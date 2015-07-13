@@ -212,7 +212,7 @@ namespace GorillaChimpDataJamWF
             dataGridView1.DataSource = habdatacon;
             if (habdatacon.Count == 0)
             {
-                MessageBox.Show("Sorry, no results match your query", "OK");
+                MessageBox.Show("Sorry, no results match your query");
             }
             //dataGridView1.DataSource = db.HabEncounters.Where(x => x.SPECIES == "gorilla").ToList();
             //selectedsearchfields["Observer"].ToString()).ToList();
